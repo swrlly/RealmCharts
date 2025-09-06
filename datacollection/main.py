@@ -1,11 +1,13 @@
+import os
 import time
 import logging
 import requests
-from Logger import CreateLogger
 from Database import Database
+from Logger import CreateLogger
 
 clock = time.monotonic()
-link = "https://realmstock.network/Public/PlayersOnline"
+link = open("link", "r").read()
+KeyboardInterrupt
 
 def main():
     CreateLogger("logs")
