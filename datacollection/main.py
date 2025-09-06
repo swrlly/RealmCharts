@@ -6,8 +6,7 @@ from Database import Database
 from Logger import CreateLogger
 
 clock = time.monotonic()
-link = open("link", "r").read()
-KeyboardInterrupt
+link = open("link", "r").read().strip()
 
 def main():
     CreateLogger("logs")
