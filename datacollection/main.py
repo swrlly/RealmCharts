@@ -20,6 +20,7 @@ def main():
             time.sleep(60 - (time.monotonic() - clock) % 60)
         except Exception as e:
             logger.info("Exception: {}".format(e))
+            time.sleep(60 - (time.monotonic() - clock) % 60)
 
 if __name__ == "__main__":
     main()
