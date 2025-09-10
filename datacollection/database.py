@@ -9,7 +9,7 @@ class Database:
         self.link = link
         self.logger = logging.getLogger("Database")
 
-    def connect(self):
+    def connect(self) -> None:
         # Connect to database and initialize cursor.
         self._connection = sqlite3.connect(self.link)
         self._cursor = self._connection.cursor()
@@ -19,7 +19,20 @@ class Database:
         self._cursor.close()
         self._connection.close()
 
-    def insert_new_row(self, row : list) -> None:
+    def insert_new_maintenance(self, row : list) -> None:
+        # Insert maintenance status.
+        self.connect()
+
+        try:
+            self._cursor.execute("INSERT INTO maintenance VALUES (?, ?, ?);", row)
+            self._connection.commit()
+        except Exception as e:
+            self.logger.info("Maintenance insertion error at time {}: {}".format(row[0], e))
+
+        self.close()
+
+
+    def insert_new_playercount(self, row : list) -> None:
         # Insert new playercount.
         self.connect()
         
@@ -27,11 +40,11 @@ class Database:
             self._cursor.execute("INSERT INTO playersOnline VALUES (?, ?);", row)
             self._connection.commit()
         except Exception as e:
-            self.logger.info("Insertion error at time {}: {}".format(row[0], e))
+            self.logger.info("Player insertion error at time {}: {}".format(row[0], e))
             
         self.close()
 
-    def get_nonnull_rows(self, start, end = None):
+    def get_nonnull_rows(self, start, end = None) -> None:
         # Return rows with start <= timestamp < end with non null playercount
         # If only start, return 1 row.
         self.connect()
@@ -47,7 +60,7 @@ class Database:
         self.close()
         return rows
 
-    def fill_null(self, start, end):
+    def fill_null(self, start, end) -> None:
         # Replace rows with start <= timestamp < end with NULL.
         rows =  self.get_nonnull_rows(start, end)
         rows = [{"players": None, "timestamp": i[0]} for i in rows]

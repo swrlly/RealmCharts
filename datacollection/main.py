@@ -1,31 +1,23 @@
-import os
 import time
 import logging
-import requests
-from database import Database
 from logger import create_logger
+from tasks import Tasks
 
-clock = time.monotonic()
-link = open("link", "r").read().strip()
-db_link = "data/players.db"
 
 def main():
 
     create_logger("logs")
     logger = logging.getLogger("Main")
-
+    links = open("link", "r").read().strip().split("\n")
+    db_link = "data/players.db"
+    tasks = Tasks(links, db_link)
+    clock = time.monotonic()
+    logger.info("Started program.")
     while True:
 
-        t = int(time.time())
-        database = Database(db_link)
-        count = None
-
-        try:
-            count = int(requests.get(link).content)
-        except Exception as e:
-            logger.info("Exception while requesting player count.")
-
-        database.insert_new_row([t, count])
+        now = int(time.time())
+        tasks.get_maintenance_status(now)
+        tasks.get_player_count(now)
         time.sleep(60 - (time.monotonic() - clock) % 60)
 
 if __name__ == "__main__":
