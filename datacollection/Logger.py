@@ -7,7 +7,7 @@ dtfmt = "[%Y-%m-%d] %H:%M:%S - "
 
 directory = "logs"
 
-def CreateLogger(directory):
+def create_logger(directory):
 
     if not os.path.exists(directory):
         os.makedirs(directory)

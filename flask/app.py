@@ -5,22 +5,22 @@ import time
 import json
 
 
-cssVersion = str(int(time.time()))
+css_version = str(int(time.time()))
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", css_version = css_version)
 
 @app.route("/api/playercount")
 def playerCount():
-    cur = getDB().cursor()
+    cur = get_db().cursor()
     cur.execute("SELECT * FROM playersOnline")
     results = cur.fetchall()
     results = json.dumps(results)
     return app.response_class(response = results, status = 200, mimetype = "application/json")
 
-def getDB():
+def get_db():
     db = getattr(g, "_database", None)
     if db is None:
         db = g._database = sqlite3.connect("../datacollection/data/players.db")

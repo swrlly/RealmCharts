@@ -1,7 +1,5 @@
 :root {
     /*--text-color: #C9D1D9;*/
-    --text-color: #D3D3D3;
-    --background-col: #090909;
     --website-width:1200px;
     --bold-weight: 600;
     --list-line-height: 1.5;
@@ -9,12 +7,11 @@
     --paragraph-bottom-margin: 1rem;
 
     background-color: var(--background-col);
-    
 }
 
-.container {
-    max-width: var(--website-width);
-    margin: 0 auto;
+html {
+    --text-color: #c9c9c9;
+    --background-col: #090909;
 }
 
 body {
@@ -22,4 +19,9 @@ body {
     color: var(--text-color) !important;
     font-family: 'Open Sans', sans-serif !important;   
     margin: 0;
+}
+
+.container {
+    max-width: var(--website-width);
+    margin: 0 auto;
 }

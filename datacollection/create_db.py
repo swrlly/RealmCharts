@@ -3,8 +3,7 @@ import sqlite3
 database = "data/players.db"
 create = """CREATE TABLE IF NOT EXISTS playersOnline (
     timestamp INTEGER PRIMARY KEY NOT NULL,
-    players INT
-    );"""
+    players INT);"""
 
 try:
     with sqlite3.connect(database) as conn:
