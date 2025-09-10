@@ -15,6 +15,8 @@ end = 1757423614
 # remove 29 minutes of new data for 30 min window to update correctly
 database.fill_null(start, end)
 database.logger.info("Filled host down times with null.")
-# create entries for missing times: my bot/host was down
+# create entries for missing times: my bot + host was down
 database.fill_missing_times()
 database.logger.info("Created missing rows with null.")
+
+# still need to remove maintenance times

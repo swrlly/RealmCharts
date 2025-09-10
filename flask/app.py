@@ -13,7 +13,7 @@ def index():
     return render_template("index.html", css_version = css_version)
 
 @app.route("/api/playercount")
-def playerCount():
+def player_count():
     cur = get_db().cursor()
     cur.execute("SELECT * FROM playersOnline")
     results = cur.fetchall()
