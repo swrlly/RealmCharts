@@ -7,6 +7,7 @@ from logger import create_logger
 
 clock = time.monotonic()
 link = open("link", "r").read().strip()
+db_link = "data/players.db"
 
 def main():
 
@@ -16,15 +17,15 @@ def main():
     while True:
 
         t = int(time.time())
-        database = Database()
+        database = Database(db_link)
         count = None
 
         try:
             count = int(requests.get(link).content)
         except Exception as e:
-            logger.info("Exception while requesting: {}".format(e))
+            logger.info("Exception while requesting player count.")
 
-        database.insert([t, count])
+        database.insert_new_row([t, count])
         time.sleep(60 - (time.monotonic() - clock) % 60)
 
 if __name__ == "__main__":

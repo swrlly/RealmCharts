@@ -1,6 +1,6 @@
 import sqlite3
 
-database = "data/players.db"
+database = "../data/players.db"
 create = """CREATE TABLE IF NOT EXISTS playersOnline (
     timestamp INTEGER PRIMARY KEY NOT NULL,
     players INT);"""
