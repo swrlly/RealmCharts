@@ -19,7 +19,7 @@ class Database:
         self._cursor.close()
         self._connection.close()
 
-    def insert_new_maintenance(self, row : list) -> None:
+    def insert_new_maintenance(self, row : list) -> list:
         # Insert maintenance status.
         self.connect()
 
@@ -44,7 +44,7 @@ class Database:
             
         self.close()
 
-    def get_nonnull_rows(self, start, end = None) -> None:
+    def get_nonnull_rows(self, start, end = None) -> List:
         # Return rows with start <= timestamp < end with non null playercount
         # If only start, return 1 row.
         self.connect()
