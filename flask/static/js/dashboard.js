@@ -1,6 +1,6 @@
-var backgroundColor = "#121212";
-var seriesColor = "#b39af0";
-var selectorColor = "#636363";
+var backgroundColor = "#141414";
+var seriesColor = "#6180e8ff";
+var selectorColor = "#4d4d4dff";
 var linesInChartColor = "#969696";
 var yAxisLineColor = "#5e5e5e";
 var inputBoxBorderColor = "#6e6e6e";
@@ -15,13 +15,15 @@ req.open("GET",'/api/playercount', true);
 req.setRequestHeader("Access-Control-Allow-Origin", "same-origin")
 req.send();*/
 
-(async() => {
+async function getData(link) {
+    return await fetch(link).then(response => response.json());
+}
 
-    const data = await fetch("https://rotmg.swrlly.com/api/playercount", {
-    }
-    ).then(response => response.json());
+async function createChart() {
 
-        
+    //var data = await getData("http://localhost:8001/api/playercount");
+    var data = await getData("https://rotmg.swrlly.com/api/playercount");
+
     for (index = 0; index < data.length; index++) {
         data[index][0] *= 1000;
         data[index][1] = data[index][1] === 0 ? null : data[index][1]
@@ -29,7 +31,7 @@ req.send();*/
         
     Highcharts.setOptions({
         chart : {
-            type: 'spline',
+            reflow: true,
             backgroundColor: backgroundColor,
             style: {
                 fontFamily: chartFont,
@@ -39,7 +41,14 @@ req.send();*/
         }
     });
     Highcharts.seriesTypes.scatter.prototype.getPointSpline = Highcharts.seriesTypes.spline.prototype.getPointSpline;
-    var chart = Highcharts.stockChart("chart-container", {
+    var chart = Highcharts.stockChart("playercount-chart", {
+        chart : {
+            events : {
+                load() {
+                    onPlayerChartLoad();
+                } 
+            }
+        },
         navigator: {
             // slider opacity + color
             maskFill : "rgba(102,133,194,0.08)",
@@ -149,7 +158,7 @@ req.send();*/
                 color: selectorColor,
             },
             tickPixelInterval: 120,
-            min: Date.now() - (48 * 60 * 60 * 1000),
+            min: Date.now() - (168 * 60 * 60 * 1000),
             max: Date.now()
 
         },
@@ -160,9 +169,18 @@ req.send();*/
                     color: axisLabelColor
                 }
             }
-        }
+        },
+        
     });
-
+    
+    return [chart, data];
+    /*
+    setInterval(() => {
+    console.log('Chart size:', chart.chartWidth, 'x', chart.chartHeight);
+    console.log('Container size:', chart.container.offsetWidth, 'x', chart.container.offsetHeight);
+    }, 1000);
+    */
+   
     /*setInterval(function() {
         var point = [
             Date.now(), // current timestamp
@@ -172,7 +190,72 @@ req.send();*/
         chart.series[0].addPoint(point, true, true);
     }, 5000);*/
 
-})();
+}
+
+function onPlayerChartLoad() {
+    var hiddenText = document.getElementsByClassName("card-header-text");
+    for (let i = 0; i < hiddenText.length; i++) {
+        hiddenText[i].style.display = "block";
+    }
+    var card = document.getElementsByClassName("card");
+    console.log(card);
+    for (let i = 0; i < card.length; i++) {
+        card[i].style.background = window.getComputedStyle(document.body).getPropertyValue("--card-background-color");
+        card[i].style.animation = "revert";
+        card[i].style.backgroundSize = "revert";
+    }
+}
+
+function tsToSeconds(time) {
+    let seconds = Math.floor((Date.now() - time) / 1000);
+    let minutes = Math.floor(seconds / 60);
+    let hours = Math.floor(seconds / 3600);
+    let days = Math.floor(seconds / (3600 * 24));
+    let s = "";
+    if (days > 0) {
+        s = days == 1 ? days + " day" : days + " days";
+    } else if (hours > 0) {
+        s = hours == 1 ? hours + " hour" : hours + " hours";
+    } else if (minutes > 0) {
+        s = minutes == 1 ? minutes + " minute" : minutes + " minutes";
+    } else if (seconds > 0) {
+        s = seconds == 1 ? seconds + " second" : seconds + " seconds";
+    }
+    return s;
+}
+
+async function getGameOnline(time) {
+    var data = await getData("https://rotmg.swrlly.com/api/online");
+    return data;
+}
+
+async function updateCards(data) {
+    let content = document.getElementById("players-online");
+    content.innerHTML = data[data.length - 1][1];
+
+    content = document.getElementById("server-status");
+    var serverStatus = await getGameOnline();
+    if (serverStatus["online"] === 1){
+        content.innerHTML = '<img class="glape" src="/static/images/glape.png"></img>';
+    }
+    else {
+        console.log(serverStatus["online"])
+        content.innerHTML = '<img class="glape" src="/static/images/shinyglape.png"></img>';
+    }
+
+}
+
+async function main() {
+    let [chart, data] = await createChart();
+    await updateCards(data);
+}
+
+main();
+
+
+
+
+
 //updateTimeUpdated(data[data.length -1][0]);
 //setInterval(updateTimeUpdated, 1000, data[data.length - 1][0]);
 

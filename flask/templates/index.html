@@ -16,13 +16,29 @@
         {% block header %} 
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/highstock/6.0.3/highstock.js" integrity="sha512-xStuxZIFeepdcpLwBhqIuU761mDfYUDbV8C8lUiTX96W+kyL+AYmY9l3o/Ku30gEek9l+hUJGQpmT4pcVm6LeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
         <script src="/static/js/highstock.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script rel="preconnect" src="/static/js/graphs.js"></script>
+        <script rel="preconnect" src="/static/js/dashboard.js"></script>
         {% endblock %}
     </head>
 
+    <div class="container" style="height: 5em;"></div>
+
     <div class="container">
-        <div style="padding-top: 5em;">
-            <div id="chart-container"></div>
+
+        <div class="one-stat-grid">
+            <div class="card">
+                <div class="card-header-text">Players online</div>
+                <div id="players-online" class="card-content"></div>
+            </div>
+            <div class="card">
+                <div class="card-header-text">Server status</div>
+                <div id="server-status" class="card-content"></div>
+            </div>
+            <div class="card">c</div>
+            <div class="card">c</div>
+        </div>
+        <div class="playercount-chart-header">Players</div>
+        <div class="chart-skeleton">
+            <div id="playercount-chart"></div>
         </div>
     </div>
 
