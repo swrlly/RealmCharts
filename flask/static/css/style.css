@@ -5,6 +5,7 @@
     --list-line-height: 1.5;
     --line-height: 1.5;
     --paragraph-bottom-margin: 1rem;
+    --font-size: 1em;
 
     background-color: var(--background-color);
 }
@@ -14,11 +15,19 @@ html {
     --card-header-text-color: #7c7c7c;
     --background-color: #101010;
     --card-border-color: #1f1f1f;
+    --skeleton-background-color: #111111;
     --card-background-color: #141414;
+    --tooltip-background-color: #bdbdbd;
+    --tooltip-text-color: #202020;
+    --navbar-text-background-color: #1a1a1a;
+
+    --blue: #517affff;
+
+    --card-border-radius: 25px
 }
 
 body {
-    font-size: 1em;
+    font-size: var(--font-size);
     background-color: var(--background-color) !important;
     color: var(--text-color) !important;
     font-family: 'Open Sans', sans-serif !important;   
@@ -33,53 +42,189 @@ body {
   src: url("/static/fonts/OpenSans.woff2") format('woff2');
 }
 
-.container {
+/* navbar */
+
+.navbar {
+    display: grid;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* container has no padding, so subtract (navbar margin + navbar padding) */
+    width: calc(50vw - 450px - 4rem); 
+    grid-template-rows: repeat(4, max-content);
+    height: max-content;
+    margin: 2rem;
+    margin-top: 5rem;
+    justify-content: flex-end;
+    padding-top: 3.6rem;
+    row-gap: 1rem;
+}
+
+.title-div {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 0.01fr 1fr auto;
+    align-items: baseline;
+}
+
+.title-container {
     max-width: var(--core-visuals-width);
     margin: 0 auto;
-    display: grid;
-    grid-template-rows: 1fr 0.2fr 5fr;
+    padding: 1rem;
 }
 
-#playercount-chart {
-    overflow: hidden;
-    max-height: 400px;
-    max-width: auto;
-    border-radius: 25px;
-    
+.navbar-icon {
+    top: 5px;
+    position: relative;
 }
 
-.playercount-chart-header {
-    font-size: 3rem;
-    padding-top: 0.5em;
-    padding-bottom: 0.25em;
+.navbar-website-text {
+    font-size: 2.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-self: flex-start;
 }
 
-.chart-skeleton {
-  width: 100%;
-  max-width: 900px; 
-  max-height: 400px; 
-  aspect-ratio: 2.4 / 1; 
-  border: 2px var(--card-border-color) solid;
-  border-radius: 25px;
-  background: linear-gradient(45deg, var(--card-background-color) 25%, #1e1e1e 50%, var(--card-background-color) 75%);
-  background-size: 200% 100%;
-  animation: loading 5s infinite;
+.navbar-descriptor {
+    justify-content: flex-end;
+    display:flex;
 }
 
-@keyframes loading {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+.navbar-text {
+    visibility: hidden;
+    /*background: var(--card-background-color);*/
+    border-radius: var(--card-border-radius);
+    padding: 0px 10px 0px 10px;
+    transition: background 0.2s;
+    display:grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1.5rem;
 }
+
+.navbar-text:hover {
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.navbar-text-icon {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+@keyframes blueGlow {
+    0% {
+        background-color: default;
+    }
+    100% {
+        background-color: var(--blue);
+    }
+}
+
+
+
+/* main content */
+
+.container {
+    max-width: var(--core-visuals-width);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+
+.visualization-container {
+    max-width: var(--core-visuals-width);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    display: grid; /*breaks reflow for highcharts?????*/
+    grid-template-rows: 0.2fr 1.6fr auto;
+}
+
+.playercount-header {
+    visibility: hidden;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    background-clip: content-box;
+    border-radius: var(--card-border-radius);
+    margin-bottom: 1.5rem;
+}
+
+.last-updated {
+    justify-content: flex-end; 
+    font-size: 0.75rem; 
+    display: flex;
+}
+
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0px 0px 0px var(--text-color));
+    }   
+    100% {
+        filter: drop-shadow(0px 0px 4px var(--text-color));
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline;
+    padding-left: 8px;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    font-size: 0.8rem;
+    background-color: var(--tooltip-background-color);
+    color: var(--tooltip-text-color);
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s;
+    inset-block-start: calc(-48px - 5px);
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.question-informative {
+    max-width: 24px;
+    max-height: 24px;
+    fill: var(--text-color);
+    transition: transform 0.2s;
+
+}
+
+
+.question-informative:hover {
+    animation: glow 0.2s forwards;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+/* top statistics */
 
 .one-stat-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 2em;
+    column-gap: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .card {
-    border: 2px var(--card-border-color) solid;
-    border-radius: 25px;
+    min-height: 91.333px;
+    border: none;
+    border-radius: var(--card-border-radius);
     display: flex;
     padding: 20px 30px 10px 30px;
     /*background-color: var(--card-background-color);*/
@@ -87,13 +232,10 @@ body {
     grid-template-rows: 20% 80%;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, #1e1e1e  25%, var(--card-background-color) 50%, #1e1e1e 75%);
-    background-size: 200% 100%;
-    animation: loading 5s infinite;
 }
 
 .card-header-text {
-    display: none;
+    visibility: hidden;
     font-size: 0.75rem;
     color: var(--card-header-text-color);
 }
@@ -114,11 +256,11 @@ body {
 
 }
 
-.glape {
-    animation: growFromCenter 0.4s ease-out forwards;
+.server-up-emoji {
     transform-origin: center; 
     max-width: inherit; 
     max-height: inherit;
+    transition: transform 0.2s;
 }
 
 @keyframes growFromCenter {
@@ -130,6 +272,75 @@ body {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.server-up-emoji:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.server-up-emoji:active {
+    transform: scale(0.8);
+}
+
+/* playercount chart */
+
+.chart-skeleton {
+    max-width: 900px; 
+    max-height: 400px; 
+    aspect-ratio: 2.4 / 1; 
+    border: none;
+    border-radius: var(--card-border-radius);
+    /* chart reflow fix if parent is grid: https://github.com/highcharts/highcharts/issues/9491#issuecomment-605965402 */
+    display: grid; 
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*
+.chart-skeleton::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(124, 124, 124, 0.5), transparent);
+    transform: translateX(-100%);
+    animation: loading 2s infinite;
+}
+    */
+
+@keyframes loading {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+    /*0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }*/
+}
+
+#playercount-chart {
+    overflow: hidden;
+    max-height: 400px;
+    max-width: auto;
+    border-radius: var(--card-border-radius);
+    
+}
+
+.title-div-wrapper {
+    display:grid;
+}
+
+/* title-div wrapper: show background but not text, visibility: hidden hides background 
+don't put background wrapper children in here
+*/
+.chart-skeleton, .card, .playercount-chart-header, .title-div-wrapper, .navbar-text-wrapper {
+    border-radius: var(--card-border-radius);
+    background: linear-gradient(90deg, var(--skeleton-background-color) 25%, #23232355 50%, var(--skeleton-background-color) 51%);
+    animation: loading 1.7s linear infinite normal;
+    background-size: 200% 100%;
 }
 
 

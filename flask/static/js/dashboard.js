@@ -1,5 +1,5 @@
 var backgroundColor = "#141414";
-var seriesColor = "#6180e8ff";
+var seriesColor = "#517affff";
 var selectorColor = "#4d4d4dff";
 var linesInChartColor = "#969696";
 var yAxisLineColor = "#5e5e5e";
@@ -31,7 +31,6 @@ async function createChart() {
         
     Highcharts.setOptions({
         chart : {
-            reflow: true,
             backgroundColor: backgroundColor,
             style: {
                 fontFamily: chartFont,
@@ -43,9 +42,10 @@ async function createChart() {
     Highcharts.seriesTypes.scatter.prototype.getPointSpline = Highcharts.seriesTypes.spline.prototype.getPointSpline;
     var chart = Highcharts.stockChart("playercount-chart", {
         chart : {
+            reflow: true,
             events : {
-                load() {
-                    onPlayerChartLoad();
+                async load() {
+                    removeSkeleton();
                 } 
             }
         },
@@ -124,10 +124,10 @@ async function createChart() {
         series: [{
             name: 'Players',
             data: data,
-            lineWidth: 1.25,
+            lineWidth: 2,
             color: seriesColor,
             tooltip: {
-                backgroundColor: 'rgba(255, 255, 255, 1)',
+                /*backgroundColor: 'rgba(255, 255, 255, 1)',*/
                 hideDelay: 0,
                 style: {
                     color: '#000000',
@@ -172,6 +172,10 @@ async function createChart() {
         },
         
     });
+
+    /*document.getElementById("playercount-chart").addEventListener("resize", function() {
+        chart.reflow();
+    });*/
     
     return [chart, data];
     /*
@@ -192,18 +196,67 @@ async function createChart() {
 
 }
 
-function onPlayerChartLoad() {
-    var hiddenText = document.getElementsByClassName("card-header-text");
-    for (let i = 0; i < hiddenText.length; i++) {
-        hiddenText[i].style.display = "block";
+function removeBorderSkeleton(s, c, b) {
+
+    if (b === true) {
+        s.style.border = c;
+        s.style.background = window.getComputedStyle(document.body).getPropertyValue("--card-background-color");
+        s.style.animation = "none";
+        s.style.backgroundSize = "none";
     }
+    else {
+        s.style.animation = "none";
+        s.style.backgroundSize = "none";
+    }
+}
+
+function removeBackgroundSkeleton(s) {
+    s.style.background = "none";
+    s.style.animation = "none";
+    s.style.backgroundSize = "none";
+}
+
+function removeSkeleton() {
+
+    let cardBorderColor = "2px " + window.getComputedStyle(document.body).getPropertyValue("--card-border-color") + " solid";
+
+    // text
+    // make text appear
+    var hiddenText = document.querySelectorAll(".card-header-text,.playercount-header,.navbar-text,.title-div");
+    console.log(hiddenText);
+    for (let i = 0; i < hiddenText.length; i++) { hiddenText[i].style.visibility = "visible"; }
+
+    // headers
+    var header = document.getElementsByClassName("playercount-header")[0];
+    removeBorderSkeleton(header, "", false);
+
+    // make card background normal + show border
     var card = document.getElementsByClassName("card");
-    console.log(card);
-    for (let i = 0; i < card.length; i++) {
-        card[i].style.background = window.getComputedStyle(document.body).getPropertyValue("--card-background-color");
-        card[i].style.animation = "revert";
-        card[i].style.backgroundSize = "revert";
-    }
+    for (let i = 0; i < card.length; i++) { removeBorderSkeleton(card[i], cardBorderColor, true); }
+
+    // make chart background normal + show border
+    var playerChart = document.getElementsByClassName("chart-skeleton")[0];
+    removeBorderSkeleton(playerChart, cardBorderColor, true);
+    playerChart.style["box-shadow"] = "0px 0px 10px 0.1px black";
+
+    //navbar
+    var navbar = document.getElementsByClassName("navbar-text");
+    console.log(navbar);
+    for (let i = 0; i < navbar.length; i++) { removeBorderSkeleton(navbar[i], "none", false); }
+
+    // now remove wrapper backgrounds
+    navbar = document.querySelectorAll(".navbar-text-wrapper,.title-div-wrapper");
+    for (let i = 0; i < navbar.length; i++) { removeBackgroundSkeleton(navbar[i]); }
+
+}
+
+function positionTooltips() {
+    // put above hover area
+    var tooltip = document.getElementsByClassName("tooltip-text")[0];
+    var width = tooltip.clientWidth;
+    // remove icon from both edges, get center offset, then adjust 12 px b/c left of icon is currently at center due to inline-inset-start: 0 being directly lined up w/ left side of box
+    // then add 8 for icon 8 units to right
+    tooltip.style["inset-inline-start"] = (-1 * (width - 48) / 2 - 12 + 8).toString() + "px"; 
 }
 
 function tsToSeconds(time) {
@@ -236,21 +289,25 @@ async function updateCards(data) {
     content = document.getElementById("server-status");
     var serverStatus = await getGameOnline();
     if (serverStatus["online"] === 1){
-        content.innerHTML = '<img class="glape" src="/static/images/glape.png"></img>';
+        content.innerHTML = '<img class="server-up-emoji" style="animation: growFromCenter 0.4s ease-out forwards;" src="/static/images/pogfish.png"></img>';
     }
     else {
         console.log(serverStatus["online"])
-        content.innerHTML = '<img class="glape" src="/static/images/shinyglape.png"></img>';
+        content.innerHTML = '<img class="server-up-emoji" style="animation: growFromCenter 0.4s ease-out forwards;" src="/static/images/shinyglape.png"></img>';
     }
+    
+    setTimeout(() => {document.getElementsByClassName("server-up-emoji")[0].style.removeProperty("animation");}, 400);
 
 }
 
 async function main() {
     let [chart, data] = await createChart();
+    positionTooltips();
     await updateCards(data);
 }
 
 main();
+
 
 
 
