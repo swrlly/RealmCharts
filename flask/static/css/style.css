@@ -13,6 +13,7 @@
 html {
     --text-color: #c9c9c9;
     --card-header-text-color: #7c7c7c;
+    --less-emphasis-color: #5c5c5c;
     --background-color: #101010;
     --card-border-color: #1f1f1f;
     --skeleton-background-color: #111111;
@@ -122,8 +123,6 @@ body {
     }
 }
 
-
-
 /* main content */
 
 .container {
@@ -156,6 +155,8 @@ body {
     justify-content: flex-end; 
     font-size: 0.75rem; 
     display: flex;
+    color: var(--less-emphasis-color);
+    fill: var(--less-emphasis-color);
 }
 
 .clock-icon {
@@ -254,17 +255,13 @@ body {
     margin: 0 auto;
 }
 
-#players-online {
-    font-size: 1.9rem;
-}
-
 #server-status {
     max-width: 40px;
     max-height: 40px;
 
 }
 
-.server-up-emoji {
+.server-up-emoji, .not-sure-yet {
     transform-origin: center; 
     max-width: inherit; 
     max-height: inherit;
@@ -282,13 +279,36 @@ body {
     }
 }
 
-.server-up-emoji:hover {
+.server-up-emoji:hover, .not-sure-yet {
     transform: scale(1.15);
     cursor: pointer;
 }
 
-.server-up-emoji:active {
+.server-up-emoji:active, .not-sure-yet {
     transform: scale(0.8);
+}
+
+#players-online {
+    font-size: 1.9rem;
+}
+
+#players-weekly-change {
+    font-size: 1.25rem;
+}
+
+.percent-change-icon {
+    margin-left: 0.25rem;
+}
+
+#not-sure-yet {
+    display: hidden;
+    max-width: 40px;
+    max-height: 40px;
+
+}
+
+#players-last-updated {
+ /**/
 }
 
 /* playercount chart */
@@ -329,7 +349,7 @@ body {
     }*/
 }
 
-#playercount-chart {
+#playercount-chart, #review-chart {
     overflow: hidden;
     max-height: 400px;
     max-width: auto;

@@ -35,7 +35,7 @@ try:
         conn.commit()
         cursor.execute(create_maintenance)
         conn.commit()
-        cursor.execute("DROP TABLE steamReviews")
+        #cursor.execute("DROP TABLE steamReviews")
         cursor.execute(create_steam_reviews)
         conn.commit()
         cursor.close()
