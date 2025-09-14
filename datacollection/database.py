@@ -3,11 +3,11 @@ import sqlite3
 
 class Database:
 
-    def __init__(self, link):
+    def __init__(self, link, logger):
         self._connection = None
         self._cursor = None
         self.link = link
-        self.logger = logging.getLogger("Database")
+        self.logger = logger
 
     def connect(self) -> None:
         # Connect to database and initialize cursor.
@@ -44,7 +44,7 @@ class Database:
             
         self.close()
 
-    def get_nonnull_rows(self, start, end = None) -> List:
+    def get_nonnull_rows(self, start, end = None) -> list:
         # Return rows with start <= timestamp < end with non null playercount
         # If only start, return 1 row.
         self.connect()
@@ -71,12 +71,13 @@ class Database:
             self._cursor.executemany("UPDATE playersOnline SET players = :players WHERE timestamp = :timestamp;", rows)
             self._connection.commit()
         except Exception as e:
-            self.logger.info("Update operation failed")
+            self.logger.info("Update null rows operation failed")
 
         self.close()
         
     def fill_missing_times(self) -> None:
         # Fill in missing time intervals over 2 minutes with NA.
+        # used to ensure time series index has at least one observation per minute
         self.connect()
         # get starting time of gap and total missing seconds
         self._cursor.execute("""
@@ -105,3 +106,25 @@ class Database:
                 self.logger.info("Missing time insertion failed for {}".format(start))
 
         self.close()
+
+    def insert_reviews(self, results: list):
+        # insert all steam reviews. overwrite old ones with new info (ex. updated review, new upvotes, etc.)
+
+        self.connect()
+
+        try:
+            self._cursor.executemany(
+                """INSERT OR REPLACE INTO steamReviews VALUES (:recommendation_id, :author_id, :playtime_forever,
+                :playtime_last_two_weeks, :playtime_at_review, :last_played, :language, :review, :timestamp_created,
+                :timestamp_updated, :voted_up, :votes_up, :votes_funny, :comment_count)  ;""", results
+                )
+            self._connection.commit()
+        except Exception as e:
+            self.logger.info(f"Updating steam review operation failed: {e}")
+
+        self.close()
+        
+    def count_reviews(self):
+        self.connect()
+        self._cursor.execute("SELECT COUNT(*) FROM steamReviews;")
+        return self._cursor.fetchone()
