@@ -116,7 +116,7 @@ class Database:
             self._cursor.executemany(
                 """INSERT OR REPLACE INTO steamReviews VALUES (:recommendation_id, :author_id, :playtime_forever,
                 :playtime_last_two_weeks, :playtime_at_review, :last_played, :language, :review, :timestamp_created,
-                :timestamp_updated, :voted_up, :votes_up, :votes_funny, :comment_count)  ;""", results
+                :timestamp_updated, :voted_up, :votes_up, :votes_funny, :comment_count, :cursor)  ;""", results
                 )
             self._connection.commit()
         except Exception as e:

@@ -33,8 +33,9 @@ class SteamReviews:
              self.logger.info(f"Total reviews to scrape: {result['query_summary']['total_reviews']}")
         if result["query_summary"]["num_reviews"] == 0:
             return {}
+        old_cursor = self.params["cursor"]
         self.params["cursor"] = result["cursor"].encode()
-        return self.parse_result(result, result["cursor"])
+        return self.parse_result(result, old_cursor)
 
     def parse_result(self, result: dict, cursor):# -> list(dict[Any, Any]):
         res = []
