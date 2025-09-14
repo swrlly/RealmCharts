@@ -1,1 +1,5 @@
-[2025-09-14] 11:33:35 -  INFO   - Main - Started program.
+[2025-09-14] 12:41:36 -  INFO   - Main - Started program.
+[2025-09-14] 12:41:37 -  INFO   - Main - Starting RotMG review scraping from Steam...
+[2025-09-14] 12:41:37 -  INFO   - Main - Getting steam reviews.
+[2025-09-14] 12:41:37 -  INFO   - Main - Total reviews to scrape: 46909
+[2025-09-14] 12:45:09 -  INFO   - Main - Finished scraping 46904 reviews.
