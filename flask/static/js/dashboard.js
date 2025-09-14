@@ -23,7 +23,7 @@ var reviewsLink = "http://localhost:8001/api/review-proportions";
 var serverUpLink = "https://realmcharts.swrlly.com/api/is-game-online";
 var playerCountLink = "https://realmcharts.swrlly.com/api/playercount";
 var latestPlayerCountLink = "https://realmcharts.swrlly.com/api/players-now";
-//var playersLastWeekLink = "https://realmcharts.swrlly.com/api/players-last-week";
+var playersLastWeekLink = "https://realmcharts.swrlly.com/api/players-last-week";
 var reviewsLink = "https://realmcharts.swrlly.com/api/review-proportions"
 
 
