@@ -24,7 +24,8 @@ create_steam_reviews = """CREATE TABLE IF NOT EXISTS steamReviews (
     voted_up INT,
     votes_up INT,
     votes_funny INT,
-    comment_count INT
+    comment_count INT,
+    cursor TEXT
 );"""
 
 try:
@@ -34,7 +35,7 @@ try:
         conn.commit()
         cursor.execute(create_maintenance)
         conn.commit()
-        #cursor.execute("DROP TABLE steamReviews")
+        cursor.execute("DROP TABLE steamReviews")
         cursor.execute(create_steam_reviews)
         conn.commit()
         cursor.close()
