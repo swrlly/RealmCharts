@@ -38,7 +38,7 @@ class SteamReviews:
             return {}
         return self.parse_result(result)
 
-    def parse_result(self, result: dict) -> list(dict[Any, Any]):
+    def parse_result(self, result: dict):# -> list(dict[Any, Any]):
         res = []
         for review in result["reviews"]:
             add = {
