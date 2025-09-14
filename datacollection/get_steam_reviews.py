@@ -30,7 +30,7 @@ class SteamReviews:
         
         # only first set of results tell you how many total reviews there are
         if "total_reviews" in result["query_summary"]:
-             self.logger.info(f"Total reviews to scrape: {result["query_summary"]["num_reviews"]}")
+             self.logger.info(f"Total reviews to scrape: {result['query_summary']['num_reviews']}")
 
         self.params["cursor"] = result["cursor"].encode()
 
