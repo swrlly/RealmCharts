@@ -43,6 +43,11 @@ body {
   src: url("/static/fonts/OpenSans.woff2") format('woff2');
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 /* navbar */
 
 .navbar {
@@ -279,12 +284,12 @@ body {
     }
 }
 
-.server-up-emoji:hover, .not-sure-yet {
+.server-up-emoji:hover, .not-sure-yet:hover {
     transform: scale(1.15);
     cursor: pointer;
 }
 
-.server-up-emoji:active, .not-sure-yet {
+.server-up-emoji:active, .not-sure-yet:active {
     transform: scale(0.8);
 }
 
@@ -302,8 +307,8 @@ body {
 
 #not-sure-yet {
     display: hidden;
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 35px;
+    max-height: 35px;
 
 }
 
@@ -371,9 +376,54 @@ don't put background wrapper children in here
     background-size: 200% 100%;
 }
 
+@font-face {
+  font-family: 'icons';
+  src: url('/static/fonts/icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-youtube-play:before {
+  content: "\e900";
+}
+.i-soundcloud:before {
+  content: "\e901";
+}
+.i-spotify:before {
+  content: "\e902";
+}
+.i-bandcamp:before {
+  content: "\e903";
+}
+.i-github:before {
+  content: "\e904";
+}
+.i-linkedin-square:before {
+  content: "\e905";
+}
+.i-arrow-up-right2:before {
+  content: "\ea3b";
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+

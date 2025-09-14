@@ -519,11 +519,14 @@ function removeSkeleton() {
 
 function positionTooltips() {
     // put above hover area
-    var tooltip = document.getElementsByClassName("tooltip-text")[0];
-    var width = tooltip.clientWidth;
-    // remove icon from both edges, get center offset, then adjust 12 px b/c left of icon is currently at center due to inline-inset-start: 0 being directly lined up w/ left side of box
-    // then add 8 for icon 8 units to right
-    tooltip.style["inset-inline-start"] = (-1 * (width - 48) / 2 - 12 + 8).toString() + "px"; 
+    var tooltip = document.getElementsByClassName("tooltip-text");
+    for (let i = 0; i < tooltip.length; i++) {
+        var width = tooltip[i].clientWidth;
+        // remove icon from both edges, get center offset, then adjust 12 px b/c left of icon is currently at center due to inline-inset-start: 0 being directly lined up w/ left side of box
+        // then add 8 for icon 8 units to right
+        tooltip[i].style["inset-inline-start"] = (-1 * (width - 48) / 2 - 12 + 8).toString() + "px"; 
+    }
+
 }
 
 function updatePlayerCountTimeUpdated(data) {
