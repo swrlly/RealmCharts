@@ -56,6 +56,21 @@ def players_online_now():
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
 
+@app.route("/api/players-last-week", methods = ["GET"])
+def players_last_week():
+    cur = get_db().cursor()
+    cur.execute("""
+    SELECT 
+        timestamp,
+        players,
+        (SELECT MAX(timestamp) FROM playersOnline) - 10080 - timestamp AS difference
+    FROM playersOnline
+    ORDER BY ABS(difference)
+    LIMIT 1;""")
+    results = json.dumps(cur.fetchone())
+    cur.close()
+    return app.response_class(response = results, status = 200, mimetype = "application/json")
+
 @app.route("/api/is-game-online", methods = ["GET"])
 def is_game_up():
     cur = get_db().cursor()

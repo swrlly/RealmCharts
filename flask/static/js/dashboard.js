@@ -15,14 +15,19 @@ var rangeSelectorHover = "#343434ff";
 var textColor = "#c9c9c9";
 var disabledTextColor = "#4a4a4aff";
 var chartFont = "Open Sans";
-//var playerCountLink = "http://localhost:8001/api/playercount";
-//var reviewsLink = "http://localhost:8001/api/review-proportions";
-//var latestPlayerCountLink = "http://localhost:8001/api/players-now";
-//var serverUpLink = "http://localhost:8001/api/is-game-online";
-var playerCountLink = "https://realmcharts.swrlly.com/api/playercount";
-var reviewsLink = "https://realmcharts.swrlly.com/api/review-proportions"
-var latestPlayerCountLink = "https://realmcharts.swrlly.com/api/players-now";
+var serverUpLink = "http://localhost:8001/api/is-game-online";
+var playerCountLink = "http://localhost:8001/api/playercount";
+var latestPlayerCountLink = "http://localhost:8001/api/players-now";
+var playersLastWeekLink = "http://localhost:8001/api/players-last-week";
+var reviewsLink = "http://localhost:8001/api/review-proportions";
 var serverUpLink = "https://realmcharts.swrlly.com/api/is-game-online";
+var playerCountLink = "https://realmcharts.swrlly.com/api/playercount";
+var latestPlayerCountLink = "https://realmcharts.swrlly.com/api/players-now";
+//var playersLastWeekLink = "https://realmcharts.swrlly.com/api/players-last-week";
+var reviewsLink = "https://realmcharts.swrlly.com/api/review-proportions"
+
+
+
 
 /*
 const req = new XMLHttpRequest();
@@ -65,6 +70,7 @@ async function playercountChart() {
         },
         navigator: {
             // slider opacity + color
+            enabled: true,
             maskFill : "rgba(102,133,194,0.08)",
             xAxis: {
                 labels: {
@@ -374,7 +380,7 @@ async function reviewChart() {
                 format: "{value}"
             },
             title: {
-                text: "Number of reviews"
+                text: "# reviews"
             },
             opposite: true
         }],
@@ -574,9 +580,10 @@ async function updateCards(data) {
         content.innerHTML = "-"
     }
     
-    // update weekly % chnage
+    // update weekly % change
     content = document.getElementById("players-weekly-change");
-    let percent = parseFloat(((data[data.length-1][1] / data[data.length - 1 - 10080][1]) * 100  - 100).toFixed(2));
+    var playersLastWeek = await getData(playersLastWeekLink);
+    let percent = parseFloat(((data[data.length-1][1] / playersLastWeek[1]) * 100  - 100).toFixed(2));
     // toFixed converts to string
     if (isFinite(percent) && !isNaN(percent) && percent !== -100) {
         if (percent > 0) {
@@ -627,19 +634,19 @@ async function main() {
     positionTooltips();
     await updateCards(data);
     let [review_chart, review_data] = await reviewChart();
-    setInterval(updatePlayerCountTimeUpdated, 5000, data);
+    setInterval(updatePlayerCountTimeUpdated, 1000, data);
     // begin live update logic
     const now = new Date();
-    const msUntilFirstUpdate = Math.max(60000 - (now - data[data.length - 1][0]), 0);
+    const msUntilFirstUpdate = Math.max(60000 - (now - data[data.length - 1][0]), 1) + 1000;
     console.log("waiting", msUntilFirstUpdate / 1000, "seconds");
     const firstJobId = setTimeout(() => {
         updateCardsJob(chart, data).then(result => {
             [chart, data] = result;
-            //console.log("first update", data[data.length - 1])
+            console.log("first update", data[data.length - 1])
             const intervalJobId = setInterval(() => {
                 updateCardsJob(chart, data).then(result => {
                     [chart, data] = result;
-                    //console.log("reg update", data[data.length - 1]);
+                    console.log("reg update", data[data.length - 1]);
                 });
             }, 60000);
         });
