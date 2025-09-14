@@ -12,10 +12,10 @@ class SteamReviews:
         self.url = "https://store.steampowered.com/appreviews/200210"
         self.params = {
             "json": 1,
-            "filter": "all",
+            "filter": "recent", # filtering by recent WILL get all reviews
             "language": "all",
             "num_per_page": 100,
-            "day_range": 1, # setting to 1 gets all reviews
+            "day_range": 1,
             "purchase_type": "all",
             "cursor": "*"
         }
@@ -31,43 +31,47 @@ class SteamReviews:
         # only first set of results tell you how many total reviews there are
         if "total_reviews" in result["query_summary"]:
              self.logger.info(f"Total reviews to scrape: {result['query_summary']['total_reviews']}")
-
-        self.params["cursor"] = result["cursor"].encode()
-
         if result["query_summary"]["num_reviews"] == 0:
             return {}
-        return self.parse_result(result)
+        self.params["cursor"] = result["cursor"].encode()
+        return self.parse_result(result, result["cursor"])
 
-    def parse_result(self, result: dict):# -> list(dict[Any, Any]):
+    def parse_result(self, result: dict, cursor):# -> list(dict[Any, Any]):
         res = []
         for review in result["reviews"]:
-            add = {
-                "recommendation_id": int(review["recommendationid"]),
-                "author_id": int(review["author"]["steamid"]),
-                "playtime_forever": int(review["author"]["playtime_forever"]),
-                "playtime_last_two_weeks": int(review["author"]["playtime_last_two_weeks"]),
-                "playtime_at_review": int(review["author"]["playtime_at_review"]),
-                "last_played": int(review["author"]["last_played"]),
-                "language": review["language"],
-                "review": review["review"],
-                "timestamp_created": int(review["timestamp_created"]),
-                "timestamp_updated": int(review["timestamp_updated"]),
-                "voted_up": bool(review["voted_up"]),
-                "votes_up": int(review["votes_up"]),
-                "votes_funny": int(review["votes_funny"]),
-                "comment_count": int(review["comment_count"])
-            }
-            res.append(add)
+            try:
+                # playtime_at_review could be missing if user has games hidden
+                add = {
+                    "recommendation_id": int(review["recommendationid"]),
+                    "author_id": int(review["author"]["steamid"]),
+                    "playtime_forever": int(review["author"]["playtime_forever"]),
+                    "playtime_last_two_weeks": int(review["author"]["playtime_last_two_weeks"]),
+                    "playtime_at_review": int(review["author"]["playtime_at_review"]) if "playtime_at_review" in review["author"] else None,
+                    "last_played": int(review["author"]["last_played"]),
+                    "language": review["language"],
+                    "review": review["review"],
+                    "timestamp_created": int(review["timestamp_created"]),
+                    "timestamp_updated": int(review["timestamp_updated"]),
+                    "voted_up": bool(review["voted_up"]),
+                    "votes_up": int(review["votes_up"]),
+                    "votes_funny": int(review["votes_funny"]),
+                    "comment_count": int(review["comment_count"]),
+                    "cursor": cursor
+                }
+                res.append(add)
+            except Exception as e:
+                self.logger.info(f"Parsing review {review} had error.")
+
+        #self.logger.info(f"Parsed {len(res)} reviews")
         return res
 
     def get_all_reviews(self):
         # batch scrape reviews, don't insert into db one by one.
 
         all_reviews = []
-        stop = False
         self.logger.info("Starting RotMG review scraping from Steam...")
 
-        while not stop:
+        while True:
             res = self.query_once()
             if not res:
                 break
