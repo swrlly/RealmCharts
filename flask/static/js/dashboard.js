@@ -21,8 +21,8 @@ var chartFont = "Open Sans";
 //var serverUpLink = "http://localhost:8001/api/is-game-online";
 var playerCountLink = "https://realmcharts.swrlly.com/api/playercount";
 var reviewsLink = "https://realmcharts.swrlly.com/api/review-proportions"
-var latestPlayerCountLink = "http://realmcharts.swrlly.com/api/players-now";
-var serverUpLink = "http://realmcharts.swrlly.com/api/is-game-online";
+var latestPlayerCountLink = "https://realmcharts.swrlly.com/api/players-now";
+var serverUpLink = "https://realmcharts.swrlly.com/api/is-game-online";
 
 /*
 const req = new XMLHttpRequest();
