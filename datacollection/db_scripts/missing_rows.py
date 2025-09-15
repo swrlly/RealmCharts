@@ -8,7 +8,8 @@ import logging
 from logger import create_logger
 
 create_logger("logs")
-database = Database("../data/players.db")
+logger = logging.getLogger("missing_rows")
+database = Database("../data/players.db", logger)
 start = 1757389977
 end = 1757423614
 # host was down, incorrect playercounts. 
