@@ -570,7 +570,7 @@ async function updateCards(data) {
         if (num >= 1000) {
             let remainder = num % 1000;
             let thousands_digit = (num - remainder) / 1000;
-            content.innerHTML = thousands_digit.toString() + "," + remainder.toString();
+            content.innerHTML = thousands_digit.toString() + "," + remainder.toString().padStart(3, "0");
         }
         else {
             content.innerHTML = num;
