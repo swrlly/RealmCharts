@@ -213,9 +213,13 @@ async function playercountChart() {
         
     });
 
-    /*document.getElementById("playercount-chart").addEventListener("resize", function() {
+    document.getElementById("playercount-chart").addEventListener("load", function() {
         chart.reflow();
-    });*/
+    });
+
+    document.getElementById("playercount-chart").addEventListener("resize", function() {
+        chart.reflow();
+    });
     
     return [chart, data];
     /*
