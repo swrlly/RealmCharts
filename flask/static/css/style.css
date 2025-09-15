@@ -512,6 +512,9 @@ don't put background wrapper children in here
         width: calc(10px + 1.2987vw);
         height: calc(10px + 1.2987vw);
     }
+    .visualization-container {
+        grid-template-rows: 0.2fr 1.6fr 2.5fr;
+    }
 }
 
 @media screen and (min-width: 1350px) {
