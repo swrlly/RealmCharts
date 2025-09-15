@@ -63,7 +63,7 @@ def players_last_week():
     SELECT 
         timestamp,
         players,
-        (SELECT MAX(timestamp) FROM playersOnline) - 10080 - timestamp AS difference
+        (SELECT MAX(timestamp) FROM playersOnline) - 604800 - timestamp AS difference
     FROM playersOnline
     ORDER BY ABS(difference)
     LIMIT 1;""")
