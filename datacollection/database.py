@@ -61,7 +61,7 @@ class Database:
         return rows
 
     def fill_null(self, start, end) -> None:
-        # Replace rows with start <= timestamp < end with NULL.
+        # Replace existing rows with start <= timestamp < end with NULL.
         rows =  self.get_nonnull_rows(start, end)
         rows = [{"players": None, "timestamp": i[0]} for i in rows]
 
@@ -127,4 +127,6 @@ class Database:
     def count_reviews(self):
         self.connect()
         self._cursor.execute("SELECT COUNT(*) FROM steamReviews;")
-        return self._cursor.fetchone()
+        result = self._cursor.fetchone()
+        self.close()
+        return result

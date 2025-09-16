@@ -24,12 +24,11 @@ def main():
         now = int(time.time())
         tasks.get_maintenance_status(now)
         tasks.get_player_count(now)
-        num_reviews = tasks.db_connection.count_reviews()[0]
         # get reviews every day
         if dt.datetime.now().day - current_day != 0:
             thread = Thread(target = tasks.get_steam_reviews)
             thread.start()
-            logger.info("Getting steam reviews.")
+            logger.info("Started daily job for steam reviews.")
         # review data inserted after next playercount lookup
         tasks.insert_into_database()
 

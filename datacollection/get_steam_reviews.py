@@ -5,6 +5,7 @@ from typing import Any
 
 # api reference: https://partner.steamgames.com/doc/store/getreviews
 # 100,000 calls for steam api everyday.
+# https://store.steampowered.com/appreviews/200210?json=1&filter=recent&language=all&num_per_page=100&day_range=1&purchase_type=all&cursor=*
 
 class SteamReviews:
 

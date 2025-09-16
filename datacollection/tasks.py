@@ -24,6 +24,7 @@ class Tasks:
         self.data_to_insert = Queue()
 
     def get_maintenance_status(self, time) -> None:
+        # assumption: <Maintenance> tag only appears during maintenance, and not before when people are asked to log out
         content = ""
         online = None
         estimated_time = None
@@ -32,18 +33,16 @@ class Tasks:
         except Exception as e:
             self.logger.info("Exception while requesting maintenance status.")
             self.data_to_insert.put({"maintenance": [time, online, estimated_time]})
-            #self.db_connection.insert_new_maintenance([time, online, estimated_time])
+            return
 
         maint = re.search("<Maintenance>(.+)</Maintenance>", content)
         if maint == None:
             online = True
-            self.data_to_insert.put({"maintenance": [time, online, estimated_time]})
-            #self.db_connection.insert_new_maintenance([time, online, estimated_time])
         else:
             online = False
             estimated_time = int(re.search("<Time>(.+)</Time>", maint.group(0)).group(1))
-            self.data_to_insert.put({"maintenance": [time, online, estimated_time]})
-            #self.db_connection.insert_new_maintenance([time, online, estimated_time])
+
+        self.data_to_insert.put({"maintenance": [time, online, estimated_time]})
 
     def get_player_count(self, time) -> None:
         count = None
@@ -59,15 +58,25 @@ class Tasks:
         self.data_to_insert.put({"steamReviews": reviews})
 
     def insert_into_database(self):
+        # batch job to update all data at one time point.
+        # call this after you have collected all data
+
+        is_maintenance = False
+
         while not self.data_to_insert.empty():
+
             item = self.data_to_insert.get()
-            if "playersOnline" in item:
-                self.db_connection.insert_new_playercount(item["playersOnline"])
-            elif "maintenance" in item:
+
+            # check if maintenance, maintenance data will always come before player data due to queue being FIFO
+            if "maintenance" in item:
                 self.db_connection.insert_new_maintenance(item["maintenance"])
+                if item["maintenance"][1] == False:
+                    is_maintenance = True
+            elif "playersOnline" in item:
+                if is_maintenance:
+                    self.db_connection.insert_new_playercount([item["playersOnline"][0], None])
+                else:
+                    self.db_connection.insert_new_playercount(item["playersOnline"])
             elif "steamReviews" in item:
                 self.db_connection.insert_reviews(item["steamReviews"])
             self.data_to_insert.task_done()
-        print('done')
-
-        
