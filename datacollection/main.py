@@ -22,6 +22,7 @@ def main():
     while True:
 
         now = int(time.time())
+        # queue maintenance status first
         tasks.get_maintenance_status(now)
         tasks.get_player_count(now)
         # get reviews every day

@@ -304,10 +304,6 @@ async function reviewChart() {
             enabled: true,
             buttons: [
                 {
-                    type: 'day',
-                    count: 1,
-                    text: '24h'
-                }, {
                     type: 'week',
                     count: 1,
                     text: '7d'
@@ -601,7 +597,7 @@ async function updateCards(data) {
         }
     }
     else {
-        content.innerHTML = "-";
+        content.innerHTML = "No data";
     }
 
     // update server online status

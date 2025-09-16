@@ -15,6 +15,7 @@ def index():
 
 @app.route("/api/review-proportions", methods = ["GET"])
 def review_proportions():
+    # get propotion of positive reviews over entire game history
     cur = get_db().cursor()
     cur.execute("""-- create cumsum of reviews
 WITH added_date AS (
@@ -42,6 +43,7 @@ GROUP BY year, month, day;""")
 
 @app.route("/api/playercount", methods = ["GET"])
 def player_count():
+    # get all player counts collected, minute granularity
     cur = get_db().cursor()
     cur.execute("SELECT * FROM playersOnline")
     results = json.dumps(cur.fetchall())
@@ -50,6 +52,7 @@ def player_count():
 
 @app.route("/api/players-now", methods = ["GET"])
 def players_online_now():
+    # get latest playercount
     cur = get_db().cursor()
     cur.execute("SELECT * FROM playersOnline WHERE timestamp = (SELECT max(timestamp) FROM playersOnline);")
     results = json.dumps(cur.fetchone())
@@ -58,12 +61,13 @@ def players_online_now():
 
 @app.route("/api/players-last-week", methods = ["GET"])
 def players_last_week():
+    # get last week's playercount vs. latest scraped time
     cur = get_db().cursor()
     cur.execute("""
     SELECT 
         timestamp,
         players,
-        (SELECT MAX(timestamp) FROM playersOnline) - 604800 - timestamp AS difference
+        (SELECT MAX(timestamp) FROM playersOnline) - 60 * 60 * 24 * 7 - timestamp AS difference
     FROM playersOnline
     ORDER BY ABS(difference)
     LIMIT 1;""")
@@ -73,6 +77,7 @@ def players_last_week():
 
 @app.route("/api/is-game-online", methods = ["GET"])
 def is_game_up():
+    # get latest game status with time last checked
     cur = get_db().cursor()
     cur.execute("SELECT timestamp, online FROM maintenance WHERE timestamp = (SELECT max(timestamp) FROM maintenance);")
     results = cur.fetchone()
