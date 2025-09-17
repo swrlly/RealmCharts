@@ -38,9 +38,7 @@ export async function updateCards(data) {
     // update players now
     let content = document.getElementById("players-online");
     let num = data[data.length - 1][1];
-    console.log(num);
     if (isFinite(num) && !isNaN(num) && num !== null) {
-        console.log("regular");
         if (num >= 1000) {
             let remainder = num % 1000;
             let thousands_digit = (num - remainder) / 1000;
@@ -51,7 +49,6 @@ export async function updateCards(data) {
         }
     }
     else {
-        console.log("bugged");
         content.innerHTML = "-"
     }
     
