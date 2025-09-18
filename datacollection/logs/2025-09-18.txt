@@ -19,3 +19,35 @@
 [2025-09-18] 08:00:11 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
 [2025-09-18] 08:00:11 -  INFO   - Main - Total reviews to scrape: 46917
 [2025-09-18] 08:02:28 -  INFO   - Main - Finished scraping 46911 reviews.
+[2025-09-18] 09:00:11 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 09:00:11 -  INFO   - Main - Total reviews to scrape: 46917
+[2025-09-18] 09:02:20 -  INFO   - Main - Finished scraping 46911 reviews.
+[2025-09-18] 10:00:11 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 10:00:11 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 10:02:15 -  INFO   - Main - Finished scraping 46911 reviews.
+[2025-09-18] 11:00:11 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 11:00:12 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 11:03:15 -  INFO   - Main - Finished scraping 46910 reviews.
+[2025-09-18] 12:00:11 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 12:00:11 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 12:02:30 -  INFO   - Main - Finished scraping 46910 reviews.
+[2025-09-18] 13:00:11 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 13:00:11 -  INFO   - Main - Total reviews to scrape: 46915
+[2025-09-18] 13:02:41 -  INFO   - Main - Finished scraping 46910 reviews.
+[2025-09-18] 13:20:11 -  INFO   - Main - Started program.
+[2025-09-18] 13:29:00 -  INFO   - Main - Started program.
+[2025-09-18] 14:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 14:00:02 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 14:03:00 -  INFO   - Main - Finished scraping 46910 reviews.
+[2025-09-18] 15:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 15:00:02 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 15:02:50 -  INFO   - Main - Finished scraping 46910 reviews.
+[2025-09-18] 16:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 16:00:02 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 16:02:39 -  INFO   - Main - Finished scraping 46910 reviews.
+[2025-09-18] 17:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 17:00:02 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 17:02:34 -  INFO   - Main - Finished scraping 46910 reviews.
+[2025-09-18] 18:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 18:00:02 -  INFO   - Main - Total reviews to scrape: 46916
+[2025-09-18] 18:02:30 -  INFO   - Main - Finished scraping 46910 reviews.
