@@ -24,6 +24,10 @@ class SteamReviews:
             "Cookie": "" # cookie
         }
 
+    # reset cursor to beginning, otherwise next job will get 0 reviews
+    def reset_state(self):
+        self.params["cursor"] = "*"
+
     def query_once(self, session) -> dict:
         try:
             result = session.get(self.url, params = self.params, headers = self.headers)
@@ -92,8 +96,8 @@ class SteamReviews:
 
         with open("data/reviews_last_scraped", "w") as f:
             f.write(str(int(time.time())))
-
         self.logger.info(f"Finished scraping {len(all_reviews)} reviews.")
+        self.reset_state()
 
         return all_reviews
 

@@ -26,11 +26,22 @@ export function tsToSeconds(time) {
     return txt;
 }
 
-// update player count timestamp display
+// update player count timestamp display based on last player count time scraped
 export function updatePlayerCountTimeUpdated(data) {
     const txt = tsToSeconds(data[data.length - 1][0]);
     let content = document.getElementById("players-last-updated");
     content.innerHTML = "Updated " + txt + " ago";
+}
+
+// update steam reviews last time updated
+export async function updateReviewsTimeUpdated(time, fetchNew) {
+    if (fetchNew) {
+        const data = await getData(API_ENDPOINTS.lastReviewTimeScraped);
+        time = tsToSeconds(data * 1000);
+    }
+    let content = document.getElementById("reviews-last-updated");
+    content.innerHTML = "Updated " + time + " ago";
+    return Promise.resolve(time);
 }
 
 // update all dashboard cards with latest data

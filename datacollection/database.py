@@ -75,7 +75,7 @@ class Database:
 
         self.close()
         
-    def fill_missing_times(self) -> None:
+    def fill_missing_times(self) -> int:
         # Fill in missing time intervals over 2 minutes with NA.
         # used to ensure time series index has at least one observation per minute
         self.connect()
@@ -106,6 +106,8 @@ class Database:
                 self.logger.info("Missing time insertion failed for {}".format(start))
 
         self.close()
+
+        return len(missing)
 
     def insert_reviews(self, results: list):
         # insert all steam reviews. overwrite old ones with new info (ex. updated review, new upvotes, etc.)
