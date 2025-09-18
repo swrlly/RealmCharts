@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
         {% block title %}<title>RealmCharts - Live RotMG Analysis</title>{% endblock %}
         {% block discord %}
         <meta property="og:title" content="RealmCharts - Live RotMG Analysis"/>
@@ -8,7 +9,7 @@
         <meta property="description" content="A live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
         <meta property="og:description" content="A live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
         <meta property="og:url" content="https://realmcharts.swrlly.com"/>
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/static/images/favicon.ico" />
         {% endblock %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -19,6 +20,7 @@
         {% endblock %}
     </head>
 
+    {% block content %}
     <div class="navbar">
         <span class="navbar-text-wrapper">
             <a href="#playercount-section"><div class="navbar-text"><span>Players</span><img class="navbar-text-icon" src="/static/images/players.png"></img></div></a>
@@ -33,10 +35,7 @@
             </div>
         </span>
         <span class="navbar-text-wrapper">
-           <div class="tooltip" style="display: inherit; position: relative; padding-left: 0;">
-                <div class="navbar-text"><span>About</span><img class="navbar-text-icon" style="padding-left: 3.375px; padding-right: 3.375px;" src="/static/images/about.png"></img></div>
-                <span class="tooltip-text">Soon!</span>
-            </div>
+            <a href="/about"><div class="navbar-text"><span>About</span><img class="navbar-text-icon" style="padding-left: 3.375px; padding-right: 3.375px;" src="/static/images/about.png"></img></div></a>
         </span>
         <span class="navbar-text-wrapper">
             <a href="https://github.com/swrlly/realmcharts"><div class="navbar-text"><span>Source Code</span><span class="navbar-text-icon i-github" style="font-size: 30px; padding-left: 2.14165px; padding-right: 2.14165px"></span></div></a>
@@ -46,10 +45,10 @@
     <div class="title-container">
         <span class="title-div-wrapper">
             <div class="title-div">
-                <span class="title-and-icon">
+                <a href="/"  class="title-and-icon">
                     <img class="navbar-icon" src="/static/images/favicon.png"></img> 
                     <span class="navbar-website-text">RealmCharts</span>
-                </span>
+                </a>
                 <span class="navbar-descriptor"><i>Analytics for the MMORPG Realm of the Mad God (RotMG).</i></span>
             </div>
         </span>
@@ -73,16 +72,12 @@
                 </div>
             </span>
             <span class="navbar-text-wrapper">
-            <div class="tooltip" style="display: inherit; position: relative; padding-left: 0;">
-                    <div class="navbar-text"><span>About</span><img class="navbar-text-icon" style="padding-left: 3.375px; padding-right: 3.375px;" src="/static/images/about.png"></img></div>
-                    <span class="tooltip-text">Soon!</span>
-                </div>
+                <a href="/about"><div class="navbar-text"><span>About</span><img class="navbar-text-icon" style="padding-left: 3.375px; padding-right: 3.375px;" src="/static/images/about.png"></img></div></a>
             </span>
             <span class="navbar-text-wrapper">
                 <a href="https://github.com/swrlly/realmcharts"><div class="navbar-text"><span>Source Code</span><span class="navbar-text-icon i-github"></span></div></a>
             </span>
         </div>
-
 
         <div class="visualization-container">
 
@@ -174,6 +169,6 @@
         </div>
 
     </div>
-
+    {% endblock %}
 
 </html>

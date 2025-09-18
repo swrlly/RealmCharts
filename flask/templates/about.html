@@ -1,0 +1,130 @@
+{% extends "index.html" %}
+
+{% block title %}<title>RealmCharts - About</title>{% endblock %}
+{% block discord %}
+<meta property="og:title" content="RealmCharts - About"/>
+<meta name="theme-color" content="transparent"/>
+<meta property="description" content="A live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
+<meta property="og:description" content="A live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
+<meta property="og:url" content="https://realmcharts.swrlly.com/about"/>
+<meta property="og:image" content="/static/images/favicon.ico" />
+{% endblock %}
+
+{% block header %} 
+{% endblock %}
+
+{% block content %}
+
+<div class="navbar">
+    <a href="/"><div class="navbar-text" style="visibility: visible;"><span>Home</span><img class="navbar-text-icon" src="/static/images/home.png"></img></div></a>
+</div>
+
+<div class="title-container">
+    <div class="title-div" style="visibility: visible;">
+        <a href="/" class="title-and-icon">
+            <img class="navbar-icon" src="/static/images/favicon.png"></img> 
+            <span class="navbar-website-text">RealmCharts</span>
+        </a>
+        <span class="navbar-descriptor"><i>Analytics for the MMORPG Realm of the Mad God (RotMG).</i></span>
+    </div>
+</div>
+
+<div class="container">
+
+    <!--<div class="navbar-mobile">
+        <a href="/"><div class="navbar-text" style="visibility: visible;"><span>Home</span><img class="navbar-text-icon" src="/static/images/home.png"></img></div></a>
+    </div>-->
+    <h1>About this site</h1>
+
+    <p>Hello world! This is a hobby project for one of my favorite online bullet hell multiplayer games <a class="about-a" href="https://www.realmofthemadgod.com/">RotMG</a>. I've always wanted to learn more about the intersection of web development and data analysis, and this project was the perfect combination of the two. All the code is open-sourced <a class="about-a" href="https://github.com/swrlly/RealmCharts">on GitHub.</a></p>
+
+    <p>RealmCharts provides a live dashboard for insights on RotMG player count and Steam review analysis. Enjoy!</p>
+
+    <h1>Attribution and Technologies</h1>
+
+    <p>This website uses</p>
+
+    <ul class="ul-normal">
+        <li><a class="about-a" href="https://www.python.org/downloads/">Python</a>, <a class="about-a" href="https://sqlite.org/index.html">SQLite</a> for data collection and the database</li>
+        <li><a class="about-a" href="https://github.com/pallets/flask/">Flask</a> and <a class="about-a" href="https://nginx.org/en/">nginx</a> for the webserver</li>
+        <li><a class="about-a" href="https://www.highcharts.com/">HighCharts</a> for interactive charting</li>
+        <li>JS/CSS for state management (no libraries!)</li>
+    </ul>
+
+    <p>Also used are</p>
+
+    <ul class="ul-normal">
+        <li>RotMG pixel art for icons</li>
+        <li><a class="about-a" href="https://icomoon.io/">Icomoon</a> for GitHub icon</li>
+
+    </ul>
+
+    <h1>Changelog</h1>
+    <h3>9/18/2025</h3>
+    <ul>
+        <li>Created callout cards for steam reviews based on user zoom window (allows user to drill down to windows of their choice and inspect statistics)
+            <ul style="margin:0;">
+                <li>On average, most users do play more than 10 days before leaving a review</li>
+            </ul>
+        </li>
+        <li>Added About page (this one!)</li>
+    </ul>
+    <h3>9/17/2025</h3>
+    <ul>
+        <li>Changed review scraping logic to use <code>requests.Session</code> and changed to hourly job</li>
+        <li>Fixed bug in review scraping logic where <code>cursor</code> wasn't reset to <code>*</code> after finishing</li>
+        <li>Fixed bug in current player count when <code>null</code></li>
+    </ul>
+    <h3>9/16/2025</h3>
+    <ul>
+        <li>Refactored JavaScript into ES6 modules, previously 500 lines in 1 file</li>
+        <li>Fixed bug where dashboard updating logic added new data to the array and HighCharts; HighCharts mutates original array—only need to <code>addPoint</code> on HighCharts</li>
+        <li>Discovered bug in scraping Steam reviews after the first scrape</li>
+    </ul>
+    <h3>9/15/2025</h3>
+    <ul>
+        <li>Automated setting player counts to <code>null</code> when server is offline</li>
+    </ul>
+    <h3>9/14/2025</h3>
+    <ul>
+        <li>Added weekly player count change card</li>
+        <li>Created daily job to scrape Steam reviews</li>
+        <li>Deployed dual-axis steam review chart: % of total positive reviews and number of reviews</li>
+        <li>Designed logic to make dashboard update every minute</li>
+        <li>Created tooltips on hover to explain potential questions—keeping dashboard design clean</li>
+        <li>Made frontend mobile friendly with media queries and alternate navbar</li>
+        <li>Fixed bug where the player count chart wouldn't shrink on mobile due to callout card elements not shrinking</li>
+        <li>Fixed bug in weekly difference calculation</li>
+        <li>Released dashboard to public!</li>
+    </ul>
+    <h3>9/12/2025</h3>
+    <ul>
+        <li>Created callout cards for current player count, server maintenance status</li>
+        <li>Designed fixed floating navbar for easy navigation</li>
+        <li>Designed skeleton loading for callout cards due to >750ms load times (webserver is in EU)</li>
+    </ul>
+    <h3>9/10/2025</h3>
+    <ul>
+        <li>Began working on frontend design</li>
+        <li>Deployed first chart displaying player counts every minute using HighCharts</li>
+        <li>Created automated job to check if the game is undergoing maintenance, ground truth for 0 players online</li>
+        <li>Decoupled data collection and database logic</li>
+    </ul>
+    <h3>9/9/2025</h3>
+    <ul>
+        <li>Started looking at the data; reliable source but faulty during maintenance times</li>
+        <li>Wrote basic script to automate filling in incorrect player counts and maintenance times with <code>null</code> and adding missing minutes when my collector was offline</li>
+    </ul>
+    <h3>9/6/2025</h3>
+    <ul>
+        <li>Set up basic webserver with Flask and nginx, made basic landing page</li>
+        <li>Connected webserver to SQLite database</li>
+        <li>Learned <code>mv</code> deletes files when moving into directories without a trailing slash</li>
+    </ul>
+    <h3>8/30/2025</h3>
+    <ul>
+        <li>Created automated job to gather player count in SQLite; gathers data every minute</li>
+        <li>Added basic logging functionality</li>
+    </ul>
+</div>
+{% endblock %}

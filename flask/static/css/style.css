@@ -23,6 +23,8 @@ html {
     --navbar-text-background-color: #1a1a1a;
 
     --blue: #517affff;
+    --light-blue: rgb(118, 150, 255);
+    --code-background: #212121;
 
     --card-border-radius: 25px;
 }
@@ -36,11 +38,20 @@ body {
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300 800;
-  font-stretch: 100%;
-  src: url("/static/fonts/OpenSans.woff2") format('woff2');
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    src: url("/static/fonts/OpenSans.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Source Code Pro, monospace";
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("/static/fonts/SourceCodePro.woff2") format('woff2');
 }
 
 a {
@@ -581,6 +592,51 @@ don't put background wrapper children in here
     .navbar { 
         display: grid;
     }
+}
+
+/* about */
+
+h1, h2, h3 {
+    font-weight: 400;
+    margin-top: 2.75rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+code {
+    font-family: "Source Code Pro, monospace";
+    background: var(--code-background);
+    padding: 0px 2px 0px 2px;
+}
+
+.ul-normal {
+    font-size: 1rem;
+}
+
+.about-a {
+    color: var(--blue);
+}
+
+.about-a:hover {
+    color: var(--light-blue);
+}
+
+::selection {
+    background-color: #352e7e;
+    color: var(--text-color);
 }
 
 *,

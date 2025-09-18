@@ -107,6 +107,10 @@ def close_connection(exception):
 def index():
     return render_template("index.html", css_version = css_version)
 
+@app.route("/about")
+def about():
+    return render_template("about.html", css_version = css_version)
+
 def get_db():
     db = getattr(g, "_database", None)
     if db is None:
