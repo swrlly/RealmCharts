@@ -1,0 +1,4 @@
+[2025-09-18] 01:49:47 -  INFO   - Main - Started program.
+[2025-09-18] 02:00:48 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-18] 02:00:48 -  INFO   - Main - Total reviews to scrape: 46918
+[2025-09-18] 02:03:55 -  INFO   - Main - Finished scraping 46911 reviews.
