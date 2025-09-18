@@ -65,7 +65,7 @@ export async function createReviewsChart() {
                     text: "7d"
                 }, {
                     type: "day",
-                    count: 29,
+                    count: 30,
                     text: "1m"
                 }, {
                     type: "year",
@@ -191,7 +191,6 @@ export async function createReviewsChart() {
                 afterSetExtremes: function(event) {
                     var start = Math.ceil(event.min);
                     var end = Math.floor(event.max);
-                    console.log(start, end);
                     let ctr = 0
                     let num_reviews = 0;
                     let tot_playtime_two_weeks = 0;
@@ -212,11 +211,9 @@ export async function createReviewsChart() {
                     tot_positive = ((tot_positive / num_reviews) * 100).toFixed(2);
                     tot_playtime_at_review = Math.round(tot_playtime_at_review / num_reviews);
                     tot_playtime = Math.round(tot_playtime / num_reviews);
-                    console.log(num_reviews, tot_playtime_two_weeks, tot_positive, tot_playtime_at_review, tot_playtime);
                     let content = document.getElementById("percent-positive-reviews");
                     content.style.backgroundPosition =  `${100 - parseFloat(tot_positive)}% 0`;
                     content.innerHTML = tot_positive + "%";
-
                     content = document.getElementById("avg-playtime-at-review");
                     content.innerHTML = minutesToHumanTime(tot_playtime_at_review);
                     content = document.getElementById("avg-playtime-last-two-weeks");
