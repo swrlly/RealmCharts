@@ -146,6 +146,20 @@ a {
     row-gap: 1rem;
 }
 
+.home-floating-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1f1f1f;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.home-icon {
+    max-width: 30px;
+    max-height: 30px;
+}
+
 @keyframes blueGlow {
     0% {
         background-color: default;
@@ -164,6 +178,7 @@ a {
     /*padding: 1rem;
     padding-bottom: 2rem;*/
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 
@@ -511,6 +526,9 @@ don't put background wrapper children in here
     .navbar-mobile {
         display: grid;
     }
+    .home-floating-footer {
+        display: inherit;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -586,7 +604,7 @@ don't put background wrapper children in here
 }
 
 @media screen and (min-width: 1350px) {
-    .navbar-mobile {
+    .navbar-mobile, .home-floating-footer {
         display: none;
     }
     .navbar { 
