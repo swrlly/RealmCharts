@@ -16,12 +16,12 @@ database = Database("../data/players.db", logger)
 remove = [
     # 9/2/2025 8:55 - 12:30 maintenance MOTMG 2025
     # data was 17 minutes late
-    # for now, just set before data online to null.
-    [1756803326, 1756819046 + 1],
+    # for now, just set before data online to null. first starting time is 17 min after maintenance ended. todo
+    [1756803326, 1756817186 + 1],
     # data was down, vps issue. set +59
     [1757389977, 1757423614], 
     # 9/10/2025 8:50 - 10:30 maintenance
-    # data was 7 minute late, don't set +59 since maintenance
+    # data was 7 minute late, don't set +59 since maintenance. todo
     [1757493559, 1757500579 + 1], 
     # data was down again for 12+ hours, no info on why. this one had an issue where needed another restart after restarting
     # set +59
