@@ -1,6 +1,6 @@
 import { API_ENDPOINTS } from '../config/constants.js';
 
-// file for updating dashboard cards + getting data
+// functions for updating dashboard cards + getting data
 
 // data fetching function
 export async function getData(link) {

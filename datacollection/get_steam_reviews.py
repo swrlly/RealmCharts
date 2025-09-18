@@ -1,7 +1,6 @@
 import time
 import requests
 import logging
-from typing import Any
 
 # api reference: https://partner.steamgames.com/doc/store/getreviews
 # 100,000 calls for steam api everyday.
@@ -21,24 +20,32 @@ class SteamReviews:
             "cursor": "*"
         }
         self.logger = logger
+        self.headers = {
+            "Cookie": "" # cookie
+        }
 
-    def query_once(self) -> dict:
+    def query_once(self, session) -> dict:
         try:
-            result = requests.get(self.url, params = self.params).json()
+            result = session.get(self.url, params = self.params, headers = self.headers)
+            if "steamCountry" in result.cookies:
+                self.headers["Cookie"] = "steamCountry=" + result.cookies["steamCountry"]
         except Exception as e:
             self.logger.info(f"Error while scraping reviews: {e}")
             return
+
+        result = result.json()
         
         # only first set of results tell you how many total reviews there are
         if "total_reviews" in result["query_summary"]:
              self.logger.info(f"Total reviews to scrape: {result['query_summary']['total_reviews']}")
+        # if we hit the end
         if result["query_summary"]["num_reviews"] == 0:
             return {}
         old_cursor = self.params["cursor"]
         self.params["cursor"] = result["cursor"].encode()
         return self.parse_result(result, old_cursor)
 
-    def parse_result(self, result: dict, cursor):# -> list(dict[Any, Any]):
+    def parse_result(self, result: dict, cursor):
         res = []
         for review in result["reviews"]:
             try:
@@ -71,18 +78,29 @@ class SteamReviews:
         # batch scrape reviews, don't insert into db one by one.
 
         all_reviews = []
-        self.logger.info("Starting RotMG review scraping from Steam...")
+        self.logger.info("Starting hourly job for scraping Steam reviews..")
+
+        session = requests.Session()
 
         while True:
-            res = self.query_once()
+            res = self.query_once(session)
             if not res:
                 break
             all_reviews += res
 
+        session.close()
+
+        with open("data/reviews_last_scraped", "w") as f:
+            f.write(str(int(time.time())))
+
         self.logger.info(f"Finished scraping {len(all_reviews)} reviews.")
+
         return all_reviews
 
     
 if __name__ == "__main__":
-    s = SteamReviews()
+    from logger import create_logger
+    create_logger("old2")
+    logger = logging.getLogger("testing steam reviews")
+    s = SteamReviews(logger)
     s.get_all_reviews()

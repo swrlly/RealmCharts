@@ -17,7 +17,7 @@ def main():
     links = open("link", "r").read().strip().split("\n")
     tasks = Tasks(links, db_link, logger)
     clock = time.monotonic()
-    current_day = dt.datetime.now().day
+    current_hour = dt.datetime.now().hour
 
     while True:
 
@@ -25,15 +25,14 @@ def main():
         # queue maintenance status first
         tasks.get_maintenance_status(now)
         tasks.get_player_count(now)
-        # get reviews every day
-        if dt.datetime.now().day - current_day != 0:
+        # get reviews every hour
+        if dt.datetime.now().hour - current_hour != 0:
             thread = Thread(target = tasks.get_steam_reviews)
             thread.start()
-            logger.info("Started daily job for steam reviews.")
+            
         # review data inserted after next playercount lookup
         tasks.insert_into_database()
-
-        current_day = dt.datetime.now().day
+        current_hour = dt.datetime.now().hour
         time.sleep(60 - (time.monotonic() - clock) % 60)
         
 
