@@ -3,3 +3,6 @@
 [2025-09-17] 00:00:08 -  INFO   - Main - Started daily job for steam reviews.
 [2025-09-17] 00:00:09 -  INFO   - Main - Total reviews to scrape: 46913
 [2025-09-17] 00:01:06 -  INFO   - Main - Finished scraping 6597 reviews.
+[2025-09-18] 00:00:08 -  INFO   - Main - Starting RotMG review scraping from Steam...
+[2025-09-18] 00:00:08 -  INFO   - Main - Started daily job for steam reviews.
+[2025-09-18] 00:03:01 -  INFO   - Main - Finished scraping 40310 reviews.
