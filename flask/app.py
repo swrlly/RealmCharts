@@ -9,28 +9,37 @@ css_version = str(int(time.time()))
 app = Flask(__name__)
 
 # API logic
-@app.route("/api/review-proportions", methods = ["GET"])
+@app.route("/api/reviews", methods = ["GET"])
 def review_proportions():
     # get propotion of positive reviews over entire game history
+    # send sums for downstream average calculation in JS because average over averages because days with less reviews (samples) will affect statistics more strongly
+    # averaging once over the viewing window weighs each review's statistics equally
     cur = get_db().cursor()
     cur.execute("""-- create cumsum of reviews
+    -- recommendation_id 61328679 is botting playtime with online botter
     WITH added_date AS (
         SELECT 
             timestamp_created,
             voted_up,
+            playtime_last_two_weeks,
+            playtime_forever,
+            playtime_at_review,
             SUM(voted_up) OVER (ORDER BY timestamp_created) AS total_votes_up,
             ROW_NUMBER() OVER (ORDER BY timestamp_created) AS total_votes,
             strftime("%Y", DATETIME(timestamp_created, "unixepoch")) AS year,
             strftime("%m", DATETIME(timestamp_created, "unixepoch")) AS month,
             strftime("%d", DATETIME(timestamp_created, "unixepoch")) AS day
-        FROM steamReviews
-        ORDER BY timestamp_created ASC)
+        FROM steamReviews)
 
     -- create statistics by day
     SELECT 
-        year || "-" || month || "-" || day as date,
-        COUNT(timestamp_created) as num_reviews,
-        ROUND(MAX(total_votes_up)*1.0 / MAX(total_votes), 4) as proportion_positive -- max gets EoD statistics; most updated.
+        unixepoch(year || "-" || month || "-" || day) as date,
+        COUNT(timestamp_created) as daily_total_reviews,
+        ROUND(MAX(total_votes_up)*1.0 / MAX(total_votes), 5) as total_proportion_positive, -- max gets EoD statistics; most updated.
+        SUM(playtime_last_two_weeks) as daily_total_playtime_last_two_weeks,
+        SUM(voted_up) as daily_total_votes_up, 
+        SUM(playtime_at_review) as daily_total_playtime_at_review,
+        SUM(playtime_forever) as daily_total_playtime_forever
     FROM added_date
     GROUP BY year, month, day;""")
     results = json.dumps(cur.fetchall())

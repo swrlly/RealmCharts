@@ -26,10 +26,26 @@ export function removeReviewSkeleton() {
     var reviewChart = document.getElementsByClassName("chart-skeleton")[1];
     removeBorderSkeleton(reviewChart, cardBorderColor, true);
     reviewChart.style["box-shadow"] = "0px 0px 10px 0.1px black";
+
+    // text - make text appear
+    var hiddenText = document.querySelectorAll(".review-card-header-text,.steam-review-header,.review-callout-info");
+    for (let i = 0; i < hiddenText.length; i++) { 
+        hiddenText[i].style.visibility = "visible"; 
+    }
+
+    // headers
+    var header = document.getElementsByClassName("steam-review-header")[0];
+    removeBorderSkeleton(header, "", false);
+
+    // make card background normal + show border
+    var card = document.getElementsByClassName("review-card");
+    for (let i = 0; i < card.length; i++) { 
+        removeBorderSkeleton(card[i], cardBorderColor, true); 
+    }
 }
 
 // temove skeleton loading for everything + player count chart
-export function removeSkeleton() {
+export function removePlayerCountSkeleton() {
     let cardBorderColor = "2px " + window.getComputedStyle(document.body).getPropertyValue("--card-border-color") + " solid";
 
     // text - make text appear
@@ -44,6 +60,7 @@ export function removeSkeleton() {
 
     // make card background normal + show border
     var card = document.getElementsByClassName("card");
+    console.log(card);
     for (let i = 0; i < card.length; i++) { 
         removeBorderSkeleton(card[i], cardBorderColor, true); 
     }

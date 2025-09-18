@@ -24,7 +24,7 @@ html {
 
     --blue: #517affff;
 
-    --card-border-radius: 25px
+    --card-border-radius: 25px;
 }
 
 body {
@@ -159,13 +159,14 @@ a {
 .visualization-container {
     /*max-width: var(--core-visuals-width);
     padding-left: 1rem;
-    padding-right: 1rem;*/
+    padding-right: 1rem;
     margin: 0 auto;
-    display: grid; /*breaks reflow for highcharts?????*/
-    grid-template-rows: 0.2fr 1.6fr;
+    display: grid; /*breaks reflow for highcharts?????
+    grid-template-rows: 0.2fr 1.6fr;*/
+    padding-bottom: 1.5rem;
 }
 
-.playercount-header {
+.playercount-header, .steam-review-header {
     visibility: hidden;
     font-size: 2rem;
     line-height: 2.2rem;
@@ -174,13 +175,19 @@ a {
     margin-bottom: 1.5rem;
 }
 
+.header-grid {
+    display: grid; 
+    grid-template-columns: auto auto;
+    align-items: baseline;
+}
+
 .last-updated {
     justify-content: flex-end; 
     font-size: 0.75rem; 
     display: flex;
     color: var(--less-emphasis-color);
     fill: var(--less-emphasis-color);
-    align-items: baseline;
+    /*align-items: baseline; this misaligns my skeleton */
 }
 
 .clock-icon {
@@ -235,7 +242,6 @@ a {
     height: 24px;
     fill: var(--text-color);
     transition: transform 0.2s;
-
 }
 
 
@@ -254,23 +260,29 @@ a {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
     row-gap:2rem;
-    padding-bottom: 1.5rem;
 }
 
-.card {
-    min-height: 91.333px;
+.card, .review-card  {
+    min-height: 85px;
     border: none;
     border-radius: var(--card-border-radius);
     display: flex;
-    padding: 20px 30px 10px 30px;
+    padding: 15px 10px 10px 10px;
     /*background-color: var(--card-background-color);*/
     display: grid;
     grid-template-rows: 20% 80%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.card-header-text {
+.review-card {
+    min-height: 76px;
+    padding: 20px 10px 10px 10px;
+}
+
+
+.card-header-text, .review-card-header-text {
     visibility: hidden;
     font-size: 0.75rem;
     color: var(--card-header-text-color);
@@ -285,7 +297,6 @@ a {
 #server-status {
     max-width: 40px;
     max-height: 40px;
-
 }
 
 .server-up-emoji, .not-sure-yet {
@@ -316,7 +327,7 @@ a {
 }
 
 #players-online {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 }
 
 #players-weekly-change {
@@ -327,11 +338,11 @@ a {
     margin-left: 0.25rem;
 }
 
-#not-sure-yet {
+.not-sure-yet {
     display: hidden;
-    max-width: 35px;
-    max-height: 35px;
-
+    max-width: 40px;
+    max-height: 40px;
+    padding: 2.5px;
 }
 
 #players-last-updated, #reviews-last-updated {
@@ -376,6 +387,8 @@ a {
     }*/
 }
 
+/* review chart */
+
 #playercount-chart, #review-chart {
     /* try for mobile, maybe it will break desktop*/
     /*overflow: hidden;
@@ -385,14 +398,45 @@ a {
     
 }
 
+#percent-positive-reviews {
+    background: linear-gradient(to right, #39FF9C 10%, #E6A646 30%, #EE3C53 70%);
+    background-size: 10000% 100%;
+    background-clip: text;
+    transition: background-position 0.5s ease;
+    display: inline-block;
+    color: transparent;
+    background-position: calc(100% - 82.9%) 0;
+    font-size: 1.2rem;
+}
+
+#avg-playtime-at-review {
+    font-size: 1.2rem;
+}
+
+#avg-playtime-last-two-weeks {
+    font-size: 1.2rem;
+}
+
+#avg-total-playtime {
+    font-size: 1.2rem;
+}
+
+
 .title-div-wrapper {
     display:grid;
+}
+
+.review-callout-info {
+    visibility: hidden;
+    padding-bottom: 0.5rem; 
+    color: var(--less-emphasis-color);
+    font-size: 0.8rem;
 }
 
 /* title-div wrapper: show background but not text, visibility: hidden hides background 
 don't put background wrapper children in here
 */
-.chart-skeleton, .card, .playercount-chart-header, .title-div-wrapper, .navbar-text-wrapper {
+.chart-skeleton, .card, .review-card, .playercount-chart-header, .title-div-wrapper, .navbar-text-wrapper {
     border-radius: var(--card-border-radius);
     background: linear-gradient(90deg, var(--skeleton-background-color) 25%, #23232355 50%, var(--skeleton-background-color) 51%);
     animation: loading 1.7s linear infinite normal;
@@ -483,7 +527,10 @@ don't put background wrapper children in here
         width: calc(1.948vw + 0.9rem);
     }
     #players-online {
-        font-size: calc(0.475rem + 2.961vw);
+        font-size: calc(0.425rem + 2.649vw);
+    }
+    #players-weekly-change {
+        font-size: calc(0.625rem + 1.2985vw);
     }
     .one-stat-grid {
         column-gap: 1.5rem;
@@ -491,10 +538,12 @@ don't put background wrapper children in here
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-    .card {
-        width: 80%;
+    .card, .review-card {
+        width: 70%;
+        min-width:fit-content;
+        padding: 10px 20px 10px 20px;
     }
-    .playercount-header {
+    .playercount-header, .steam-review-header {
         font-size: calc(1rem + 2.078vw);
     }
     .question-informative {
@@ -504,15 +553,24 @@ don't put background wrapper children in here
     .chart-skeleton {
         aspect-ratio: 1 / 1;
     }
-    #players-weekly-change {
-        font-size: calc(0.625rem + 1.2985vw);
-    }
     .last-updated {
-        font-size: calc(0.325rem + 0.779vw);
+        font-size: calc(0.375rem + 0.779vw);
     }
     .clock-icon {
         width: calc(10px + 1.2987vw);
         height: calc(10px + 1.2987vw);
+    }
+    .card-header-text, .review-card-header-text {
+        font-size: calc(0.375rem + 0.779vw);
+    }
+    #percent-positive-reviews, #avg-playtime-at-review, #avg-playtime-last-two-weeks, #avg-total-playtime {
+        font-size: calc(0.6rem + 1.247vw);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card, .review-card {
+        width: 85%;
     }
 }
 

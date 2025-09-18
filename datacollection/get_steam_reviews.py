@@ -21,7 +21,7 @@ class SteamReviews:
         }
         self.logger = logger
         self.headers = {
-            "Cookie": "" # cookie
+            "Cookie": "" # country cookie and browser cookie
         }
 
     # reset cursor to beginning, otherwise next job will get 0 reviews

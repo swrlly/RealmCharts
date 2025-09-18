@@ -1,13 +1,38 @@
-import { COLORS, API_ENDPOINTS, RANGE_SELECTOR_THEME } from '../config/constants.js';
-import { getData } from '../api/dataService.js';
-import { removeReviewSkeleton } from '../ui/skeleton.js';
+import { COLORS, API_ENDPOINTS, RANGE_SELECTOR_THEME } from "../config/constants.js";
+import { getData } from "../api/dataService.js";
+import { removeReviewSkeleton } from "../ui/skeleton.js";
+
+function minutesToHumanTime(minutes) {
+    let minutesDisplay = minutes % 60;
+    let hours = Math.floor(minutes / 60) % 24;
+    if (minutes < 60) {
+        return minutes += "m";
+    }
+    hours += minutesDisplay >= 30 ? 1 : 0; // round hour by minutes, too noisy
+    let days = Math.floor(minutes / (60 * 24));
+    let txt = "";
+    if (days > 0) {
+        txt += days + "d ";
+    } 
+    if (hours > 0) {
+        txt += hours + "h ";
+    } 
+    if (minutes == 0) {
+        txt = "0m";
+    }
+    return txt;
+}
 
 export async function createReviewsChart() {
     var data = await getData(API_ENDPOINTS.reviews);
+
+    // convert timestamps to milliseconds
+    for (let index = 0; index < data.length; index++) {
+        data[index][0] *= 1000;
+    }
     
-    // process data for dual-axis chart
-    let reviews = data.slice(0, data.length - 1).map(i => i.slice(0, 2));
-    let proportions = data.slice(0, data.length - 1).map(i => [i[0], i[2] * 100]);
+    let reviews = data.slice(0, data.length).map(i => [i[0], i[1]]);
+    let proportions = data.slice(0, data.length).map(i => [i[0], i[2] * 100]);
     
     var chart = Highcharts.stockChart("review-chart", {
         chart: {
@@ -35,20 +60,20 @@ export async function createReviewsChart() {
             enabled: true,
             buttons: [
                 {
-                    type: 'week',
-                    count: 1,
-                    text: '7d'
+                    type: "day",
+                    count: 7,
+                    text: "7d"
                 }, {
-                    type: 'month',
-                    count: 1,
-                    text: '1m'
+                    type: "day",
+                    count: 29,
+                    text: "1m"
                 }, {
-                    type: 'year',
+                    type: "year",
                     count: 1,
-                    text: '1y'
+                    text: "1y"
                 }, {
-                    type: 'all',
-                    text: 'All'
+                    type: "all",
+                    text: "All"
                 }
             ],
             buttonTheme: RANGE_SELECTOR_THEME,
@@ -77,7 +102,7 @@ export async function createReviewsChart() {
                 format: "{value}%"
             },
             title: {
-                text: "% positive reviews"
+                text: "% total positive reviews"
             },
             opposite: false
         }, {
@@ -95,7 +120,7 @@ export async function createReviewsChart() {
             opposite: true
         }],
         series: [{
-            name: "Positive reviews",
+            name: "Total positive",
             type: "spline",
             yAxis: 0, // left axis
             lineWidth: 3,
@@ -105,7 +130,7 @@ export async function createReviewsChart() {
                 valueSuffix: "%",
                 pointFormatter: function() {
                     return `<span style="color:${this.color}">\u25CF</span> ${this.series.name}:`
-                        + ` <b>${this.y.toFixed(2)}%</b><br/>`;
+                        + ` <b>${this.y.toFixed(3)}%</b><br/>`;
                 },
                 backgroundColor: COLORS.backgroundColor,
                 hideDelay: 0,
@@ -144,14 +169,67 @@ export async function createReviewsChart() {
             },
             ordinal: false,
             crosshair: {
-                dashStyle: 'ShortDash'
+                dashStyle: "ShortDash"
             },
             tickPixelInterval: 120,
-        },
+            /*
+            events: {
+                setExtremes: function(event) {
+                    console.log(event.min);
+                    console.log(event.max);
+                }*/
+            events: {
+                /* 
+                0 date,
+                1 daily_total_reviews, 
+                2 all_time_prop, 
+                3 daily_playtime_last_two_weeks, 
+                4 daily_votes_up, 
+                5 daily_playtime_at_review, 
+                6 daily_playtime_forever
+                */
+                afterSetExtremes: function(event) {
+                    var start = Math.ceil(event.min);
+                    var end = Math.floor(event.max);
+                    console.log(start, end);
+                    let ctr = 0
+                    let num_reviews = 0;
+                    let tot_playtime_two_weeks = 0;
+                    let tot_positive = 0;
+                    let tot_playtime_at_review = 0;
+                    let tot_playtime = 0;
+                    for (let index = 0; index < data.length; index++) {
+                        if (start <= data[index][0] & data[index][0] <= end) {
+                            num_reviews += data[index][1];
+                            tot_playtime_two_weeks += data[index][3];
+                            tot_positive += data[index][4];
+                            tot_playtime_at_review += data[index][5];
+                            tot_playtime += data[index][6];
+                            ctr += 1;
+                        }
+                    }
+                    tot_playtime_two_weeks = Math.round(tot_playtime_two_weeks / num_reviews);
+                    tot_positive = ((tot_positive / num_reviews) * 100).toFixed(2);
+                    tot_playtime_at_review = Math.round(tot_playtime_at_review / num_reviews);
+                    tot_playtime = Math.round(tot_playtime / num_reviews);
+                    console.log(num_reviews, tot_playtime_two_weeks, tot_positive, tot_playtime_at_review, tot_playtime);
+                    let content = document.getElementById("percent-positive-reviews");
+                    content.style.backgroundPosition =  `${100 - parseFloat(tot_positive)}% 0`;
+                    content.innerHTML = tot_positive + "%";
+
+                    content = document.getElementById("avg-playtime-at-review");
+                    content.innerHTML = minutesToHumanTime(tot_playtime_at_review);
+                    content = document.getElementById("avg-playtime-last-two-weeks");
+                    content.innerHTML = minutesToHumanTime(tot_playtime_two_weeks);
+                    content = document.getElementById("avg-total-playtime");
+                    content.innerHTML = minutesToHumanTime(tot_playtime);
+                }
+            }
+        },/*
         legend: {
-            align: 'left',
-            verticalAlign: 'top'
-        },
+            align: "left",
+            verticalAlign: "top"
+        },*/
         tooltip: {
             shared: true,
             backgroundColor: COLORS.backgroundColor,

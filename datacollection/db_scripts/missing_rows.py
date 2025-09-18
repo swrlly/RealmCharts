@@ -14,10 +14,22 @@ database = Database("../data/players.db", logger)
 # set +59 min after data came back online due to data generation mechanism
 # times are in utc
 remove = [
-    [1757389977, 1757423614], # data was down
-    [1757493559, 1757500579 + 1], # 9/10/2025 8:50 - 10:30 maintenance
-    [1758006727, 1758065287 + 1], # data was down again, no info on why. this one had an issue where needed another restart after restarting
-    [1758103207, 1758114307 + 1], # 9/17/2025 8:50 - 10:30 maintenance: maintenance detector + back up time was correct, but data was down
+    # 9/2/2025 8:55 - 12:30 maintenance MOTMG 2025
+    # data was 17 minutes late
+    # for now, just set before data online to null.
+    [1756803326, 1756819046 + 1],
+    # data was down, vps issue. set +59
+    [1757389977, 1757423614], 
+    # 9/10/2025 8:50 - 10:30 maintenance
+    # data was 7 minute late, don't set +59 since maintenance
+    [1757493559, 1757500579 + 1], 
+    # data was down again for 12+ hours, no info on why. this one had an issue where needed another restart after restarting
+    # set +59
+    [1758006727, 1758065287 + 1], 
+    # 9/17/2025 8:55 - 10:30 maintenance
+    # my maintenance detector + back up time was correct, but data was down (few hours late)
+    # set +59 since way too late to detect maintenance effect
+    [1758103207, 1758114307 + 1], 
 ]
 
 # fill **existing rows** with null. use cases:

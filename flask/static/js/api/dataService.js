@@ -1,4 +1,4 @@
-import { API_ENDPOINTS } from '../config/constants.js';
+import { API_ENDPOINTS } from "../config/constants.js";
 
 // functions for updating dashboard cards + getting data
 
@@ -37,14 +37,15 @@ export function updatePlayerCountTimeUpdated(data) {
 export async function updateReviewsTimeUpdated(time, fetchNew) {
     if (fetchNew) {
         const data = await getData(API_ENDPOINTS.lastReviewTimeScraped);
-        time = tsToSeconds(data * 1000);
+        time = data * 1000;
     }
+    const txt = tsToSeconds(time);
     let content = document.getElementById("reviews-last-updated");
-    content.innerHTML = "Updated " + time + " ago";
+    content.innerHTML = "Updated " + txt + " ago";
     return Promise.resolve(time);
 }
 
-// update all dashboard cards with latest data
+// update playercount dashboard cards with latest data
 export async function updateCards(data) {
     // update players now
     let content = document.getElementById("players-online");

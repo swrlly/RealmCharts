@@ -1,6 +1,6 @@
-import { COLORS, API_ENDPOINTS, BASE_CHART_OPTIONS, RANGE_SELECTOR_THEME } from '../config/constants.js';
-import { getData } from '../api/dataService.js';
-import { removeSkeleton } from '../ui/skeleton.js';
+import { COLORS, API_ENDPOINTS, BASE_CHART_OPTIONS, RANGE_SELECTOR_THEME } from "../config/constants.js";
+import { getData } from "../api/dataService.js";
+import { removePlayerCountSkeleton } from "../ui/skeleton.js";
 
 export async function createPlayerCountChart() {
     var data = await getData(API_ENDPOINTS.playerCount);
@@ -20,7 +20,7 @@ export async function createPlayerCountChart() {
             reflow: true,
             events: {
                 async load() {
-                    removeSkeleton();
+                    removePlayerCountSkeleton();
                 } 
             }
         },
@@ -52,26 +52,26 @@ export async function createPlayerCountChart() {
             enabled: true,
             buttons: [
                 {
-                    type: 'day',
+                    type: "day",
                     count: 1,
-                    text: '24h'
+                    text: "24h"
                 }, {
-                    type: 'week',
+                    type: "week",
                     count: 1,
-                    text: '7d'
+                    text: "7d"
                 }, {
-                    type: 'month',
+                    type: "month",
                     count: 1,
-                    text: '1m',
+                    text: "1m",
                     enabled: false,
                 }, {
-                    type: 'year',
+                    type: "year",
                     count: 1,
-                    text: '1y',
+                    text: "1y",
                     enabled: false,
                 }, {
-                    type: 'all',
-                    text: 'All'
+                    type: "all",
+                    text: "All"
                 }
             ],
             buttonTheme: RANGE_SELECTOR_THEME,
@@ -87,7 +87,7 @@ export async function createPlayerCountChart() {
             inputBoxBorderColor: COLORS.backgroundColor
         },
         series: [{
-            name: 'Players',
+            name: "Players",
             data: data,
             lineWidth: 3,
             color: COLORS.seriesColor,
@@ -108,7 +108,7 @@ export async function createPlayerCountChart() {
             lineColor: COLORS.linesInChartColor,
             tickColor: COLORS.linesInChartColor,
             gridLineWidth: 0,
-            type: 'datetime',
+            type: "datetime",
             labels: {
                 style: {
                     color: COLORS.axisLabelColor
@@ -116,10 +116,10 @@ export async function createPlayerCountChart() {
             },
             ordinal: false,
             crosshair: {
-                dashStyle: 'ShortDash'
+                dashStyle: "ShortDash"
             },
             tickPixelInterval: 120,
-            min: Date.now() - (24 * 7 * 60 * 60 * 1000 + 5 * 60 * 1000), // 7 days, 5 min
+            min: Date.now() - (24 * 7 * 60 * 60 * 1000 + 15 * 60 * 1000), // 7 days, 15 min
             max: Date.now()
         },
         yAxis: {
