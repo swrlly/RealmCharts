@@ -15,9 +15,9 @@ database = Database("../data/players.db", logger)
 # times are in utc
 remove = [
     [1757389977, 1757423614], # data was down
-    [1757493559, 1757500579 + 1] # 9/10/2025 8:50 - 10:30 maintenance
-    [1758006727, 1758065287 + 1] # data was down again, no info on why. this one had an issue where needed another restart after restarting
-    [1758103207, 1758114307 + 1] # 9/17/2025 8:50 - 10:30 maintenance: maintenance detector + back up time was correct, but data was down
+    [1757493559, 1757500579 + 1], # 9/10/2025 8:50 - 10:30 maintenance
+    [1758006727, 1758065287 + 1], # data was down again, no info on why. this one had an issue where needed another restart after restarting
+    [1758103207, 1758114307 + 1], # 9/17/2025 8:50 - 10:30 maintenance: maintenance detector + back up time was correct, but data was down
 ]
 
 # fill **existing rows** with null. use cases:
