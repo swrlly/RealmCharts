@@ -26,7 +26,7 @@ export async function createPlayerCountChart() {
         },
         navigator: {
             enabled: true,
-            maskFill: "rgba(102,133,194,0.08)",
+            maskFill: "rgba(133, 133, 133, 0.08)",
             xAxis: {
                 labels: {
                     style: {
@@ -56,8 +56,8 @@ export async function createPlayerCountChart() {
                     count: 1,
                     text: "24h"
                 }, {
-                    type: "week",
-                    count: 1,
+                    type: "minute",
+                    count: 10110,
                     text: "7d"
                 }, {
                     type: "month",
@@ -119,7 +119,7 @@ export async function createPlayerCountChart() {
                 dashStyle: "ShortDash"
             },
             tickPixelInterval: 120,
-            min: Date.now() - (24 * 7 * 60 * 60 * 1000 + 15 * 60 * 1000), // 7 days, 15 min
+            min: Date.now() - (24 * 7 * 60 * 60 * 1000 + 30 * 60 * 1000), // 7 days, 30 min
             max: Date.now()
         },
         yAxis: {

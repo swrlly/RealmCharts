@@ -111,6 +111,10 @@ def index():
 def about():
     return render_template("about.html", css_version = css_version)
 
+@app.route("/robots.txt")
+def robots():
+    return app.send_static_file("robots.txt")
+
 def get_db():
     db = getattr(g, "_database", None)
     if db is None:

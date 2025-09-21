@@ -380,7 +380,7 @@ a {
 .chart-skeleton {
     max-width: 900px; 
     max-height: 400px; 
-    aspect-ratio: 2.4 / 1; 
+    aspect-ratio: 2 / 1; 
     border: none;
     border-radius: var(--card-border-radius);
     /* chart reflow fix if parent is grid: https://github.com/highcharts/highcharts/issues/9491#issuecomment-605965402 */
@@ -425,7 +425,7 @@ a {
 }
 
 #percent-positive-reviews {
-    background: linear-gradient(to right, #39FF9C 10%, #E6A646 30%, #EE3C53 70%);
+    background: linear-gradient(to right, #39FF9C 10%, #E6A646 35%, #EE3C53 70%);
     background-size: 10000% 100%;
     background-clip: text;
     transition: background-position 0.5s ease;
@@ -627,7 +627,7 @@ h3 {
 ul {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
 }
 
 p {

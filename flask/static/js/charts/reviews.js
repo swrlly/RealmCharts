@@ -44,7 +44,15 @@ export async function createReviewsChart() {
             }
         },
         navigator: {
-            enabled: false
+            enabled: false,
+            maskFill: "rgba(133, 133, 133, 0.08)",
+            xAxis: {
+                labels: {
+                    style: {
+                        color: COLORS.linesInChartColor
+                    }
+                }
+            }
         },
         scrollbar: {
             height: 0
@@ -61,7 +69,7 @@ export async function createReviewsChart() {
             buttons: [
                 {
                     type: "day",
-                    count: 7,
+                    count: 6,
                     text: "7d"
                 }, {
                     type: "day",
