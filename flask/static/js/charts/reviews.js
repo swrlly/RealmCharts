@@ -1,5 +1,5 @@
 import { COLORS, API_ENDPOINTS, RANGE_SELECTOR_THEME } from "../config/constants.js";
-import { getData } from "../api/dataService.js";
+import { getData } from "../automation/dataService.js";
 import { removeReviewSkeleton } from "../ui/skeleton.js";
 
 function minutesToHumanTime(minutes) {
@@ -245,5 +245,5 @@ export async function createReviewsChart() {
         }
     });
 
-    return [chart, data];
+    return chart;
 }

@@ -1,14 +1,13 @@
 import { COLORS, API_ENDPOINTS, BASE_CHART_OPTIONS, RANGE_SELECTOR_THEME } from "../config/constants.js";
-import { getData } from "../api/dataService.js";
+import { getData } from "../automation/dataService.js";
 import { removePlayerCountSkeleton } from "../ui/skeleton.js";
 
 export async function createPlayerCountChart() {
     var data = await getData(API_ENDPOINTS.playerCount);
 
-    // convert timestamps to milliseconds and hide 0 values
+    // convert timestamps to milliseconds
     for (let index = 0; index < data.length; index++) {
         data[index][0] *= 1000;
-        data[index][1] = data[index][1] === 0 ? null : data[index][1];
     }
         
     // set global Highcharts options

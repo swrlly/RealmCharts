@@ -44,6 +44,9 @@ export const BASE_CHART_OPTIONS = {
             color: COLORS.linesInChartColor,
             fontSize: "1rem"
         }
+    },
+    time: {
+        timezone: undefined
     }
 };
 

@@ -70,7 +70,6 @@ export function removePlayerCountSkeleton() {
 
     // make card background normal + show border
     var card = document.getElementsByClassName("card");
-    console.log(card);
     for (let i = 0; i < card.length; i++) { 
         removeBorderSkeleton(card[i], cardBorderColor, true); 
     }

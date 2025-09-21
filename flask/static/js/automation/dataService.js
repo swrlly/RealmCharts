@@ -102,7 +102,7 @@ export async function updateCards(data) {
 }
 
 // update cards and chart data every minute
-export async function updateCardsJob(chart, data) {
+export async function updatePlayersJob(chart, data) {
     var newData = await getData(API_ENDPOINTS.latestPlayerCount);
     newData[0] *= 1000;
     // highcharts adds newData to original data. no need to do data.push(newData);

@@ -1,69 +1,33 @@
-import { createPlayerCountChart } from './charts/playerCount.js';
-import { createReviewsChart } from './charts/reviews.js';
-import { updateCards, updateCardsJob, updatePlayerCountTimeUpdated, updateReviewsTimeUpdated } from './api/dataService.js';
-import { positionTooltips, enableReviewSkeleton } from './ui/skeleton.js';
+import { createPlayerCountChart } from "./charts/playerCount.js";
+import { createReviewsChart } from "./charts/reviews.js";
+import { updateCards, updatePlayerCountTimeUpdated } from "./automation/dataService.js";
+import { updatePlayerChart, updateReviewChart, updateReviewTime } from "./automation/timeouts.js"
+import { positionTooltips } from "./ui/skeleton.js";
 
 async function main() {
-    // first loading in
-    // players
-    let [chart, data] = await createPlayerCountChart();
+
+    // first loading in, update players
+    var [chart, data] = await createPlayerCountChart();
     updatePlayerCountTimeUpdated(data);
     positionTooltips();
     await updateCards(data);
 
-    //reviews
-    let [review_chart, review_data] = await createReviewsChart();
-    var lastReviewUpdateTime = 0;
-    updateReviewsTimeUpdated(lastReviewUpdateTime, true).then(result => {
-        lastReviewUpdateTime = result;
-    })
-    setInterval(updatePlayerCountTimeUpdated, 1000, data);
-    let updateReviewIntervalId = setInterval(() => {
-        updateReviewsTimeUpdated(lastReviewUpdateTime, false).then(result => {
-            lastReviewUpdateTime = result;
-        })
-    }, 1000);
+    // update reviews
+    var reviewChart = await createReviewsChart();
 
     // live update logic
+    // array is pass by ref...
+    var lastReviewUpdateTime = [0];
+    const reviewTimeId = setTimeout(updateReviewTime, 1000, lastReviewUpdateTime, true);
+    // use setInterval for data b/c need data as global, fine if drifts.
+    setInterval(updatePlayerCountTimeUpdated, 1000, data);
+
     // players
-    var now = new Date();
+    var now = new Date().valueOf();
     const msUntilFirstUpdate = Math.max(60000 - (now - data[data.length - 1][0]), 1) + 3000;
-    const firstPlayerUpdateId = setTimeout(() => {
-
-        // first, update player dash area based on how much time left until next update
-        updateCardsJob(chart, data).then(result => {
-            [chart, data] = result;
-            const playerUpdateIntervalId = setInterval(() => {
-                // then, update dash every minute
-                updateCardsJob(chart, data).then(result => {
-                    [chart, data] = result;
-                });
-            }, 59950);
-        });
-    }, msUntilFirstUpdate);
-
+    const playerUpdateId = setTimeout(updatePlayerChart, msUntilFirstUpdate, chart, data);
     // reviews
-    const reviewPollerIntervalID = setInterval(() => {
-        now = new Date();
-        // steam reviews finishes scraping <= 3 minutes, empirically speaking
-        // need to push the check later >50k reviews
-        if (now.getMinutes() === 5) {
-            clearInterval(updateReviewIntervalId);
-            review_chart.destroy();
-            enableReviewSkeleton();
-            (async() => {
-                [review_chart, review_data] = await createReviewsChart();
-            })();
-            updateReviewIntervalId = setInterval(() => {
-                    updateReviewsTimeUpdated(lastReviewUpdateTime, false).then(result => {
-                        lastReviewUpdateTime = result;
-                    })
-                }, 1000);
-            updateReviewsTimeUpdated(lastReviewUpdateTime, true).then(result => {
-                lastReviewUpdateTime = result;
-            });
-        }
-    }, 60000);
+    const reviewUpdateId = setTimeout(updateReviewChart, 60000, reviewChart, lastReviewUpdateTime, reviewTimeId);
 }
 
 main();
