@@ -20,6 +20,16 @@ function removeBackgroundSkeleton(element) {
     element.style.backgroundSize = "none";
 }
 
+// enable review chart skeleton
+export function enableReviewSkeleton() {
+    var reviewChart = document.getElementsByClassName("chart-skeleton")[1];
+    reviewChart.style.border = "";
+    reviewChart.style.background = "";
+    reviewChart.style.animation = "";
+    reviewChart.style.backgroundSize = "";
+    reviewChart.style.boxShadow = "";
+}
+
 // remove skeleton loading for review chart specifically
 export function removeReviewSkeleton() {
     let cardBorderColor = "2px " + window.getComputedStyle(document.body).getPropertyValue("--card-border-color") + " solid";

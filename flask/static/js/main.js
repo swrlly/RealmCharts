@@ -1,7 +1,7 @@
 import { createPlayerCountChart } from './charts/playerCount.js';
 import { createReviewsChart } from './charts/reviews.js';
 import { updateCards, updateCardsJob, updatePlayerCountTimeUpdated, updateReviewsTimeUpdated } from './api/dataService.js';
-import { positionTooltips } from './ui/skeleton.js';
+import { positionTooltips, enableReviewSkeleton } from './ui/skeleton.js';
 
 async function main() {
     // first loading in
@@ -10,19 +10,20 @@ async function main() {
     updatePlayerCountTimeUpdated(data);
     positionTooltips();
     await updateCards(data);
+
     //reviews
     let [review_chart, review_data] = await createReviewsChart();
+    console.log(review_data[5]);
     var lastReviewUpdateTime = 0;
     updateReviewsTimeUpdated(lastReviewUpdateTime, true).then(result => {
         lastReviewUpdateTime = result;
     })
     setInterval(updatePlayerCountTimeUpdated, 1000, data);
-    setInterval(() => {
+    let updateReviewIntervalId = setInterval(() => {
         updateReviewsTimeUpdated(lastReviewUpdateTime, false).then(result => {
             lastReviewUpdateTime = result;
         })
     }, 1000);
-
 
     // live update logic
     // players
@@ -45,12 +46,24 @@ async function main() {
     // reviews
     const reviewPollerIntervalID = setInterval(() => {
         now = new Date();
-        // steam reviews finishes scraping <= 4 minutes, empirically speaking
+        // steam reviews finishes scraping <= 3 minutes, empirically speaking
         // need to push the check later >50k reviews
         if (now.getMinutes() === 5) {
+            clearInterval(updateReviewIntervalId);
+            review_chart.destroy();
+            enableReviewSkeleton();
+            (async() => {
+                [review_chart, review_data] = await createReviewsChart();
+                console.log(review_data);
+            })();
+            updateReviewIntervalId = setInterval(() => {
+                    updateReviewsTimeUpdated(lastReviewUpdateTime, false).then(result => {
+                        lastReviewUpdateTime = result;
+                    })
+                }, 1000);
             updateReviewsTimeUpdated(lastReviewUpdateTime, true).then(result => {
                 lastReviewUpdateTime = result;
-            })
+            });
         }
     }, 60000);
 }
