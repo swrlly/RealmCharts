@@ -19,6 +19,8 @@ def main():
     clock = time.monotonic()
     current_hour = dt.datetime.now().hour
 
+    tasks.on_startup()
+
     while True:
 
         now = int(time.time())
@@ -29,13 +31,12 @@ def main():
         if dt.datetime.now().hour - current_hour != 0:
             thread = Thread(target = tasks.get_steam_reviews)
             thread.start()
-            
+        current_hour = dt.datetime.now().hour
+
         # review data inserted after next playercount lookup
         tasks.insert_into_database()
-        current_hour = dt.datetime.now().hour
+        tasks.clean_playercount_data()
         time.sleep(60 - (time.monotonic() - clock) % 60)
-        
-
 
 if __name__ == "__main__":
     main()

@@ -5,6 +5,19 @@ create_players = """CREATE TABLE IF NOT EXISTS playersOnline (
     timestamp INTEGER PRIMARY KEY NOT NULL,
     players INT);"""
 
+# trustworthiness = 1 means real data
+# 0 means
+#  - sequential same counts (bugged from data source)
+#  - actual missing data (program down)
+create_players_cleaned = """CREATE TABLE IF NOT EXISTS playersCleaned (
+    timestamp INTEGER PRIMARY KEY NOT NULL,
+    players INT,
+    trustworthiness INT);"""
+
+#create_players_grouped = """CREATE TABLE IF NOT EXISTS playersGrouped (
+#    timestamp INTEGER PRIMARY KEY NOT NULL,
+#    players INT);"""
+
 create_maintenance = """CREATE TABLE IF NOT EXISTS maintenance (
     timestamp INTEGER PRIMARY KEY NOT NULL,
     online BOOLEAN CHECK (online IN (0, 1)),
@@ -33,9 +46,12 @@ try:
         cursor = conn.cursor()
         cursor.execute(create_players)
         conn.commit()
+        cursor.execute(create_players_cleaned)
+        conn.commit()
+        #cursor.execute(create_players_grouped)
+        #conn.commit()
         cursor.execute(create_maintenance)
         conn.commit()
-        #cursor.execute("DROP TABLE steamReviews")
         cursor.execute(create_steam_reviews)
         conn.commit()
         cursor.close()

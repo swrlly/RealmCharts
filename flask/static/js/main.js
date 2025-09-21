@@ -13,7 +13,6 @@ async function main() {
 
     //reviews
     let [review_chart, review_data] = await createReviewsChart();
-    console.log(review_data[5]);
     var lastReviewUpdateTime = 0;
     updateReviewsTimeUpdated(lastReviewUpdateTime, true).then(result => {
         lastReviewUpdateTime = result;
@@ -28,7 +27,7 @@ async function main() {
     // live update logic
     // players
     var now = new Date();
-    const msUntilFirstUpdate = Math.max(60000 - (now - data[data.length - 1][0]), 1) + 1000;
+    const msUntilFirstUpdate = Math.max(60000 - (now - data[data.length - 1][0]), 1) + 3000;
     const firstPlayerUpdateId = setTimeout(() => {
 
         // first, update player dash area based on how much time left until next update
@@ -39,7 +38,7 @@ async function main() {
                 updateCardsJob(chart, data).then(result => {
                     [chart, data] = result;
                 });
-            }, 60000);
+            }, 59950);
         });
     }, msUntilFirstUpdate);
 
@@ -54,7 +53,6 @@ async function main() {
             enableReviewSkeleton();
             (async() => {
                 [review_chart, review_data] = await createReviewsChart();
-                console.log(review_data);
             })();
             updateReviewIntervalId = setInterval(() => {
                     updateReviewsTimeUpdated(lastReviewUpdateTime, false).then(result => {

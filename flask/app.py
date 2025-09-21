@@ -57,7 +57,7 @@ def steam_last_scraped():
 def player_count():
     # get all player counts collected, minute granularity
     cur = get_db().cursor()
-    cur.execute("SELECT * FROM playersOnline")
+    cur.execute("SELECT * FROM playersCleaned")
     results = json.dumps(cur.fetchall())
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
@@ -66,7 +66,7 @@ def player_count():
 def players_online_now():
     # get latest playercount
     cur = get_db().cursor()
-    cur.execute("SELECT * FROM playersOnline WHERE timestamp = (SELECT max(timestamp) FROM playersOnline);")
+    cur.execute("SELECT * FROM playersCleaned WHERE timestamp = (SELECT max(timestamp) FROM playersCleaned);")
     results = json.dumps(cur.fetchone())
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
@@ -79,8 +79,8 @@ def players_last_week():
     SELECT 
         timestamp,
         players,
-        (SELECT MAX(timestamp) FROM playersOnline) - 60 * 60 * 24 * 7 - timestamp AS difference
-    FROM playersOnline
+        (SELECT MAX(timestamp) FROM playersCleaned) - 60 * 60 * 24 * 7 - timestamp AS difference
+    FROM playersCleaned
     ORDER BY ABS(difference)
     LIMIT 1;""")
     results = json.dumps(cur.fetchone())

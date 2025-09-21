@@ -51,3 +51,7 @@ for r in remove:
 #   - host was down
 n_missing = database.fill_missing_times()
 database.logger.info(f"Created {n_missing} missing rows between time points with null.")
+
+# fill maintenance table w missing player times
+database.fill_maintenance_missing_times()
+database.clean_all_playercount_data()

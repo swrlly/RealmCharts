@@ -23,8 +23,22 @@ class Tasks:
         self.review_getter = SteamReviews(logger)
         self.data_to_insert = Queue()
 
+    def on_startup(self):
+        # call when program starts, don't queue since data is needed downstream
+        self.db_connection.copy_into_players_cleaned()
+        n_missing = self.db_connection.fill_missing_times()
+        self.logger.info(f"Created {n_missing} missing rows between time points with null.")
+        # fill maintenance table w missing player times
+        self.db_connection.fill_maintenance_missing_times()
+
+    def clean_playercount_data(self):
+        # insert new entries from playersOnline into playersCleaned
+        # set <= 9/20 maintenance to 0, set bugged sequential player data to null
+        self.db_connection.clean_all_playercount_data()
+
     def get_maintenance_status(self, time) -> None:
         # assumption: <Maintenance> tag only appears during maintenance, and not before when people are asked to log out
+        # assumption is true, verified with 9/17 maintenance
         content = ""
         online = None
         estimated_time = None
@@ -45,6 +59,7 @@ class Tasks:
         self.data_to_insert.put({"maintenance": [time, online, estimated_time]})
 
     def get_player_count(self, time) -> None:
+        # get player count at one time point
         count = None
         try:
             count = int(requests.get(self.player_link).content)
@@ -74,7 +89,7 @@ class Tasks:
                     is_maintenance = True
             elif "playersOnline" in item:
                 if is_maintenance:
-                    self.db_connection.insert_new_playercount([item["playersOnline"][0], None])
+                    self.db_connection.insert_new_playercount([item["playersOnline"][0], 0])
                 else:
                     self.db_connection.insert_new_playercount(item["playersOnline"])
             elif "steamReviews" in item:
