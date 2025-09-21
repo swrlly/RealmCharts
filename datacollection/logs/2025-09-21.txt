@@ -30,3 +30,21 @@
 [2025-09-21] 15:01:00 -  INFO   - Main - Copied 30231 rows from playersOnline into playersCleaned
 [2025-09-21] 15:01:00 -  INFO   - Main - Created 0 missing rows between time points with null.
 [2025-09-21] 15:01:00 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-21] 16:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-21] 16:00:02 -  INFO   - Main - Total reviews to scrape: 46926
+[2025-09-21] 16:02:41 -  INFO   - Main - Finished scraping 46919 reviews.
+[2025-09-21] 17:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-21] 17:00:02 -  INFO   - Main - Total reviews to scrape: 46927
+[2025-09-21] 17:03:32 -  INFO   - Main - Finished scraping 46920 reviews.
+[2025-09-21] 18:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-21] 18:00:02 -  INFO   - Main - Total reviews to scrape: 46927
+[2025-09-21] 18:02:33 -  INFO   - Main - Finished scraping 46920 reviews.
+[2025-09-21] 19:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-21] 19:00:02 -  INFO   - Main - Total reviews to scrape: 46927
+[2025-09-21] 19:03:41 -  INFO   - Main - Finished scraping 46921 reviews.
+[2025-09-21] 20:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-21] 20:00:02 -  INFO   - Main - Total reviews to scrape: 46927
+[2025-09-21] 20:02:44 -  INFO   - Main - Finished scraping 46921 reviews.
+[2025-09-21] 21:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-21] 21:00:02 -  INFO   - Main - Total reviews to scrape: 46927
+[2025-09-21] 21:02:34 -  INFO   - Main - Finished scraping 46921 reviews.
