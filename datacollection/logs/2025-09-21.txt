@@ -24,3 +24,9 @@
 [2025-09-21] 14:37:00 -  INFO   - Main - Copied 0 rows from playersOnline into playersCleaned
 [2025-09-21] 14:37:00 -  INFO   - Main - Created 0 missing rows between time points with null.
 [2025-09-21] 14:37:00 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-21] 15:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-21] 15:00:02 -  INFO   - Main - Total reviews to scrape: 46925
+[2025-09-21] 15:01:00 -  INFO   - Main - Started program.
+[2025-09-21] 15:01:00 -  INFO   - Main - Copied 30231 rows from playersOnline into playersCleaned
+[2025-09-21] 15:01:00 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-21] 15:01:00 -  INFO   - Main - Inserted 0 rows into maintenance.
