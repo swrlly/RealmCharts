@@ -1,0 +1,4 @@
+[2025-09-21] 08:09:00 -  INFO   - Main - Started program.
+[2025-09-21] 08:09:00 -  INFO   - Main - Copied 29819 rows from playersOnline into playersCleaned
+[2025-09-21] 08:09:00 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-21] 08:09:00 -  INFO   - Main - Inserted 14196 rows into maintenance.
