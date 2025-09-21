@@ -14,9 +14,11 @@ create_players_cleaned = """CREATE TABLE IF NOT EXISTS playersCleaned (
     players INT,
     trustworthiness INT);"""
 
-#create_players_grouped = """CREATE TABLE IF NOT EXISTS playersGrouped (
-#    timestamp INTEGER PRIMARY KEY NOT NULL,
-#    players INT);"""
+create_players_grouped = """CREATE TABLE IF NOT EXISTS playersGrouped (
+    timestamp INTEGER PRIMARY KEY NOT NULL,
+    players REAL,
+    online REAL,
+    trustworthiness REAL);"""
 
 create_maintenance = """CREATE TABLE IF NOT EXISTS maintenance (
     timestamp INTEGER PRIMARY KEY NOT NULL,
@@ -48,8 +50,8 @@ try:
         conn.commit()
         cursor.execute(create_players_cleaned)
         conn.commit()
-        #cursor.execute(create_players_grouped)
-        #conn.commit()
+        cursor.execute(create_players_grouped)
+        conn.commit()
         cursor.execute(create_maintenance)
         conn.commit()
         cursor.execute(create_steam_reviews)

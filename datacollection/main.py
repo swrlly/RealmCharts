@@ -35,7 +35,10 @@ def main():
 
         # review data inserted after next playercount lookup
         tasks.insert_into_database()
-        tasks.clean_playercount_data()
+        # clean player data after inserting. restrict last 48 hours for speedier query
+        # needs to be fast since frontend depends on playersCleaned
+        tasks.clean_playercount_data(window = now - 48 * 60 * 60)
+        tasks.group_cleaned_player_data()
         time.sleep(60 - (time.monotonic() - clock) % 60)
 
 if __name__ == "__main__":

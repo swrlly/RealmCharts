@@ -31,10 +31,14 @@ class Tasks:
         # fill maintenance table w missing player times
         self.db_connection.fill_maintenance_missing_times()
 
-    def clean_playercount_data(self):
+    def group_cleaned_player_data(self):
+        # transform data to be ready for forecasting
+        self.db_connection.group_cleaned_data()
+
+    def clean_playercount_data(self, window):
         # insert new entries from playersOnline into playersCleaned
         # set <= 9/20 maintenance to 0, set bugged sequential player data to null
-        self.db_connection.clean_all_playercount_data()
+        self.db_connection.clean_all_playercount_data(window)
 
     def get_maintenance_status(self, time) -> None:
         # assumption: <Maintenance> tag only appears during maintenance, and not before when people are asked to log out
