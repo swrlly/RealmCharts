@@ -48,6 +48,8 @@ try:
         cursor = conn.cursor()
         cursor.execute(create_players)
         conn.commit()
+        cursor.execute("DROP TABLE playersCleaned;")
+        conn.commit()
         cursor.execute(create_players_cleaned)
         conn.commit()
         cursor.execute(create_players_grouped)

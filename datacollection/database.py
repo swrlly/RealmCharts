@@ -66,7 +66,8 @@ class Database:
 
     def clean_all_playercount_data(self, window = None):
         # set player counts during maintenance to 0 (for maintenances before 9/20/2025)
-        # set untrustworthy identical playercounts 5 minutes or greater to null
+        # set untrustworthy identical playercounts 10 minutes or greater to null
+        # saw a 5 minute contiguous block that was not an error
         self.connect()
 
         self.update_players_cleaned_with_new_data()
@@ -83,10 +84,19 @@ class Database:
             LAG(players, 2) OVER (ORDER BY timestamp ASC) AS prev_pc_2,
             LAG(players, 3) OVER (ORDER BY timestamp ASC) AS prev_pc_3,
             LAG(players, 4) OVER (ORDER BY timestamp ASC) AS prev_pc_4,
+            LAG(players, 5) OVER (ORDER BY timestamp ASC) AS prev_pc_5,
+            LAG(players, 6) OVER (ORDER BY timestamp ASC) AS prev_pc_6,
+            LAG(players, 7) OVER (ORDER BY timestamp ASC) AS prev_pc_7,
+            LAG(players, 8) OVER (ORDER BY timestamp ASC) AS prev_pc_8,
+            LAG(players, 9) OVER (ORDER BY timestamp ASC) AS prev_pc_9,
             LAG(timestamp, 4) OVER (ORDER BY timestamp ASC) AS prev_ts_4
             FROM playersOnline """
         if window != None:  get_sequential_identical_pc += "WHERE timestamp >= {}".format(window)
-        get_sequential_identical_pc += """) WHERE players = prev_pc_1 AND players = prev_pc_2 AND players = prev_pc_3 AND players = prev_pc_4;"""
+        get_sequential_identical_pc += """) 
+        WHERE players = prev_pc_1 
+            AND players = prev_pc_2 AND players = prev_pc_3 AND players = prev_pc_4
+            AND players = prev_pc_5 AND players = prev_pc_6 AND players = prev_pc_7
+	        AND players = prev_pc_8 AND players = prev_pc_9;"""
         self._cursor.execute(get_sequential_identical_pc)
         rows = self._cursor.fetchall()
 
@@ -133,9 +143,9 @@ class Database:
         except Exception as e:
             self.logger.info(f"Failed to set maintenance player counts to 0: {e}")
 
-        # finally, deal with trustworthiness for times I manually removed with my one-off script / null values
+        # finally, deal with trustworthiness for times I manually removed with my one-off script / random null values
         get_one_off_missed_trustworthiness = """SELECT *
-        FROM playersOnline
+        FROM playersCleaned
         WHERE (1756816226 <= timestamp AND timestamp <= 1756820786) OR (1757500219 <= timestamp AND timestamp <= 1757504179) OR players IS NULL;"""
         self._cursor.execute(get_one_off_missed_trustworthiness)
         rows = self._cursor.fetchall()
