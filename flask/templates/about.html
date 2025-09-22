@@ -60,10 +60,14 @@
     </ul>
 
     <h1>Changelog</h1>
+    <h3>9/21/2025</h3>
+    <ul>
+        <li>Developed basic automated ML pipeline deployment for forecasting player counts using unobserved components</li>
+    </ul>
     <h3>9/20/2025</h3>
     <ul>
         <li>Added ETL pipelines from dirty data -> forecast ready: cleaned sequential unreliable playercounts + 60 min after logging in, set old maintenance players to 0, and grouped data into 5 minute intervals</li>
-        <li>Converted `setInterval` for updating player/review dashboard to use exact `setTimeout` preventing new data update timing drift on Firefox</li>
+        <li>Converted <code>setInterval</code> for updating player/review dashboard to use exact <code>setTimeout</code> preventing new data update timing drift on Firefox</li>
         <li>Added logic to refresh review chart 4 minutes after the hour</li>
     </ul>
     <h3>9/18/2025</h3>

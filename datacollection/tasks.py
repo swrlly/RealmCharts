@@ -3,6 +3,7 @@ import logging
 import requests
 from queue import Queue
 from database import Database
+from forecaster import Forecaster
 from get_steam_reviews import SteamReviews
 
 
@@ -21,15 +22,43 @@ class Tasks:
             "X-Unity-Version": "2021.3.16f1"
         }
         self.review_getter = SteamReviews(logger)
+        self.forecaster = None
         self.data_to_insert = Queue()
 
-    def on_startup(self):
+    def on_startup(self, time):
+        self.get_player_count(time)
+        self.get_maintenance_status(time)
+        self.insert_into_database()
         # call when program starts, don't queue since data is needed downstream
-        self.db_connection.copy_into_players_cleaned()
         n_missing = self.db_connection.fill_missing_times()
         self.logger.info(f"Created {n_missing} missing rows between time points with null.")
         # fill maintenance table w missing player times
         self.db_connection.fill_maintenance_missing_times()
+        self.db_connection.copy_into_players_cleaned()
+        self.clean_playercount_data(window = None)
+        self.group_cleaned_player_data()
+        self.train_forecaster()
+
+    def train_forecaster(self):
+        # train forecaster and get first forecast
+        data = self.db_connection.select_grouped_data()
+        self.forecaster = Forecaster()
+        self.forecaster.prepare_data(data)
+        self.forecaster.train_model()
+        forecast = self.forecaster.get_forecast()
+        self.db_connection.insert_into_forecast(forecast)
+
+    def get_new_forecast_once(self):
+        # get new forecast given one new data point
+        # first, check if maintenance
+        maintenance_time = self.db_connection.select_maintenance()
+        if maintenance_time[1] == 0:
+            # todo
+            return
+
+        data = self.db_connection.select_grouped_data()
+        forecast = self.forecaster.update_forecast_once(data)
+        self.db_connection.insert_into_forecast(forecast)
 
     def group_cleaned_player_data(self):
         # transform data to be ready for forecasting

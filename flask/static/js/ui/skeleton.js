@@ -59,7 +59,7 @@ export function removePlayerCountSkeleton() {
     let cardBorderColor = "2px " + window.getComputedStyle(document.body).getPropertyValue("--card-border-color") + " solid";
 
     // text - make text appear
-    var hiddenText = document.querySelectorAll(".card-header-text,.playercount-header,.navbar-text,.title-div");
+    var hiddenText = document.querySelectorAll(".card-header-text,.playercount-header,.navbar-text,.title-div,.player-forecast-info");
     for (let i = 0; i < hiddenText.length; i++) { 
         hiddenText[i].style.visibility = "visible"; 
     }

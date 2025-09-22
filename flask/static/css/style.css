@@ -452,6 +452,13 @@ a {
     display:grid;
 }
 
+.player-forecast-info {
+    visibility: hidden;
+    padding-top: 0.5rem; 
+    color: var(--less-emphasis-color);
+    font-size: 0.8rem;
+}
+
 .review-callout-info {
     visibility: hidden;
     padding-bottom: 0.5rem; 

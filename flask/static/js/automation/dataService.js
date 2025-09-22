@@ -103,10 +103,30 @@ export async function updateCards(data) {
 
 // update cards and chart data every minute
 export async function updatePlayersJob(chart, data) {
+
     var newData = await getData(API_ENDPOINTS.latestPlayerCount);
     newData[0] *= 1000;
     // highcharts adds newData to original data. no need to do data.push(newData);
     chart.series[0].addPoint(newData);
+    var now = new Date();
+    console.log(now);
+    console.log(now.getMinutes());
+    if ((now.getMinutes() % 5) === 1 || (now.getMinutes() % 5) === 6) {
+        var forecast = await getData(API_ENDPOINTS.forecast);
+        for (let index = 0; index < forecast.length; index++) {
+            forecast[index][1] *= 1000;
+        }
+        
+        let forecasted_mean = forecast.slice(0, forecast.length).map(i => [i[1], i[2]]);
+        let one_sd = forecast.slice(0, forecast.length).map(i => [i[1], i[3], i[4]]);
+        let two_sd = forecast.slice(0, forecast.length).map(i => [i[1], i[5], i[6]]);
+        let three_sd = forecast.slice(0, forecast.length).map(i => [i[1], i[7], i[8]]);
+        chart.series[1].setData(forecasted_mean, true, true, false);
+        chart.series[2].setData(one_sd, true, true, false);
+        chart.series[3].setData(two_sd, true, true, false);
+        chart.series[4].setData(three_sd, true, true, false);
+    }
+
     await updateCards(data);
     return Promise.resolve([chart, data]);
 }

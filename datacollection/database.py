@@ -22,7 +22,7 @@ class Database:
     def group_cleaned_data(self):
         # automates data cleaning/transforming -> ready for forecasting
         # group cleaned data into 5 min intervals, standardizes timestamp into beginning of 5 min interval
-        # for modeling, need to decide how to deal with untrustworthy data, especially in an automated setting
+        self.connect()
         query = """SELECT unixepoch(year || "-" || month || "-" || day || " " || hour || ":" || substr("00"||minute,-2,2) || ":00") as ts_start_of_minute_group,
         AVG(players) as players, 
         MIN(online) as online,
@@ -64,6 +64,10 @@ class Database:
         except Exception as e:
             self.logger.info(f"Failed to insert grouped data: {e}")
 
+        self.close()
+
+        return self._cursor.rowcount
+
     def clean_all_playercount_data(self, window = None):
         # set player counts during maintenance to 0 (for maintenances before 9/20/2025)
         # set untrustworthy identical playercounts 10 minutes or greater to null
@@ -75,7 +79,7 @@ class Database:
         # query gets all untrustworthy groups from unclean raw data
         get_sequential_identical_pc = """SELECT 
         timestamp,
-        prev_ts_4,
+        prev_ts_9,
         LEAD(row_num, 1) OVER () - row_num AS row_num_lag_diff
         FROM 
             (SELECT *, 
@@ -89,7 +93,7 @@ class Database:
             LAG(players, 7) OVER (ORDER BY timestamp ASC) AS prev_pc_7,
             LAG(players, 8) OVER (ORDER BY timestamp ASC) AS prev_pc_8,
             LAG(players, 9) OVER (ORDER BY timestamp ASC) AS prev_pc_9,
-            LAG(timestamp, 4) OVER (ORDER BY timestamp ASC) AS prev_ts_4
+            LAG(timestamp, 9) OVER (ORDER BY timestamp ASC) AS prev_ts_9
             FROM playersOnline """
         if window != None:  get_sequential_identical_pc += "WHERE timestamp >= {}".format(window)
         get_sequential_identical_pc += """) 
@@ -154,6 +158,8 @@ class Database:
             self._connection.commit()
         except Exception as e:
             self.logger.info(f"Failed to set one-off player counts post-maintenance / null value trustworthiness to 0: {e}")
+
+        self.close()
 
     def copy_into_players_cleaned(self):
         # copy all data from playersOnline into playersCleaned, if missing
@@ -324,3 +330,27 @@ class Database:
         result = self._cursor.fetchone()
         self.close()
         return result
+
+    def select_grouped_data(self):
+        self.connect()
+        self._cursor.execute("SELECT * FROM playersGrouped;")
+        result = self._cursor.fetchall()
+        self.close()
+        return result
+
+    def select_maintenance(self):
+        self.connect()
+        self._cursor.execute("SELECT timestamp, online, estimated_time FROM maintenance WHERE timestamp = (SELECT max(timestamp) FROM maintenance);")
+        results = self._cursor.fetchone()
+        self.close()
+        return results
+
+    def insert_into_forecast(self, data):
+        # insert most updated forecast
+        self.connect()
+        try:
+            self._cursor.executemany("INSERT OR REPLACE INTO forecast VALUES (?,?,?,?,?,?,?,?,?);", data)
+            self._connection.commit()
+        except Exception as e:
+            self.logger.info(f"Inserting into forecast table failed: {e}")
+        self.close()

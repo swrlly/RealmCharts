@@ -15,7 +15,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="/static/css/style.css?v={{css_version}}">    
         {% block header %} 
-        <script src="/static/js/highstock.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/static/js/highstock.js"></script>
+        <script src="/static/js/highcharts-more.js"></script>
         <script type="module" rel="preconnect" src="/static/js/main.js"></script>
         {% endblock %}
     </head>
@@ -120,6 +121,8 @@
         <div class="chart-skeleton">
             <div id="playercount-chart"></div>
         </div>
+
+        <div class="player-forecast-info"><i>Forecast of 12 hours in the future. May be incorrect due to maintenance and (occasionally) incorrect data.</i></div>
 
         <!--<div class="container" style="padding:0; padding-top: 1rem;">Recent counts are inaccurate; data collection mechanism is broken.</div>-->
 

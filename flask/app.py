@@ -97,6 +97,14 @@ def is_game_up():
     results = json.dumps({"last_checked": time.time() - results[0], "online": results[1]})
     return app.response_class(response = results, status = 200, mimetype = "text/plain")
 
+@app.route("/api/forecast", methods = ["GET"])
+def get_forecast():
+    cur = get_db().cursor()
+    cur.execute("SELECT * FROM forecast where timestamp >= unixepoch() - 300;")
+    results = json.dumps(cur.fetchall())
+    cur.close()
+    return app.response_class(response = results, status = 200, mimetype = "application/json")
+
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, "_database", None)

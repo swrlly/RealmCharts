@@ -43,12 +43,22 @@ create_steam_reviews = """CREATE TABLE IF NOT EXISTS steamReviews (
     cursor TEXT
 );"""
 
+create_forecast = """CREATE TABLE IF NOT EXISTS forecast (
+    idx INTEGER PRIMARY KEY NOT NULL,
+    timestamp INTEGER NOT NULL,
+    forecast_mean REAL,
+    one_sd_lower REAL,
+    one_sd_upper REAL,
+    two_sd_lower REAL,
+    two_sd_upper REAL,
+    three_sd_lower REAL,
+    three_sd_upper REAL
+);"""
+
 try:
     with sqlite3.connect(database) as conn:
         cursor = conn.cursor()
         cursor.execute(create_players)
-        conn.commit()
-        cursor.execute("DROP TABLE playersCleaned;")
         conn.commit()
         cursor.execute(create_players_cleaned)
         conn.commit()
@@ -57,6 +67,8 @@ try:
         cursor.execute(create_maintenance)
         conn.commit()
         cursor.execute(create_steam_reviews)
+        conn.commit()
+        cursor.execute(create_forecast)
         conn.commit()
         cursor.close()
 
