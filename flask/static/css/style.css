@@ -379,7 +379,6 @@ a {
 
 .chart-skeleton {
     max-width: 900px; 
-    max-height: 400px; 
     aspect-ratio: 2 / 1; 
     border: none;
     border-radius: var(--card-border-radius);
@@ -586,9 +585,6 @@ don't put background wrapper children in here
         width: calc(12px + 1.55844vw);
         height: calc(12px + 1.55844vw);
     }
-    .chart-skeleton {
-        aspect-ratio: 1 / 1;
-    }
     .last-updated {
         font-size: calc(0.375rem + 0.779vw);
     }
@@ -602,11 +598,17 @@ don't put background wrapper children in here
     #percent-positive-reviews, #avg-playtime-at-review, #avg-playtime-last-two-weeks, #avg-total-playtime {
         font-size: calc(0.6rem + 1.247vw);
     }
+    .chart-skeleton {
+        min-height: 400px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .card, .review-card {
         width: 85%;
+    }
+    .chart-skeleton {
+        aspect-ratio: 1 / 1;
     }
 }
 

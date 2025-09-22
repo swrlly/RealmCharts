@@ -4,7 +4,7 @@ var debug = false;
 export const COLORS = {
     backgroundColor: "#141414",
     seriesColor: "#517affff",
-    forecastColor: "#b26affff",
+    forecastColor: "#6d56ffff",//"#8153ffff",
     columnColor: "#7b7b7b80",
     reviewColor: "#47bfff80",
     linesInChartColor: "#969696",

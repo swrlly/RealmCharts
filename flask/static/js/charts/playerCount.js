@@ -53,7 +53,7 @@ export async function createPlayerCountChart() {
                 }
             },
             color: COLORS.forecastColor,
-            fillOpacity: 0.1,
+            fillOpacity: 0.175,
             lineWidth: 0
         }
         },
@@ -187,7 +187,7 @@ export async function createPlayerCountChart() {
             min: Date.now() - (3 * 24 * 60 * 60 * 1000),//Date.now() - (24 * 7 * 60 * 60 * 1000 + 30 * 60 * 1000), // 7 days, 30 min
             max: forecast[forecast.length - 1][1],//Date.now(),
             plotBands: [{
-                color: 'rgba(201, 113, 255, 0.05)',
+                color: "#6c56ff09",
                 from: forecast[0][1] - 300,
                 to: Number.MAX_SAFE_INTEGER,
                 label: {
