@@ -1,4 +1,4 @@
-var debug = true;
+var debug = false;
 
 // color scheme for dashboard
 export const COLORS = {

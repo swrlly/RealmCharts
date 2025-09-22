@@ -24,8 +24,8 @@ plt.rcParams["legend.edgecolor"] = borderColor
 plt.rcParams["figure.dpi"] = 300
 plt.rcParams["axes.labelpad"] = 20
 plt.rcParams["axes.titlepad"] = 20
-plt.rcParams["font.family"] = "sans-serif"
-plt.rcParams["font.sans-serif"] = "Open Sans"
+#plt.rcParams["font.family"] = "sans-serif"
+#plt.rcParams["font.sans-serif"] = "Open Sans"
 
 plt.rcParams["boxplot.medianprops.color"] = lavender
 plt.rcParams["boxplot.whiskerprops.color"] = textColor
