@@ -22,24 +22,19 @@ def main():
     while True:
 
         now = int(time.time())
-        # queue maintenance status first
-        tasks.get_maintenance_status(now)
-        tasks.get_player_count(now)
-        # get reviews every hour, nserted after next playercount lookup
-        if dt.datetime.now().hour - current_hour != 0:
+        # get reviews every hour, inserted after next playercount lookup
+        if now % (60 * 60) == 0:
             thread = Thread(target = tasks.get_steam_reviews)
             thread.start()
-        current_hour = dt.datetime.now().hour
-        tasks.insert_into_database()
-        # clean player data after inserting. restrict last 48 hours for speedier query
-        # needs to be fast since frontend depends on playersCleaned
-        tasks.clean_playercount_data(window = now - 48 * 60 * 60)
+
+        tasks.one_minute_tasks(now)
+
         if now % (5 * 60) == 0:
-            tasks.group_cleaned_player_data()
-            tasks.get_new_forecast_once()
+            tasks.five_minute_tasks()
             if now % (6 * 60 * 60) == 0:
-                logger.info("Training forecasting model...")
-                tasks.train_forecaster()
+                thread = Thread(target = tasks.train_forecaster)
+                thread.start()
+        
         time.sleep(60 - (time.monotonic() - clock) % 60)
 
 if __name__ == "__main__":

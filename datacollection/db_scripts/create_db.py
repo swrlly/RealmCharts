@@ -43,6 +43,16 @@ create_steam_reviews = """CREATE TABLE IF NOT EXISTS steamReviews (
     cursor TEXT
 );"""
 
+create_steam_reviews_grouped = """CREATE TABLE IF NOT EXISTS reviewsGrouped (
+    timestamp INTEGER PRIMARY KEY NOT NULL,
+    daily_total_reviews INT,
+    total_proportion_positive REAL,
+    daily_total_playtime_last_two_weeks REAL,
+    daily_total_votes_up INT,
+    daily_total_playtime_at_review INT,
+    daily_total_playtime_forever INT
+);"""
+
 create_forecast = """CREATE TABLE IF NOT EXISTS forecast (
     idx INTEGER PRIMARY KEY NOT NULL,
     timestamp INTEGER NOT NULL,
@@ -53,6 +63,16 @@ create_forecast = """CREATE TABLE IF NOT EXISTS forecast (
     two_sd_upper REAL,
     three_sd_lower REAL,
     three_sd_upper REAL
+);"""
+
+create_forecast_horizon = """CREATE TABLE IF NOT EXISTS forecastHorizon (
+    timestamp INTEGER NOT NULL,
+    horizon_steps INTEGER,
+    predicted_value REAL,
+    actual_value REAL,
+    mean_absolute_error REAL GENERATED ALWAYS AS (ABS(actual_value - predicted_value)) STORED,
+    mean_absolute_percentage_error REAL GENERATED ALWAYS AS (ABS(actual_value - predicted_value) / actual_value) STORED,
+    PRIMARY KEY (timestamp, horizon_steps)
 );"""
 
 create_maintenance_forecast = """CREATE TABLE IF NOT EXISTS maintenanceForecast (
@@ -71,18 +91,14 @@ try:
     with sqlite3.connect(database) as conn:
         cursor = conn.cursor()
         cursor.execute(create_players)
-        conn.commit()
         cursor.execute(create_players_cleaned)
-        conn.commit()
         cursor.execute(create_players_grouped)
-        conn.commit()
         cursor.execute(create_maintenance)
-        conn.commit()
         cursor.execute(create_steam_reviews)
-        conn.commit()
+        cursor.execute(create_steam_reviews_grouped)
         cursor.execute(create_forecast)
-        conn.commit()
         cursor.execute(create_maintenance_forecast)
+        cursor.execute(create_forecast_horizon)
         conn.commit()
         cursor.close()
 

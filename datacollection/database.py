@@ -134,9 +134,8 @@ class Database:
                 left, right = [], []
             idx += 1
 
-        # now set maintenance playercounts to 0
-        # do this 2nd since untrustworthy times are definitely during maintenance, and maintenance really should be 0 for downstream modeling
-        # also if there are 10+ maintenance 0's, this sets trustworthiness back to 1
+        # now set maintenance playercounts to 0 and trustworthiness back to 1
+        # do this 2nd since untrustworthy times are definitely during maintenance
         get_maintenance_times = """SELECT playersOnline.timestamp
         FROM playersOnline
         LEFT JOIN maintenance
@@ -358,6 +357,44 @@ class Database:
             self.logger.info(f"Inserting into forecast table failed: {e}")
         self.close()
 
+    def insert_into_forecast_horizon(self, data):
+        self.connect()
+        try:
+            one_hour = data[12 - 1]
+            six_hour = data[6*12 - 1]
+            twelve_hour = data[12*12 - 1]
+            twenty_four_hour = data[24*12 - 1]
+            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [one_hour[1], 12, one_hour[2], None])
+            self._connection.commit()
+            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [six_hour[1], 6*12, six_hour[2], None])
+            self._connection.commit()
+            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [twelve_hour[1], 12*12, twelve_hour[2], None])
+            self._connection.commit()
+            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [twenty_four_hour[1], 24*12, twenty_four_hour[2], None])
+            self._connection.commit()
+        except Exception as e:
+            self.logger.info(f"Inserting into forecastHorizon table failed: {e}")
+        self.close()
+
+    def update_forecast_horizon_with_actuals(self):
+        # ignore non-maintenance/bugged data 
+        self.connect()
+        self._cursor.execute("""SELECT forecastHorizon.timestamp,
+        playersGrouped.players
+        FROM forecastHorizon
+        LEFT JOIN playersGrouped
+        ON forecastHorizon.timestamp = playersGrouped.timestamp
+        WHERE playersGrouped.online = 1 AND playersGrouped.trustworthiness >= 0.2;""")
+        results = self._cursor.fetchall()
+        results = [{"timestamp": i[0], "actual_value": i[1]} for i in results]
+        try:
+            # only add once (primary key will catch it)
+            self._cursor.executemany("UPDATE OR IGNORE forecastHorizon SET actual_value = :actual_value WHERE timestamp = :timestamp;", results)
+            self._connection.commit()
+        except Exception as e:
+            self.logger.info(f"Inserting actuals into forecastHorizon failed: {e}")
+        self.close()
+
     def generate_forecast_during_maintenance(self, data):
         # forecast 0's
         now, online, est_time = data[0], data[1], data[2]
@@ -372,3 +409,49 @@ class Database:
         except Exception as e:
             self.logger.info(f"Inserting into maintenanceForecast table failed: {e}")
         self.close()
+
+    def update_reviews_grouped(self):
+        # update review view after done scraping steam
+        # get propotion of positive reviews over entire game history
+        # send sums for downstream average calculation in JS because average over averages because days with less reviews (samples) will affect statistics more strongly
+        # averaging once over the viewing window weighs each review's statistics equally
+        self.connect()
+        self._cursor.execute("DELETE FROM reviewsGrouped;")
+        query = """-- create cumsum of reviews
+        -- recommendation_id 61328679 is botting playtime with online botter
+        WITH added_date AS (
+            SELECT 
+                timestamp_created,
+                voted_up,
+                playtime_last_two_weeks,
+                playtime_forever,
+                playtime_at_review,
+                SUM(voted_up) OVER (ORDER BY timestamp_created) AS total_votes_up,
+                ROW_NUMBER() OVER (ORDER BY timestamp_created) AS total_votes,
+                strftime("%Y", DATETIME(timestamp_created, "unixepoch")) AS year,
+                strftime("%m", DATETIME(timestamp_created, "unixepoch")) AS month,
+                strftime("%d", DATETIME(timestamp_created, "unixepoch")) AS day
+            FROM steamReviews)
+
+        -- create statistics by day
+        SELECT 
+            unixepoch(MIN(year) || "-" || MIN(month) || "-" || MIN(day)) as timestamp,
+            COUNT(timestamp_created) as daily_total_reviews,
+            ROUND(MAX(total_votes_up)*1.0 / MAX(total_votes), 5) as total_proportion_positive, -- max gets EoD statistics; most updated.
+            SUM(playtime_last_two_weeks) as daily_total_playtime_last_two_weeks,
+            SUM(voted_up) as daily_total_votes_up, 
+            SUM(playtime_at_review) as daily_total_playtime_at_review,
+            SUM(playtime_forever) as daily_total_playtime_forever
+        FROM added_date
+        GROUP BY year, month, day;"""
+
+        self._cursor.execute(query)
+        results = self._cursor.fetchall()
+        try:
+            self._cursor.executemany("INSERT OR REPLACE INTO reviewsGrouped VALUES (?,?,?,?,?,?,?);", results)
+            self._connection.commit()
+        except Exception as e:
+            self.logger.info(f"Updating reviewsGrouped failed: {e}")
+        
+        self.close()
+

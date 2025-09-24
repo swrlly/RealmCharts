@@ -22,7 +22,7 @@ export async function updateReviewTime(lastReviewUpdateTime, fetchNew) {
 
 export async function updateReviewChart(reviewChart, lastReviewUpdateTime, reviewTimeId) {
     var now = new Date();
-    if (now.getMinutes() === 4) {
+    if (now.getMinutes() === 5) {
         updateReviewsTimeUpdated(lastReviewUpdateTime[0], true).then(result => {
             lastReviewUpdateTime[0] = result;
             reviewChart.destroy();

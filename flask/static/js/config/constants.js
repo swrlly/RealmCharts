@@ -76,6 +76,3 @@ export const RANGE_SELECTOR_THEME = {
         color: COLORS.zoomLabelColor
     }
 };
-
-Highcharts.setOptions(BASE_CHART_OPTIONS);
-Highcharts.seriesTypes.scatter.prototype.getPointSpline = Highcharts.seriesTypes.spline.prototype.getPointSpline;

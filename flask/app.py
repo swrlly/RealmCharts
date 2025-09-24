@@ -1,47 +1,18 @@
-from flask import Flask, g, request, render_template
+from flask import Flask, g, request, render_template, stream_template
 from werkzeug.middleware.proxy_fix import ProxyFix
 import platform
 import sqlite3
 import time
 import json
+import gzip
 
 css_version = str(int(time.time()))
 app = Flask(__name__)
 
-# API logic
 @app.route("/api/reviews", methods = ["GET"])
 def review_proportions():
-    # get propotion of positive reviews over entire game history
-    # send sums for downstream average calculation in JS because average over averages because days with less reviews (samples) will affect statistics more strongly
-    # averaging once over the viewing window weighs each review's statistics equally
     cur = get_db().cursor()
-    cur.execute("""-- create cumsum of reviews
-    -- recommendation_id 61328679 is botting playtime with online botter
-    WITH added_date AS (
-        SELECT 
-            timestamp_created,
-            voted_up,
-            playtime_last_two_weeks,
-            playtime_forever,
-            playtime_at_review,
-            SUM(voted_up) OVER (ORDER BY timestamp_created) AS total_votes_up,
-            ROW_NUMBER() OVER (ORDER BY timestamp_created) AS total_votes,
-            strftime("%Y", DATETIME(timestamp_created, "unixepoch")) AS year,
-            strftime("%m", DATETIME(timestamp_created, "unixepoch")) AS month,
-            strftime("%d", DATETIME(timestamp_created, "unixepoch")) AS day
-        FROM steamReviews)
-
-    -- create statistics by day
-    SELECT 
-        unixepoch(year || "-" || month || "-" || day) as date,
-        COUNT(timestamp_created) as daily_total_reviews,
-        ROUND(MAX(total_votes_up)*1.0 / MAX(total_votes), 5) as total_proportion_positive, -- max gets EoD statistics; most updated.
-        SUM(playtime_last_two_weeks) as daily_total_playtime_last_two_weeks,
-        SUM(voted_up) as daily_total_votes_up, 
-        SUM(playtime_at_review) as daily_total_playtime_at_review,
-        SUM(playtime_forever) as daily_total_playtime_forever
-    FROM added_date
-    GROUP BY year, month, day;""")
+    cur.execute("SELECT * FROM reviewsGrouped;")
     results = json.dumps(cur.fetchall())
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
@@ -57,7 +28,7 @@ def steam_last_scraped():
 def player_count():
     # get all player counts collected, minute granularity
     cur = get_db().cursor()
-    cur.execute("SELECT * FROM playersCleaned")
+    cur.execute("SELECT timestamp, players FROM playersCleaned;")
     results = json.dumps(cur.fetchall())
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
@@ -68,7 +39,7 @@ def players_online_now():
     cur = get_db().cursor()
     cur.execute("SELECT * FROM playersCleaned WHERE timestamp = (SELECT max(timestamp) FROM playersCleaned);")
     results = json.dumps(cur.fetchone())
-    cur.close()
+    cur.close() 
     return app.response_class(response = results, status = 200, mimetype = "application/json")
 
 @app.route("/api/players-last-week", methods = ["GET"])
@@ -117,28 +88,38 @@ def get_forecast():
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
 
+# compress data requests
+@app.after_request
+def compress(response):
+    if response.is_json == True:
+        data = gzip.compress(response.get_data(), compresslevel = 3)
+        response.set_data(data)
+        response.headers["Content-Length"] = len(data)
+        response.headers["Content-Encoding"]= "gzip"
+    return response
+
+@app.route("/")
+async def index():
+    return render_template("index.html", css_version = css_version)
+
+@app.route("/about")
+async def about():
+    return render_template("about.html", css_version = css_version)
+
+@app.route("/robots.txt")
+async def robots():
+    return app.send_static_file("robots.txt")
+
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, "_database", None)
     if db is not None:
         db.close()
 
-@app.route("/")
-def index():
-    return render_template("index.html", css_version = css_version)
-
-@app.route("/about")
-def about():
-    return render_template("about.html", css_version = css_version)
-
-@app.route("/robots.txt")
-def robots():
-    return app.send_static_file("robots.txt")
-
 def get_db():
     db = getattr(g, "_database", None)
     if db is None:
-        db = g._database = sqlite3.connect("../datacollection/data/players.db")
+        db = g._database = sqlite3.connect("../datacollection/data/players.db", check_same_thread = False)
     return db
 
 app.config["SERVER_NAME"] = "localhost:8001" if platform.system() == "Windows" else "realmcharts.swrlly.com"

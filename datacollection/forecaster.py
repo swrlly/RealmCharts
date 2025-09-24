@@ -14,9 +14,9 @@ class Forecaster:
             "freq_seasonal" : [{"period": 12 * 24, "harmonics": 4}, {"period": 12 * 24 * 7, "harmonics": 2}],
             "level" : "rtrend",
             "stochastic_level": True,
-            "autoregressive": 3
+            "autoregressive": 4
         }
-        self.forecast_length = 12 * 12
+        self.forecast_length = 24 * 12
 
     def prepare_data(self, data, update_df = True):
         # ignore maintenance + buggy data.
@@ -30,7 +30,7 @@ class Forecaster:
         self.logger.info("Training forecasting model...")
         model = UnobservedComponents(endog = self.df["players"], initialization = "diffuse", **self.params)
         self.result = model.fit(method = "powell", optim_complex_step = True)
-        plot_and_save(self.result)
+        plot_and_save(self.result, self.df)
         self.logger.info("Finished training model.")
 
     def get_forecast(self):

@@ -59,7 +59,8 @@ class Tasks:
         self.forecaster.prepare_data(data)
         self.forecaster.train_model()
         forecast = self.forecaster.get_forecast()
-        self.db_connection.insert_into_forecast(forecast)
+        self.db_connection.insert_into_forecast_horizon(forecast)
+        self.db_connection.insert_into_forecast(forecast[:12*12])
 
     def get_new_forecast_once(self):
         # get new forecast given one new data point
@@ -71,7 +72,12 @@ class Tasks:
         # allow forecaster to interpolate through maintenance
         data = self.db_connection.select_grouped_data()
         forecast = self.forecaster.update_forecast_once(data)
-        self.db_connection.insert_into_forecast(forecast)
+        self.db_connection.insert_into_forecast_horizon(forecast)
+        self.db_connection.insert_into_forecast(forecast[:12*12])
+
+    def update_forecast_horizon_with_actuals(self):
+        # update forecastHorizon with actuals
+        self.db_connection.update_forecast_horizon_with_actuals()
 
     def group_cleaned_player_data(self):
         # transform data to be ready for forecasting
@@ -147,4 +153,19 @@ class Tasks:
                     self.db_connection.insert_new_playercount(item["playersOnline"])
             elif "steamReviews" in item:
                 self.db_connection.insert_reviews(item["steamReviews"])
+                self.db_connection.update_reviews_grouped()
             self.data_to_insert.task_done()
+
+    def five_minute_tasks(self):
+        self.group_cleaned_player_data()
+        self.get_new_forecast_once()
+        self.update_forecast_horizon_with_actuals()
+
+    def one_minute_tasks(self, now):
+        # queue maintenance status first
+        self.get_maintenance_status(now)
+        self.get_player_count(now)
+        self.insert_into_database()
+        # clean player data after inserting. restrict last 24 hours for speedier query
+        # needs to be fast since frontend depends on playersCleaned
+        self.clean_playercount_data(window = now - 24 * 60 * 60)

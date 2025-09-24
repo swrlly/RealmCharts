@@ -3,8 +3,12 @@ import { createReviewsChart } from "./charts/reviews.js";
 import { updateCards, updatePlayerCountTimeUpdated } from "./automation/dataService.js";
 import { updatePlayerChart, updateReviewChart, updateReviewTime } from "./automation/timeouts.js"
 import { positionTooltips } from "./ui/skeleton.js";
+import { BASE_CHART_OPTIONS } from "./config/constants.js";
 
 async function main() {
+
+    Highcharts.setOptions(BASE_CHART_OPTIONS);
+    Highcharts.seriesTypes.scatter.prototype.getPointSpline = Highcharts.seriesTypes.spline.prototype.getPointSpline;
 
     // first loading in, load biggest api calls
     var playerChartPromise = createPlayerCountChart();
