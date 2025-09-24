@@ -36,7 +36,7 @@ class Tasks:
         self.get_player_count(time)
         self.get_maintenance_status(time)
         self.insert_into_database()
-        # don't queue since data is needed downstream
+        # insert current playercount now since fill_missing_times needs one time point now
         n_missing = self.db_connection.fill_missing_times()
         self.logger.info(f"Created {n_missing} missing rows between time points with null.")
         # fill maintenance table w missing player times
@@ -44,6 +44,7 @@ class Tasks:
         self.db_connection.copy_into_players_cleaned()
         self.clean_playercount_data(window = None)
         self.group_cleaned_player_data()
+        self.db_connection.update_reviews_grouped()
         self.train_forecaster()
 
     def train_forecaster(self):

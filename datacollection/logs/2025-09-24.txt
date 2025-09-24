@@ -25,203 +25,82 @@
 [2025-09-24] 09:12:34 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
 [2025-09-24] 09:12:35 -  INFO   - Main - Training forecasting model...
 [2025-09-24] 09:12:59 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:00:21 -  INFO   - Main - Started program.
-[2025-09-24] 13:00:23 -  INFO   - Main - Inserted 644 rows after 1758705360
-[2025-09-24] 13:00:23 -  INFO   - Main - Created 644 missing rows between time points with null.
-[2025-09-24] 13:00:23 -  INFO   - Main - Inserted 644 rows into maintenance.
-[2025-09-24] 13:00:23 -  INFO   - Main - Copied 645 rows from playersOnline into playersCleaned
-[2025-09-24] 13:00:23 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:00:33 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:00:33 -  INFO   - Main - Inserting into forecastHorizon table failed: table forecastHorizon has 4 columns but 6 values were supplied
-[2025-09-24] 13:01:17 -  INFO   - Main - Started program.
-[2025-09-24] 13:01:17 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:01:17 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:01:17 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:01:18 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:02:47 -  INFO   - Main - Started program.
-[2025-09-24] 13:02:48 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:02:48 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:02:48 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:02:48 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:02:57 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:02:57 -  INFO   - Main - Inserting into forecastHorizon table failed: table forecastHorizon has 4 columns but 6 values were supplied
-[2025-09-24] 13:04:45 -  INFO   - Main - Started program.
-[2025-09-24] 13:04:46 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:04:46 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:04:46 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:04:46 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:04:55 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:19:43 -  INFO   - Main - Started program.
-[2025-09-24] 13:19:44 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:19:44 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:19:44 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:19:44 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:19:51 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:20:01 -  INFO   - Main - Inserting actuals into forecastHorizon failed: name 'rows' is not defined
-[2025-09-24] 13:20:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:20:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:20:08 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:21:37 -  INFO   - Main - Started program.
-[2025-09-24] 13:21:38 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:21:38 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:21:38 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:21:38 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:21:45 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:25:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:25:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:25:08 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:27:45 -  INFO   - Main - Started program.
-[2025-09-24] 13:27:45 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:27:45 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:27:45 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:27:46 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:27:52 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:30:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:30:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:30:08 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:35:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:35:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:35:08 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:40:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:40:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:40:08 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:42:08 -  INFO   - Main - Started program.
-[2025-09-24] 13:42:09 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:42:09 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:42:09 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:42:10 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:42:44 -  INFO   - Main - Started program.
-[2025-09-24] 13:42:45 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:42:45 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:42:45 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:42:45 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:42:55 -  INFO   - Main - Started program.
-[2025-09-24] 13:42:56 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:42:56 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:42:56 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:42:57 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:43:11 -  INFO   - Main - Started program.
-[2025-09-24] 13:43:12 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:43:12 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:43:12 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:43:12 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:43:19 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:44:03 -  INFO   - Main - Started program.
-[2025-09-24] 13:44:04 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:44:04 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:44:04 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:44:05 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:44:12 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:45:02 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:45:13 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:46:12 -  INFO   - Main - Started program.
-[2025-09-24] 13:46:13 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:46:13 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:46:13 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:46:13 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:46:41 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:47:46 -  INFO   - Main - Started program.
-[2025-09-24] 13:47:47 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:47:47 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:47:47 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:47:47 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:48:12 -  INFO   - Main - Started program.
-[2025-09-24] 13:48:13 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:48:13 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:48:13 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:48:14 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:49:15 -  INFO   - Main - Started program.
-[2025-09-24] 13:49:16 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:49:16 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:49:16 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:49:17 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:49:38 -  INFO   - Main - Started program.
-[2025-09-24] 13:49:38 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:49:38 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:49:38 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:49:39 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:49:48 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:50:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:50:10 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:50:12 -  INFO   - Main - Started program.
-[2025-09-24] 13:50:13 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:50:13 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:50:13 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:50:14 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:50:22 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:51:08 -  INFO   - Main - Started program.
-[2025-09-24] 13:51:09 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:51:09 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:51:09 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:51:09 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:51:18 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:52:45 -  INFO   - Main - Started program.
-[2025-09-24] 13:52:46 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:52:46 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:52:46 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:52:47 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:53:19 -  INFO   - Main - Started program.
-[2025-09-24] 13:53:20 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:53:20 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:53:20 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:53:21 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:53:29 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:55:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:55:10 -  INFO   - Main - Finished training model.
-[2025-09-24] 13:58:39 -  INFO   - Main - Started program.
-[2025-09-24] 13:58:40 -  INFO   - Main - Inserted 3 rows after 1758747300
-[2025-09-24] 13:58:40 -  INFO   - Main - Created 3 missing rows between time points with null.
-[2025-09-24] 13:58:40 -  INFO   - Main - Inserted 3 rows into maintenance.
-[2025-09-24] 13:58:41 -  INFO   - Main - Copied 4 rows from playersOnline into playersCleaned
-[2025-09-24] 13:58:41 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:59:19 -  INFO   - Main - Started program.
-[2025-09-24] 13:59:20 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 13:59:20 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 13:59:20 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 13:59:21 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 13:59:30 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:00:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:00:10 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:00:51 -  INFO   - Main - Started program.
-[2025-09-24] 14:00:52 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 14:00:52 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 14:00:52 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 14:00:52 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:01:00 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:05:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:05:09 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:06:01 -  INFO   - Main - Started program.
-[2025-09-24] 14:06:02 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 14:06:02 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 14:06:02 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 14:06:02 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:06:17 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:10:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:10:11 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:14:09 -  INFO   - Main - Started program.
-[2025-09-24] 14:14:10 -  INFO   - Main - Created 0 missing rows between time points with null.
-[2025-09-24] 14:14:10 -  INFO   - Main - Inserted 0 rows into maintenance.
-[2025-09-24] 14:14:10 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
-[2025-09-24] 14:14:11 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:14:22 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:15:01 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:15:15 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:54:17 -  INFO   - Main - Started program.
-[2025-09-24] 14:54:18 -  INFO   - Main - Inserted 38 rows after 1758748560
-[2025-09-24] 14:54:18 -  INFO   - Main - Created 38 missing rows between time points with null.
-[2025-09-24] 14:54:18 -  INFO   - Main - Inserted 38 rows into maintenance.
-[2025-09-24] 14:54:18 -  INFO   - Main - Copied 39 rows from playersOnline into playersCleaned
-[2025-09-24] 14:54:19 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 14:54:28 -  INFO   - Main - Finished training model.
-[2025-09-24] 14:55:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
-[2025-09-24] 14:55:00 -  INFO   - Main - Total reviews to scrape: 46934
-[2025-09-24] 14:57:04 -  INFO   - Main - Finished scraping 46928 reviews.
-[2025-09-24] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
-[2025-09-24] 15:00:00 -  INFO   - Main - Total reviews to scrape: 46934
-[2025-09-24] 15:07:22 -  INFO   - Main - Started program.
-[2025-09-24] 15:07:23 -  INFO   - Main - Inserted 6 rows after 1758751260
-[2025-09-24] 15:07:23 -  INFO   - Main - Created 6 missing rows between time points with null.
-[2025-09-24] 15:07:23 -  INFO   - Main - Inserted 6 rows into maintenance.
-[2025-09-24] 15:07:23 -  INFO   - Main - Copied 7 rows from playersOnline into playersCleaned
-[2025-09-24] 15:07:23 -  INFO   - Main - Training forecasting model...
-[2025-09-24] 15:07:34 -  INFO   - Main - Finished training model.
+[2025-09-24] 10:00:02 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 10:00:02 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 10:02:20 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 11:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 11:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 11:02:23 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 12:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 12:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 12:00:02 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 12:00:02 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 12:00:42 -  INFO   - Main - Finished training model.
+[2025-09-24] 12:02:51 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 13:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 13:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 13:02:39 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 14:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 14:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 14:02:31 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 15:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 15:00:02 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 15:02:37 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 16:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 16:00:02 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 16:02:36 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 17:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 17:00:01 -  INFO   - Main - Total reviews to scrape: 46932
+[2025-09-24] 17:02:37 -  INFO   - Main - Finished scraping 46926 reviews.
+[2025-09-24] 18:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 18:00:01 -  INFO   - Main - Total reviews to scrape: 46932
+[2025-09-24] 18:00:03 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 18:00:03 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 18:00:39 -  INFO   - Main - Finished training model.
+[2025-09-24] 18:02:56 -  INFO   - Main - Finished scraping 46926 reviews.
+[2025-09-24] 19:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 19:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 19:02:33 -  INFO   - Main - Finished scraping 46926 reviews.
+[2025-09-24] 20:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 20:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 20:03:21 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 21:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 21:00:01 -  INFO   - Main - Total reviews to scrape: 46934
+[2025-09-24] 21:01:20 -  INFO   - Main - Finished scraping 16997 reviews.
+[2025-09-24] 22:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 22:00:01 -  INFO   - Main - Total reviews to scrape: 46934
+[2025-09-24] 22:02:32 -  INFO   - Main - Finished scraping 46928 reviews.
+[2025-09-24] 22:31:30 -  INFO   - Main - Started program.
+[2025-09-24] 22:31:31 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 22:31:31 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 22:31:31 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 22:31:33 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 22:31:40 -  INFO   - Main - Started program.
+[2025-09-24] 22:31:41 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 22:31:41 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 22:31:41 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 22:31:42 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 22:32:16 -  INFO   - Main - Finished training model.
+[2025-09-24] 22:37:05 -  INFO   - Main - Started program.
+[2025-09-24] 22:37:06 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 22:37:06 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 22:37:06 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 22:37:07 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 22:37:48 -  INFO   - Main - Started program.
+[2025-09-24] 22:37:49 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 22:37:49 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 22:37:50 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 22:37:51 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 22:38:25 -  INFO   - Main - Finished training model.
+[2025-09-24] 22:40:36 -  INFO   - Main - Started program.
+[2025-09-24] 22:40:37 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 22:40:37 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 22:40:37 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 22:40:38 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 22:41:12 -  INFO   - Main - Finished training model.
+[2025-09-24] 22:48:02 -  INFO   - Main - Started program.
+[2025-09-24] 22:48:03 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 22:48:03 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 22:48:03 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 22:48:04 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 22:48:37 -  INFO   - Main - Finished training model.

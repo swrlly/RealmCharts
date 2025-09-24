@@ -364,13 +364,13 @@ class Database:
             six_hour = data[6*12 - 1]
             twelve_hour = data[12*12 - 1]
             twenty_four_hour = data[24*12 - 1]
-            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [one_hour[1], 12, one_hour[2], None])
+            self._cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [one_hour[1], 12, one_hour[2], None])
             self._connection.commit()
-            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [six_hour[1], 6*12, six_hour[2], None])
+            self._cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [six_hour[1], 6*12, six_hour[2], None])
             self._connection.commit()
-            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [twelve_hour[1], 12*12, twelve_hour[2], None])
+            self._cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [twelve_hour[1], 12*12, twelve_hour[2], None])
             self._connection.commit()
-            self._cursor.execute("INSERT INTO forecastHorizon VALUES (?,?,?,?);", [twenty_four_hour[1], 24*12, twenty_four_hour[2], None])
+            self._cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [twenty_four_hour[1], 24*12, twenty_four_hour[2], None])
             self._connection.commit()
         except Exception as e:
             self.logger.info(f"Inserting into forecastHorizon table failed: {e}")

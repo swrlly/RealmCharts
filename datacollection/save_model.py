@@ -33,10 +33,11 @@ def plot_and_save(res, df):
     now = time.gmtime(time.time())
     name = str(datetime.datetime(*now[:4]))[:-6]
     dir = f"data/models/{name}"
-    done, ctr = False, 1
+    done, ctr = False, 0
     while not done:
         try: 
-            os.makedirs(dir + f" {ctr}")
+            if ctr == 0: os.makedirs(dir)
+            else: os.makedirs(dir + f" {ctr}")
             done = True
         except: 
             ctr += 1
@@ -54,7 +55,7 @@ def plot_and_save(res, df):
     axs[1, 1].set_title("Weekly seasonality")
     start = df["timestamp"].max() + 300
     idx = [
-        pd.to_datetime(i, unit = "s", utc = True).tz_convert("US/Pacific").day_name()[:3] + f" {pd.to_datetime(i, unit = "s", utc = True).tz_convert("US/Pacific").hour}" 
+        pd.to_datetime(i, unit = "s", utc = True).tz_convert("US/Pacific").day_name()[:3] + f" {pd.to_datetime(i, unit = 's', utc = True).tz_convert('US/Pacific').hour}" 
         for i in range(start, start + 300 * 14 * 12 * 24, 300 * 12 * 24)
     ]
     fore = res.get_forecast(14 * 12 * 24)
