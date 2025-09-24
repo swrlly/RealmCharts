@@ -85,12 +85,12 @@ export async function createPlayerCountChart() {
             enabled: true,
             buttons: [
                 {
-                    type: "day",
-                    count: 2,
+                    type: "minute",
+                    count: 60 * 48 + 60 * 12 + 30,
                     text: "48h"
                 }, {
                     type: "minute",
-                    count: 10110,
+                    count: 60 * 24 * 7 + 60 * 12 + 30,
                     text: "7d"
                 }, {
                     type: "month",
@@ -218,7 +218,8 @@ export async function createPlayerCountChart() {
             hideDelay: 0,
             style: {
                 color: COLORS.textColor,
-            }
+            },
+            followTouchMove: false,
         }
     });
     

@@ -105,7 +105,8 @@ export async function createReviewsChart() {
             gridLineColor: COLORS.yAxisLineColor,
             labels: {
                 style: {
-                    color: COLORS.axisLabelColor
+                    color: COLORS.axisLabelColor,
+                    fontSize: "0.6rem"
                 },
                 format: "{value}%"
             },
@@ -118,7 +119,8 @@ export async function createReviewsChart() {
             gridLineColor: COLORS.yAxisLineColor,
             labels: {
                 style: {
-                    color: COLORS.axisLabelColor
+                    color: COLORS.axisLabelColor,
+                    fontSize: "0.6rem"
                 },
                 format: "{value}"
             },
@@ -241,7 +243,8 @@ export async function createReviewsChart() {
             hideDelay: 0,
             style: {
                 color: COLORS.textColor,
-            }
+            },
+            followTouchMove: false
         }
     });
 

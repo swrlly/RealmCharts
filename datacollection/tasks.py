@@ -1,4 +1,5 @@
 import re
+import gc
 import logging
 import requests
 from queue import Queue
@@ -29,7 +30,7 @@ class Tasks:
         self.get_player_count(time)
         self.get_maintenance_status(time)
         self.insert_into_database()
-        # call when program starts, don't queue since data is needed downstream
+        # don't queue since data is needed downstream
         n_missing = self.db_connection.fill_missing_times()
         self.logger.info(f"Created {n_missing} missing rows between time points with null.")
         # fill maintenance table w missing player times
@@ -42,7 +43,13 @@ class Tasks:
     def train_forecaster(self):
         # train forecaster and get first forecast
         data = self.db_connection.select_grouped_data()
-        self.forecaster = Forecaster()
+        # memory management
+        if hasattr(self, "forecaster"):
+            if hasattr(self.forecaster, "result"):
+                del self.forecaster.result
+            del self.forecaster
+        gc.collect()
+        self.forecaster = Forecaster(self.logger)
         self.forecaster.prepare_data(data)
         self.forecaster.train_model()
         forecast = self.forecaster.get_forecast()

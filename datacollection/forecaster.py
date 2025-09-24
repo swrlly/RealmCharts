@@ -1,11 +1,12 @@
+import gc
 import pandas as pd
 from statsmodels.tsa.statespace.structural import UnobservedComponents
 from save_model import plot_and_save
 
 class Forecaster:
 
-    def __init__(self):
-        self.clean_data = None
+    def __init__(self, logger):
+        self.logger = logger
         self.df = None
         self.result = None
         self.params  = {
@@ -25,9 +26,11 @@ class Forecaster:
         else: return df
 
     def train_model(self):
+        self.logger.info("Training forecasting model...")
         model = UnobservedComponents(endog = self.df["players"], initialization = "diffuse", **self.params)
         self.result = model.fit(method = "powell", optim_complex_step = True)
         plot_and_save(self.result)
+        self.logger.info("Finished training model.")
 
     def get_forecast(self):
         # get 12 hour forecast
@@ -49,13 +52,18 @@ class Forecaster:
         new_df = self.prepare_data(new_data, update_df = False)
         merged = pd.merge(new_df, self.df, how = "left", on = "timestamp", suffixes = ("", "_y"), indicator = True)
         new_row = merged[merged["_merge"] == "left_only"][["timestamp", "players", "online", "trustworthiness"]]
+        del self.df
+        gc.collect()
         self.df = new_df
         return new_row
 
     def update_forecast_once(self, new_df):
         # update forecast with one new unseen data point 5 minutes after our trained data
         new_row = self.find_new_data(new_df)
-        self.result = self.result.append(new_row["players"])
+        new_result = self.result.append(new_row["players"])
+        del self.result
+        gc.collect()
+        self.result = new_result
         return self.get_forecast()
 
     #def update_forecast_when_maintenance(self, new_df):

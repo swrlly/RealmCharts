@@ -38,6 +38,7 @@ def main():
             tasks.group_cleaned_player_data()
             tasks.get_new_forecast_once()
             if now % (6 * 60 * 60) == 0:
+                logger.info("Training forecasting model...")
                 tasks.train_forecaster()
         time.sleep(60 - (time.monotonic() - clock) % 60)
 

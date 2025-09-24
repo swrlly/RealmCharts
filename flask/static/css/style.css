@@ -558,7 +558,7 @@ don't put background wrapper children in here
         font-size: calc(0.5rem + 1.039vw);
     }
     .navbar-text-icon {
-        font-size: calc(1.948vw + 0.9rem);
+        font-size: calc(1.948vw + 0.8rem);
         width: calc(1.948vw + 0.9rem);
     }
     #players-online {
@@ -601,6 +601,9 @@ don't put background wrapper children in here
     .chart-skeleton {
         min-height: 400px;
     }
+    .player-forecast-info, .review-callout-info {
+        font-size: calc(0.4rem + 0.831vw);
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -609,6 +612,12 @@ don't put background wrapper children in here
     }
     .chart-skeleton {
         aspect-ratio: 1 / 1;
+    }
+    .navbar-text {
+        column-gap: 0.5rem;
+    }
+    .server-up-emoji, .not-sure-yet {
+        width: 35px;
     }
 }
 
