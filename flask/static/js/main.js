@@ -6,14 +6,17 @@ import { positionTooltips } from "./ui/skeleton.js";
 
 async function main() {
 
-    // first loading in, update players
-    var [chart, data] = await createPlayerCountChart();
+    // first loading in, load biggest api calls
+    var playerChartPromise = createPlayerCountChart();
+    var reviewChartPromise = createReviewsChart();
+    var [[chart, data], reviewChart] = await Promise.all([
+        playerChartPromise,
+        reviewChartPromise
+    ]);
+    // smaller jobs
+    await updateCards(data);
     updatePlayerCountTimeUpdated(data);
     positionTooltips();
-    await updateCards(data);
-
-    // update reviews
-    var reviewChart = await createReviewsChart();
 
     // live update logic
     // array is pass by ref...

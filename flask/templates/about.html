@@ -46,7 +46,8 @@
 
     <ul class="ul-normal">
         <li><a class="about-a" href="https://www.python.org/downloads/">Python</a>, <a class="about-a" href="https://sqlite.org/index.html">SQLite</a> for data collection and the database</li>
-        <li><a class="about-a" href="https://github.com/pallets/flask/">Flask</a> and <a class="about-a" href="https://nginx.org/en/">nginx</a> for the webserver</li>
+        <li><a class="about-a" href="https://github.com/pallets/flask/">Flask</a> and <a class="about-a" href="https://gunicorn.org/">Gunicorn</a> for the webserver</li>
+        <li><a class="about-a" href="https://nginx.org/en/">nginx</a> and <a class="about-a" href="https://cloudflare.com">Cloudflare</a> for reverse proxy/caching</li>
         <li><a class="about-a" href="https://www.highcharts.com/">HighCharts</a> for interactive charting</li>
         <li><a class="about-a" href="https://www.statsmodels.org/stable/index.html">statsmodels</a> for forecasting</li>
         <li>JS/CSS for state management (no libraries!)</li>
@@ -59,8 +60,11 @@
         <li>RotMG pixel art for icons</li>
         <li><a class="about-a" href="https://icomoon.io/">Icomoon</a> for GitHub icon</li>
     </ul>
-
     <h1>Changelog</h1>
+    <h3>9/23/2025</h3>
+    <ul>
+        <li>Optimized page loading speed using async workers on Gunicorn and batched JS async tasks in <code>Promise.all</code></li>
+    </ul>
     <h3>9/23/2025</h3>
     <ul>
         <li>Forecast now predicts 0 until DECA's estimated end of maintenance time</li>

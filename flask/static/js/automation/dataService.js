@@ -4,7 +4,7 @@ import { API_ENDPOINTS } from "../config/constants.js";
 
 // data fetching function
 export async function getData(link) {
-    return await fetch(link).then(response => response.json());
+    return Promise.resolve(fetch(link).then(response => response.json()));
 }
 
 // time utility function
@@ -47,6 +47,13 @@ export async function updateReviewsTimeUpdated(time, fetchNew) {
 
 // update playercount dashboard cards with latest data
 export async function updateCards(data) {
+
+    var playersLastWeekPromise = getData(API_ENDPOINTS.playersLastWeek);
+    var serverStatusPromise = getData(API_ENDPOINTS.serverUp);
+    var [playersLastWeek, serverStatus] = await Promise.all([
+        playersLastWeekPromise,
+        serverStatusPromise
+    ]);
     // update players now
     let content = document.getElementById("players-online");
     let num = data[data.length - 1][1];
@@ -66,7 +73,7 @@ export async function updateCards(data) {
     
     // update weekly % change
     content = document.getElementById("players-weekly-change");
-    var playersLastWeek = await getData(API_ENDPOINTS.playersLastWeek);
+
     let percent = parseFloat(((data[data.length-1][1] / playersLastWeek[1]) * 100  - 100).toFixed(2));
     // toFixed converts to string
     if (isFinite(percent) && !isNaN(percent) && percent !== -100) {
@@ -86,7 +93,6 @@ export async function updateCards(data) {
 
     // update server online status
     content = document.getElementById("server-status");
-    var serverStatus = await getData(API_ENDPOINTS.serverUp);
     if (serverStatus["online"] === 1){
         content.innerHTML = '<img class="server-up-emoji" style="animation: growFromCenter 0.4s ease-out forwards;" src="/static/images/pogfish.png"></img>';
     }
@@ -103,8 +109,9 @@ export async function updateCards(data) {
 
 // update cards and chart data every minute
 export async function updatePlayersJob(chart, data) {
-
-    var newData = await getData(API_ENDPOINTS.latestPlayerCount);
+    var latestPlayersPromise = getData(API_ENDPOINTS.latestPlayerCount);
+    var updateCardsPromise = updateCards(data);
+    var [newData, _] = Promise.all([latestPlayersPromise, updateCardsPromise]);
     newData[0] *= 1000;
     // highcharts adds newData to original data. no need to do data.push(newData);
     chart.series[0].addPoint(newData);
@@ -132,6 +139,5 @@ export async function updatePlayersJob(chart, data) {
         }
     }
 
-    await updateCards(data);
     return Promise.resolve([chart, data]);
 }

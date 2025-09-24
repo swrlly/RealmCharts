@@ -3,8 +3,16 @@ import { getData } from "../automation/dataService.js";
 import { removePlayerCountSkeleton } from "../ui/skeleton.js";
 
 export async function createPlayerCountChart() {
-    var data = await getData(API_ENDPOINTS.playerCount);
-    var forecast = await getData(API_ENDPOINTS.forecast);
+    //var data = await getData(API_ENDPOINTS.playerCount);
+    //var forecast = await getData(API_ENDPOINTS.forecast);
+
+    var dataPromise = getData(API_ENDPOINTS.playerCount);
+    var forecastPromise = getData(API_ENDPOINTS.forecast);
+
+    var [data, forecast] = await Promise.all([
+        dataPromise,
+        forecastPromise
+    ]);
 
     // convert timestamps to milliseconds
     for (let index = 0; index < data.length; index++) {
@@ -40,9 +48,6 @@ export async function createPlayerCountChart() {
                 }
             }];
     }
-        
-    Highcharts.setOptions(BASE_CHART_OPTIONS);
-    Highcharts.seriesTypes.scatter.prototype.getPointSpline = Highcharts.seriesTypes.spline.prototype.getPointSpline;
     
     var chart = Highcharts.stockChart("playercount-chart", {
         chart: {

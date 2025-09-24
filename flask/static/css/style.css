@@ -22,8 +22,8 @@ html {
     --tooltip-text-color: #202020;
     --navbar-text-background-color: #1a1a1a;
 
-    --blue: #517affff;
-    --light-blue: rgb(118, 150, 255);
+    --blue: rgb(107, 142, 255);
+    --light-blue: rgb(136, 164, 255);
     --code-background: #212121;
 
     --card-border-radius: 25px;
