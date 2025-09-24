@@ -111,7 +111,7 @@ export async function updateCards(data) {
 export async function updatePlayersJob(chart, data) {
     var latestPlayersPromise = getData(API_ENDPOINTS.latestPlayerCount);
     var updateCardsPromise = updateCards(data);
-    var [newData, _] = Promise.all([latestPlayersPromise, updateCardsPromise]);
+    var [newData, _] = await Promise.all([latestPlayersPromise, updateCardsPromise]);
     newData[0] *= 1000;
     // highcharts adds newData to original data. no need to do data.push(newData);
     chart.series[0].addPoint(newData);

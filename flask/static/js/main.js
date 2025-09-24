@@ -9,10 +9,7 @@ async function main() {
     // first loading in, load biggest api calls
     var playerChartPromise = createPlayerCountChart();
     var reviewChartPromise = createReviewsChart();
-    var [[chart, data], reviewChart] = await Promise.all([
-        playerChartPromise,
-        reviewChartPromise
-    ]);
+    var [[chart, data], reviewChart] = await Promise.all([playerChartPromise, reviewChartPromise]);
     // smaller jobs
     await updateCards(data);
     updatePlayerCountTimeUpdated(data);

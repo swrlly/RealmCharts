@@ -9,10 +9,7 @@ export async function createPlayerCountChart() {
     var dataPromise = getData(API_ENDPOINTS.playerCount);
     var forecastPromise = getData(API_ENDPOINTS.forecast);
 
-    var [data, forecast] = await Promise.all([
-        dataPromise,
-        forecastPromise
-    ]);
+    var [data, forecast] = await Promise.all([dataPromise, forecastPromise]);
 
     // convert timestamps to milliseconds
     for (let index = 0; index < data.length; index++) {
