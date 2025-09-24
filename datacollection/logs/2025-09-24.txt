@@ -1,0 +1,27 @@
+[2025-09-24] 05:34:12 -  INFO   - Main - Started program.
+[2025-09-24] 05:34:13 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 05:34:13 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 05:34:13 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 05:34:14 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 05:34:36 -  INFO   - Main - Finished training model.
+[2025-09-24] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 06:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 06:00:02 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 06:00:02 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 06:00:43 -  INFO   - Main - Finished training model.
+[2025-09-24] 06:02:42 -  INFO   - Main - Finished scraping 46926 reviews.
+[2025-09-24] 07:00:01 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 07:00:01 -  INFO   - Main - Total reviews to scrape: 46932
+[2025-09-24] 07:02:21 -  INFO   - Main - Finished scraping 46926 reviews.
+[2025-09-24] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 08:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 08:02:11 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-24] 09:00:01 -  INFO   - Main - Total reviews to scrape: 46933
+[2025-09-24] 09:02:32 -  INFO   - Main - Finished scraping 46927 reviews.
+[2025-09-24] 09:12:32 -  INFO   - Main - Started program.
+[2025-09-24] 09:12:34 -  INFO   - Main - Created 0 missing rows between time points with null.
+[2025-09-24] 09:12:34 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-24] 09:12:34 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-24] 09:12:35 -  INFO   - Main - Training forecasting model...
+[2025-09-24] 09:12:59 -  INFO   - Main - Finished training model.
