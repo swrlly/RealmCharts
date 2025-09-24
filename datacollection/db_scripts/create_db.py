@@ -55,6 +55,18 @@ create_forecast = """CREATE TABLE IF NOT EXISTS forecast (
     three_sd_upper REAL
 );"""
 
+create_maintenance_forecast = """CREATE TABLE IF NOT EXISTS maintenanceForecast (
+    idx INTEGER,
+    timestamp INTEGER PRIMARY KEY NOT NULL,
+    forecast_mean REAL,
+    one_sd_lower REAL,
+    one_sd_upper REAL,
+    two_sd_lower REAL,
+    two_sd_upper REAL,
+    three_sd_lower REAL,
+    three_sd_upper REAL
+);"""
+
 try:
     with sqlite3.connect(database) as conn:
         cursor = conn.cursor()
@@ -69,6 +81,8 @@ try:
         cursor.execute(create_steam_reviews)
         conn.commit()
         cursor.execute(create_forecast)
+        conn.commit()
+        cursor.execute(create_maintenance_forecast)
         conn.commit()
         cursor.close()
 

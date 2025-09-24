@@ -99,9 +99,21 @@ def is_game_up():
 
 @app.route("/api/forecast", methods = ["GET"])
 def get_forecast():
-    cur = get_db().cursor()
-    cur.execute("SELECT * FROM forecast where timestamp >= unixepoch() - 300;")
-    results = json.dumps(cur.fetchall())
+    cur = get_db().cursor()    
+    cur.execute("SELECT online FROM maintenance WHERE timestamp = (SELECT max(timestamp) FROM maintenance);")
+    results = cur.fetchone()
+    if results[0] == 1:
+        cur.execute("SELECT trustworthiness FROM playersGrouped WHERE timestamp = (SELECT max(timestamp) FROM playersGrouped);")
+        results = cur.fetchone()
+        # if bugged data, do not display forecast
+        if results[0] < 0.2:
+            results = json.dumps([])
+        else:
+            cur.execute("SELECT * FROM forecast where timestamp >= unixepoch() - 300;")
+            results = json.dumps(cur.fetchall())
+    else:
+        cur.execute("SELECT * FROM maintenanceForecast where timestamp >= unixepoch() - 300;")
+        results = json.dumps(cur.fetchall())
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
 

@@ -16,7 +16,7 @@ def main():
     links = open("link", "r").read().strip().split("\n")
     tasks = Tasks(links, db_link, logger)
     tasks.on_startup(int(time.time()))
-    time.sleep(60 - time.time() % 60)
+    time.sleep(60.1 - time.time() % 60)
     clock = time.monotonic()
     current_hour = dt.datetime.now().hour
     while True:

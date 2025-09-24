@@ -1,12 +1,16 @@
 import re
+import os
 import gc
 import logging
 import requests
+from dotenv import load_dotenv
+
 from queue import Queue
 from database import Database
 from forecaster import Forecaster
 from get_steam_reviews import SteamReviews
 
+load_dotenv()
 
 class Tasks:
 
@@ -25,6 +29,8 @@ class Tasks:
         self.review_getter = SteamReviews(logger)
         self.forecaster = None
         self.data_to_insert = Queue()
+        self.simulate_maintenance = os.getenv("SIMULATE_MAINTENANCE", False).lower() == "true"
+        self.simulate_buggy_data = os.getenv("SIMLUATE_BUGGY_DATA", False).lower() == "true"
 
     def on_startup(self, time):
         self.get_player_count(time)
@@ -58,11 +64,11 @@ class Tasks:
     def get_new_forecast_once(self):
         # get new forecast given one new data point
         # first, check if maintenance
-        maintenance_time = self.db_connection.select_maintenance()
+        maintenance_time = self.db_connection.get_maintenance_now()
         if maintenance_time[1] == 0:
-            # todo
-            return
+            self.db_connection.generate_forecast_during_maintenance(maintenance_time)
 
+        # allow forecaster to interpolate through maintenance
         data = self.db_connection.select_grouped_data()
         forecast = self.forecaster.update_forecast_once(data)
         self.db_connection.insert_into_forecast(forecast)
@@ -79,6 +85,10 @@ class Tasks:
     def get_maintenance_status(self, time) -> None:
         # assumption: <Maintenance> tag only appears during maintenance, and not before when people are asked to log out
         # assumption is true, verified with 9/17 maintenance
+        if self.simulate_maintenance:
+            self.data_to_insert.put({"maintenance": [time, 0, time + 60 * 60 * 2]})
+            return
+
         content = ""
         online = None
         estimated_time = None
@@ -100,6 +110,10 @@ class Tasks:
 
     def get_player_count(self, time) -> None:
         # get player count at one time point
+        if self.simulate_buggy_data:
+            self.data_to_insert.put({"playersOnline": [time, 1635]})
+            return
+
         count = None
         try:
             count = int(requests.get(self.player_link).content)
@@ -115,7 +129,6 @@ class Tasks:
     def insert_into_database(self):
         # batch job to update all data at one time point.
         # call this after you have collected all data
-
         is_maintenance = False
 
         while not self.data_to_insert.empty():

@@ -38,7 +38,7 @@
 
     <p>Hello world! This is a hobby project for one of my favorite online bullet hell multiplayer games <a class="about-a" href="https://www.realmofthemadgod.com/">RotMG</a>. I've always wanted to learn more about the intersection of web development and data analysis, and this project was the perfect combination of the two. All the code is open-sourced <a class="about-a" href="https://github.com/swrlly/RealmCharts">on GitHub.</a></p>
 
-    <p>RealmCharts provides a live dashboard for insights on RotMG player count and Steam review analysis. Enjoy!</p>
+    <p>RealmCharts provides a live dashboard for insights on RotMG player count and Steam review analysis. Included are 12 hour player count forecasts and proportion of positive steam reviews calculated on a time interval of your choice. Enjoy!</p>
 
     <h1>Attribution and Technologies</h1>
 
@@ -48,18 +48,25 @@
         <li><a class="about-a" href="https://www.python.org/downloads/">Python</a>, <a class="about-a" href="https://sqlite.org/index.html">SQLite</a> for data collection and the database</li>
         <li><a class="about-a" href="https://github.com/pallets/flask/">Flask</a> and <a class="about-a" href="https://nginx.org/en/">nginx</a> for the webserver</li>
         <li><a class="about-a" href="https://www.highcharts.com/">HighCharts</a> for interactive charting</li>
+        <li><a class="about-a" href="https://www.statsmodels.org/stable/index.html">statsmodels</a> for forecasting</li>
         <li>JS/CSS for state management (no libraries!)</li>
     </ul>
 
     <p>Also used are</p>
 
     <ul class="ul-normal">
+        <li><a class="about-a" href="https://sqlitebrowser.org/">DB Browser for SQLite</a> for testing SQL queries</li>
         <li>RotMG pixel art for icons</li>
         <li><a class="about-a" href="https://icomoon.io/">Icomoon</a> for GitHub icon</li>
-
     </ul>
 
     <h1>Changelog</h1>
+    <h3>9/23/2025</h3>
+    <ul>
+        <li>Forecast now predicts 0 until DECA's estimated end of maintenance time</li>
+        <li>Disabled forecast when data is bugged (enabled 60 minutes after data collection returns)</li>
+        <li>Few mobile UI optimizations (scroll with one finger, fixed navbar overflow)</li>
+    </ul>
     <h3>9/21/2025</h3>
     <ul>
         <li>Deployed automated ML pipeline deployment for forecasting player counts using unobserved components</li>

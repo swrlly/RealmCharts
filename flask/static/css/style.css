@@ -389,17 +389,13 @@ a {
     
 }
 
-/*
-.chart-skeleton::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(124, 124, 124, 0.5), transparent);
-    transform: translateX(-100%);
-    animation: loading 2s infinite;
+.forecast-disabled-warning {
+    visibility: hidden;
+    padding-bottom: 0.5rem; 
+    color: var(--less-emphasis-color);
+    font-size: 0.8rem;
+    float: right;
 }
-    */
 
 @keyframes loading {
     0% { background-position: 100% 0; }
@@ -601,7 +597,7 @@ don't put background wrapper children in here
     .chart-skeleton {
         min-height: 400px;
     }
-    .player-forecast-info, .review-callout-info {
+    .player-forecast-info, .review-callout-info, .forecast-disabled-warning {
         font-size: calc(0.4rem + 0.831vw);
     }
 }

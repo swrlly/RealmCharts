@@ -19,8 +19,9 @@ class Forecaster:
         self.forecast_length = 12 * 12
 
     def prepare_data(self, data, update_df = True):
+        # ignore maintenance + buggy data.
         df = pd.DataFrame(data, columns = ["timestamp", "players", "online", "trustworthiness"])
-        df.loc[df["trustworthiness"] < 0.01, "players"] = pd.NA
+        df.loc[df["trustworthiness"] < 0.2, "players"] = pd.NA
         df.loc[df["online"] == 0, "players"] = pd.NA
         if update_df: self.df = df
         else: return df

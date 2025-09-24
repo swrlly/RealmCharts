@@ -23,7 +23,7 @@ class Database:
         # automates data cleaning/transforming -> ready for forecasting
         # group cleaned data into 5 min intervals, standardizes timestamp into beginning of 5 min interval
         self.connect()
-        query = """SELECT unixepoch(year || "-" || month || "-" || day || " " || hour || ":" || substr("00"||minute,-2,2) || ":00") as ts_start_of_minute_group,
+        query = """SELECT unixepoch(year || "-" || month || "-" || day || " " || hour || ":" || substr("00"||MIN(minute),-2,2) || ":00") as ts_start_of_minute_group,
         AVG(players) as players, 
         MIN(online) as online,
         AVG(trustworthiness) as trustworthiness,
@@ -114,6 +114,7 @@ class Database:
                 start, end = min(left), max(right)
                 self._cursor.execute("SELECT * FROM playersOnline WHERE timestamp >= ? AND timestamp <= ?;", (start, end))
                 res = self._cursor.fetchall()
+                # set players to None since playersCleaned is used in frontend visualization. don't show bugged data.
                 res = [{"timestamp": i[0], "players": None, "trustworthiness": 0} for i in res]
                 try:
                     self._cursor.executemany("INSERT OR REPLACE INTO playersCleaned VALUES (:timestamp, :players, :trustworthiness);", res)
@@ -121,6 +122,7 @@ class Database:
                 except Exception as e:
                     self.logger.info(f"Failed to set sequential player counts to null: {e}")
                 # now, assign in the future of this group +60 minutes to also be untrustworthy, due to data collector's data being unique seen last 60 min
+                # effect: +60 post maintenance is automatically untrustworthy
                 self._cursor.execute(f"SELECT * FROM playersOnline WHERE timestamp > {end} AND timestamp <= {end + 60 * 60};")
                 res = self._cursor.fetchall()
                 res = [{"timestamp": i[0], "players": i[1], "trustworthiness": 0} for i in res]
@@ -134,6 +136,7 @@ class Database:
 
         # now set maintenance playercounts to 0
         # do this 2nd since untrustworthy times are definitely during maintenance, and maintenance really should be 0 for downstream modeling
+        # also if there are 10+ maintenance 0's, this sets trustworthiness back to 1
         get_maintenance_times = """SELECT playersOnline.timestamp
         FROM playersOnline
         LEFT JOIN maintenance
@@ -184,7 +187,7 @@ class Database:
         ON playersOnline.timestamp = playersCleaned.timestamp
         where playersCleaned.timestamp IS NULL;"""
         self._cursor.execute(query)
-        rows = self._cursor.fetchall() # should only be one row.
+        rows = self._cursor.fetchall() # should only be one row if this program hasn't missed any minutes
         try:
             self._cursor.executemany("INSERT INTO playersCleaned VALUES (?,?,?);", [(i[0], i[1], 1) for i in rows])
             self._connection.commit()
@@ -338,7 +341,7 @@ class Database:
         self.close()
         return result
 
-    def select_maintenance(self):
+    def get_maintenance_now(self):
         self.connect()
         self._cursor.execute("SELECT timestamp, online, estimated_time FROM maintenance WHERE timestamp = (SELECT max(timestamp) FROM maintenance);")
         results = self._cursor.fetchone()
@@ -353,4 +356,19 @@ class Database:
             self._connection.commit()
         except Exception as e:
             self.logger.info(f"Inserting into forecast table failed: {e}")
+        self.close()
+
+    def generate_forecast_during_maintenance(self, data):
+        # forecast 0's
+        now, online, est_time = data[0], data[1], data[2]
+        now -= now % 300
+        new_rows = []
+        for add in range(300, est_time - now, 300):
+            new_rows.append([0, now + add, 0, 0, 0, 0, 0, 0, 0])
+        self.connect()
+        try:
+            self._cursor.executemany("INSERT OR REPLACE INTO maintenanceForecast VALUES (?,?,?,?,?,?,?,?,?);", new_rows)
+            self._connection.commit()
+        except Exception as e:
+            self.logger.info(f"Inserting into maintenanceForecast table failed: {e}")
         self.close()

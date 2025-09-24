@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import datetime
 import time
 import os
 
@@ -24,20 +25,11 @@ plt.rcParams["legend.edgecolor"] = borderColor
 plt.rcParams["figure.dpi"] = 300
 plt.rcParams["axes.labelpad"] = 20
 plt.rcParams["axes.titlepad"] = 20
-#plt.rcParams["font.family"] = "sans-serif"
-#plt.rcParams["font.sans-serif"] = "Open Sans"
-
-plt.rcParams["boxplot.medianprops.color"] = lavender
-plt.rcParams["boxplot.whiskerprops.color"] = textColor
-plt.rcParams["boxplot.boxprops.color"] = textColor
-plt.rcParams["boxplot.capprops.color"] = textColor
-plt.rcParams["boxplot.whiskerprops.color"] = textColor
-plt.rcParams["boxplot.capprops.color"] = textColor
-plt.rcParams["boxplot.flierprops.markeredgecolor"] = textColor
 
 def plot_and_save(res):
-    now = int(time.time())
-    dir = f"data/models/{now}"
+    now = time.gmtime(time.time())
+    name = str(datetime.datetime(*now[:4]))[:-6]
+    dir = f"data/models/{name}"
     os.makedirs(dir)
     fig, axs = plt.subplots(2, 3, figsize = (20, 8))
     axs[0, 0].plot(res.level["smoothed"])
@@ -56,6 +48,3 @@ def plot_and_save(res):
     # res.save(dir + "/model.pkl") 
     with open(dir + "/summary.txt", "w") as f:
         f.write(str(res.summary()))
-
-#from matplotlib.font_manager import findfont, FontProperties
-#font = findfont(FontProperties(family=["sans-serif"]))
