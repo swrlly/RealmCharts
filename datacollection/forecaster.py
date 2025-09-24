@@ -11,10 +11,10 @@ class Forecaster:
         self.result = None
         self.params  = {
             "irregular" : True, 
-            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 4}, {"period": 12 * 24 * 7, "harmonics": 2}],
+            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 4}, {"period": 12 * 24 * 7, "harmonics": 1}],
             "level" : "rtrend",
             "stochastic_level": True,
-            "autoregressive": 4
+            "autoregressive": 3
         }
         self.forecast_length = 24 * 12
 

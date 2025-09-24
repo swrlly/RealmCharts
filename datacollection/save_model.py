@@ -41,7 +41,7 @@ def plot_and_save(res, df):
             done = True
         except: 
             ctr += 1
-    dir += f" {ctr}"
+    dir += f" {ctr}" if ctr > 0 else ""
     fig, axs = plt.subplots(2, 3, figsize = (20, 8))
     axs[0, 0].plot(res.level["smoothed"], color = lavender, linewidth = 0.5)
     axs[0, 0].set_title("level")

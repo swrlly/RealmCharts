@@ -119,7 +119,7 @@ def close_connection(exception):
 def get_db():
     db = getattr(g, "_database", None)
     if db is None:
-        db = g._database = sqlite3.connect("../datacollection/data/players.db", check_same_thread = False)
+        db = g._database = sqlite3.connect("../datacollection/data/players.db")
     return db
 
 app.config["SERVER_NAME"] = "localhost:8001" if platform.system() == "Windows" else "realmcharts.swrlly.com"
