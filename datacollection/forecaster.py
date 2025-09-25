@@ -11,10 +11,10 @@ class Forecaster:
         self.result = None
         self.params  = { # 4, 2 rtrend before wed 9/24
             "irregular" : True, 
-            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 8}, {"period": 12 * 24 * 7, "harmonics": 1}],
+            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 6}, {"period": 12 * 24 * 7, "harmonics": 1}],
             "level" : "strend",
             "stochastic_level": True,
-            "autoregressive": 3
+            "autoregressive": 2
         }
         self.forecast_length = 24 * 12
 
@@ -29,7 +29,7 @@ class Forecaster:
     def train_model(self):
         self.logger.info("Training forecasting model...")
         model = UnobservedComponents(endog = self.df["players"], initialization = "diffuse", **self.params)
-        self.result = model.fit(method = "powell", optim_complex_step = True)
+        self.result = model.fit(method = "powell", cov_type = "oim", optim_hessian = "oim", optim_score = "harvey", optim_complex_step = True)
         plot_and_save(self.result, self.df)
         self.logger.info("Finished training model.")
 

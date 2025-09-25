@@ -15,7 +15,8 @@ def main():
     db_link = "data/players.db"
     links = open("link", "r").read().strip().split("\n")
     tasks = Tasks(links, db_link, logger)
-    tasks.on_startup(int(time.time()))
+    thread = Thread(target = tasks.on_startup, args = (int(time.time()), ))
+    thread.start()
     time.sleep(60.1 - time.time() % 60)
     clock = time.monotonic()
     current_hour = dt.datetime.now().hour
