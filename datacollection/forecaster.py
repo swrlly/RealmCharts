@@ -9,10 +9,10 @@ class Forecaster:
         self.logger = logger
         self.df = None
         self.result = None
-        self.params  = {
+        self.params  = { # 4, 2 rtrend before wed 9/24
             "irregular" : True, 
-            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 4}, {"period": 12 * 24 * 7, "harmonics": 1}],
-            "level" : "rtrend",
+            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 8}, {"period": 12 * 24 * 7, "harmonics": 1}],
+            "level" : "strend",
             "stochastic_level": True,
             "autoregressive": 3
         }
