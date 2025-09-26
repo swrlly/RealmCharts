@@ -28,7 +28,7 @@ def steam_last_scraped():
 def player_count():
     # get all player counts collected, minute granularity
     cur = get_db().cursor()
-    cur.execute("SELECT timestamp, players FROM playersCleaned;")
+    cur.execute("SELECT timestamp, CASE WHEN trustworthiness = 0 THEN null ELSE players END FROM playersCleaned;")
     results = json.dumps(cur.fetchall())
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
@@ -37,7 +37,10 @@ def player_count():
 def players_online_now():
     # get latest playercount
     cur = get_db().cursor()
-    cur.execute("SELECT * FROM playersCleaned WHERE timestamp = (SELECT max(timestamp) FROM playersCleaned);")
+    cur.execute("""SELECT timestamp, 
+        CASE WHEN trustworthiness = 0 THEN null ELSE players END 
+        FROM playersCleaned 
+        WHERE timestamp = (SELECT max(timestamp) FROM playersCleaned);""")
     results = json.dumps(cur.fetchone())
     cur.close() 
     return app.response_class(response = results, status = 200, mimetype = "application/json")
@@ -74,17 +77,17 @@ def get_forecast():
     cur.execute("SELECT online FROM maintenance WHERE timestamp = (SELECT max(timestamp) FROM maintenance);")
     results = cur.fetchone()
     if results[0] == 1:
-        cur.execute("SELECT trustworthiness FROM playersGrouped WHERE timestamp = (SELECT max(timestamp) FROM playersGrouped);")
+        cur.execute("SELECT trustworthiness, online FROM playersGrouped WHERE timestamp = (SELECT max(timestamp) FROM playersGrouped);")
         results = cur.fetchone()
         # if data is currently untrustworthy (bugged + 1h after bugged/maintenance), do not display forecast
-        if results[0] < 0.2:
+        if results[0] < 0.2 or results[1] == 0:
             results = json.dumps([])
         else:
             cur.execute("SELECT * FROM forecast where timestamp >= unixepoch() - 300;")
-            results = json.dumps(cur.fetchall())
+            results = json.dumps([i[1:-1] for i in cur.fetchall()])
     else:
         cur.execute("SELECT * FROM maintenanceForecast where timestamp >= unixepoch() - 300;")
-        results = json.dumps(cur.fetchall())
+        results = json.dumps([i[1:] for i in cur.fetchall()])
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
 

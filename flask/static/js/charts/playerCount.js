@@ -16,13 +16,13 @@ export async function createPlayerCountChart() {
         data[index][0] *= 1000;
     }
     for (let index = 0; index < forecast.length; index++) {
-        forecast[index][1] = forecast.length == 0 ? null : forecast[index][1] * 1000;
+        forecast[index][0] = forecast.length == 0 ? null : forecast[index][0] * 1000;
     }
 
-    let forecasted_mean = forecast.slice(0, forecast.length).map(i => [i[1], i[2]]);
-    let one_sd = forecast.slice(0, forecast.length).map(i => [i[1], i[3], i[4]]);
-    let two_sd = forecast.slice(0, forecast.length).map(i => [i[1], i[5], i[6]]);
-    let three_sd = forecast.slice(0, forecast.length).map(i => [i[1], i[7], i[8]]);
+    let forecasted_mean = forecast.slice(0, forecast.length).map(i => [i[0], i[1]]);
+    let one_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[2], i[3]]);
+    let two_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[4], i[5]]);
+    let three_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[6], i[7]]);
 
     let plotBands = [];
     let chartMax = data[data.length - 1][0];
@@ -32,10 +32,10 @@ export async function createPlayerCountChart() {
     }
     else {
         content.innerHTML = "";
-        chartMax = forecast[forecast.length - 1][1];
+        chartMax = forecast[forecast.length - 1][0];
         plotBands = [{
                 color: "#6c56ff09",
-                from: forecast[0][1] - 300,
+                from: forecast[0][0] - 300,
                 to: Number.MAX_SAFE_INTEGER,
                 label: {
                     text: "Forecast",

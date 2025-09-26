@@ -73,7 +73,7 @@ def plot_and_save(res, df):
     dir += f" {ctr}" if ctr > 0 else ""
     fig, axs = plt.subplots(3, 3, figsize = (20, 15))
     index = df["graph_x"]
-    axs[0, 0].plot(pd.Series(res.freq_seasonal[0]["smoothed"] + res.freq_seasonal[1]["smoothed"])[-28 * 12 * 24-1:], color = lavender)#res.freq_seasonal[2]["smoothed"], color = lavender)
+    axs[0, 0].plot(pd.Series(res.freq_seasonal[1]["smoothed"])[-28 * 12 * 24-1:], color = lavender)#res.freq_seasonal[2]["smoothed"], color = lavender)
     axs[0, 0].set_xticks(index.index[-28 * 12 * 24-1::4 * 12 * 24], index[-28 * 12 * 24-1::4 * 12 * 24], fontsize = "small")
     axs[0, 0].set_title("Daily")
     axs[1, 0].plot(pd.Series(res.freq_seasonal[2]["smoothed"])[-28 * 12 * 24:], color = lavender)#res.freq_seasonal[2]["smoothed"], color = lavender)
