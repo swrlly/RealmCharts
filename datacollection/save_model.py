@@ -69,15 +69,15 @@ def plot_and_save(res, df):
         except: 
             ctr += 1
     dir += f" {ctr}" if ctr > 0 else ""
-    fig, axs = plt.subplots(3, 3, figsize = (20, 15));
+    fig, axs = plt.subplots(3, 3, figsize = (20, 15))
     axs[0, 0].plot(res.level["smoothed"], color = lavender)
-    axs[0, 0].set_title("level");
+    axs[0, 0].set_title("level")
     axs[0, 1].plot(res.trend["smoothed"], color = lavender)
-    axs[0, 1].set_title("trend");
+    axs[0, 1].set_title("trend")
     axs[0, 2].plot(res.autoregressive["smoothed"], color = lavender, alpha = 0.85, linewidth = 0.5)
-    axs[0, 2].set_title("AR");
+    axs[0, 2].set_title("AR")
     axs[1, 0].plot(res.freq_seasonal[0]["smoothed"][-7 * 12 * 24:], color = lavender)
-    axs[1, 0].set_title("Daily seasonality");
+    axs[1, 0].set_title("Daily seasonality")
     axs[1, 1].plot(res.freq_seasonal[1]["smoothed"], color = lavender)
     axs[1, 1].set_title("Weekly seasonality")
     #axs[1, 2].hist(res.resid[(res.resid > -100) & (res.resid < 100)], color = lavender, bins = 200, width = 0.5, alpha = 0.6)

@@ -76,7 +76,7 @@ def get_forecast():
     if results[0] == 1:
         cur.execute("SELECT trustworthiness FROM playersGrouped WHERE timestamp = (SELECT max(timestamp) FROM playersGrouped);")
         results = cur.fetchone()
-        # if bugged data, do not display forecast
+        # if data is currently untrustworthy (bugged + 1h after bugged/maintenance), do not display forecast
         if results[0] < 0.2:
             results = json.dumps([])
         else:

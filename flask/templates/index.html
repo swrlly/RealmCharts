@@ -13,11 +13,13 @@
         {% endblock %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" rel="preload" href="/static/css/style.css?v={{css_version}}" async>    
         {% block header %} 
-        <script type="module" rel="preload" src="/static/js/main.js" async></script>
-        <script src="/static/js/highstock.js"></script>
-        <script src="/static/js/highcharts-more.js"></script>
+        <!--<script type="module" src="/static/js/main.js" async></script>-->
+        <script rel="preload" src="/static/js/highstock.js"></script>
+        <script rel="preload" src="/static/js/highcharts-more.js"></script>
+        <script type="module" src="/static/js/main.js"></script>
+        <link rel="stylesheet" href="/static/css/style.css?v={{css_version}}" async> 
+
         {% endblock %}
     </head>
 

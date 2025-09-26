@@ -61,9 +61,22 @@
         <li><a class="about-a" href="https://icomoon.io/">Icomoon</a> for GitHub icon</li>
     </ul>
     <h1>Changelog</h1>
+    <h3>9/25/2025</h3>
+    <ul>
+        <li>Refactored large database codebase using factory method and decorators for exception handling</li>
+    </ul>
+    <h3>9/24/2025</h3>
+    <ul>
+        <li>Analyzed model and forecast stability using condition number/eigenvalues of the state transition matrix, ACF/PACF plots, standardized forecast errors
+            <ul style="margin:0;">
+                <li>2 weekly harmonics + AR error component 3 on three weeks and three days of data was extremely unstable and forecasts had larger than acceptable prediction intervals</li>
+            </ul>
+        </li>
+        <li>Began saving 1/6/12/24h forecasts for forecast accuracy comparison</li>
+    </ul>
     <h3>9/23/2025</h3>
     <ul>
-        <li>Optimized page loading speed using async workers on Gunicorn and batched JS async tasks in <code>Promise.all</code></li>
+        <li>Optimized page loading speed from 5 seconds to below 2 seconds with Gunicorn async workers, batching JS async tasks in <code>Promise.all</code>, `gzip` compression, caching long review query</li>
     </ul>
     <h3>9/23/2025</h3>
     <ul>
