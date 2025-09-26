@@ -57,9 +57,9 @@ class Tasks:
         self.forecaster = Forecaster(self.logger)
         self.forecaster.prepare_data(data)
         self.forecaster.train_model()
-        forecast = self.forecaster.get_forecast()
-        self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast)
-        self.etl_factory.get_forecast().insert_into_forecast(forecast[:12*12])
+        forecast, params = self.forecaster.get_forecast()
+        self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast, params)
+        self.etl_factory.get_forecast().insert_into_forecast(forecast[:12*12], params)
 
     def get_new_forecast_once(self):
         # get new forecast given one new data point
@@ -70,9 +70,9 @@ class Tasks:
 
         # allow forecaster to interpolate through maintenance
         data = self.etl_factory.get_grouper().select_grouped_data()
-        forecast = self.forecaster.update_forecast_once(data)
-        self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast)
-        self.etl_factory.get_forecast().insert_into_forecast(forecast[:12*12])
+        forecast, params = self.forecaster.update_forecast_once(data)
+        self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast, params)
+        self.etl_factory.get_forecast().insert_into_forecast(forecast[:12*12], params)
 
     def update_forecast_horizon_with_actuals(self):
         self.etl_factory.get_forecast().update_forecast_horizon_with_actuals()

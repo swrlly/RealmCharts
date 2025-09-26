@@ -11,7 +11,7 @@ class Forecaster:
         self.result = None
         self.params  = { # 4, 2 rtrend before wed 9/24
             "irregular" : True, 
-            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 6}, {"period": 12 * 24 * 7, "harmonics": 1}],
+            "freq_seasonal" : [{"period": 12 * 24, "harmonics": 6}, {"period": 12 * 24 * 7, "harmonics": 7}, {"period": 12 * 24 * 7, "harmonics": 1}],
             "level" : "strend",
             "stochastic_level": True,
             "autoregressive": 2
@@ -21,6 +21,8 @@ class Forecaster:
     def prepare_data(self, data, update_df = True):
         # ignore maintenance + buggy data.
         df = pd.DataFrame(data, columns = ["timestamp", "players", "online", "trustworthiness"])
+        df["time"] = [i.tz_convert("US/Pacific") for i in pd.to_datetime(df["timestamp"], unit = "s", utc = True)]
+        df["graph_x"] = pd.Series(map(lambda x: x[:3], df.time.dt.day_name())) + " " + df.time.dt.hour.astype(str)
         df.loc[df["trustworthiness"] < 0.2, "players"] = pd.NA
         df.loc[df["online"] == 0, "players"] = pd.NA
         if update_df: self.df = df
@@ -36,7 +38,7 @@ class Forecaster:
     def get_forecast(self):
         # get 12 hour forecast
         forecast = self.result.get_forecast(self.forecast_length)
-        return self.transform_forecast_data(forecast)
+        return self.transform_forecast_data(forecast), self.get_model_spec()
     
     def transform_forecast_data(self, forecast):
         # assumes you have the most updated data, including when adding 1 point
@@ -67,5 +69,22 @@ class Forecaster:
         self.result = new_result
         return self.get_forecast()
 
-    #def update_forecast_when_maintenance(self, new_df):
-        #todo
+    def get_model_spec(self):
+        s = ""
+        grouped = {}
+        for p in self.params:
+            if p == "level":
+                s += f"{self.params[p]} "
+            elif p == "autoregressive":
+                s += f"ar{self.params[p]} "
+            elif p == "freq_seasonal":
+                for i in self.params[p]:
+                    if i["period"] not in grouped:
+                        grouped.update({i["period"] : [i["harmonics"]]})
+                    else:
+                        grouped[i["period"]].append(i["harmonics"])
+                d = ""
+                for i in grouped:
+                    d += f"{str(i)}:{','.join(str(j) for j in grouped[i])} "
+                s += d
+        return s.strip()

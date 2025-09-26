@@ -99,6 +99,8 @@ try:
         cursor.execute(create_forecast)
         cursor.execute(create_maintenance_forecast)
         cursor.execute(create_forecast_horizon)
+        cursor.execute("ALTER TABLE forecast ADD COLUMN params TEXT;")
+        cursor.execute("ALTER TABLE forecastHorizon ADD COLUMN params TEXT;")
         conn.commit()
         cursor.close()
 

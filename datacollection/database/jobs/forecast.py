@@ -11,17 +11,17 @@ class Forecast(ETLJob):
         self.update_forecast_horizon_with_actuals = self.log_exceptions(self.update_forecast_horizon_with_actuals)
         self.generate_forecast_during_maintenance = self.log_exceptions(self.generate_forecast_during_maintenance)
 
-    def insert_into_forecast(self, data) -> None:
+    def insert_into_forecast(self, data, params) -> None:
         """
         Updates `forecast` with new forecast.
         Only insert future time points
         """
 
         with self.db_connection.connect() as (conn, cursor):
-            cursor.executemany("INSERT OR REPLACE INTO forecast VALUES (?,?,?,?,?,?,?,?,?);", data)
+            cursor.executemany("INSERT OR REPLACE INTO forecast VALUES (?,?,?,?,?,?,?,?,?,?);", [i + [params] for i in data])
             conn.commit()
 
-    def insert_into_forecast_horizon(self, data):
+    def insert_into_forecast_horizon(self, data, params):
         """Updates forecastHorizon with forecasts"""
 
         with self.db_connection.connect() as (conn, cursor):
@@ -29,10 +29,10 @@ class Forecast(ETLJob):
             six_hour = data[6*12 - 1]
             twelve_hour = data[12*12 - 1]
             twenty_four_hour = data[24*12 - 1]
-            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [one_hour[1], 12, one_hour[2], None])
-            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [six_hour[1], 6*12, six_hour[2], None])
-            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [twelve_hour[1], 12*12, twelve_hour[2], None])
-            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?);", [twenty_four_hour[1], 24*12, twenty_four_hour[2], None])
+            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?,?);", [one_hour[1], 12, one_hour[2], None, params])
+            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?,?);", [six_hour[1], 6*12, six_hour[2], None, params])
+            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?,?);", [twelve_hour[1], 12*12, twelve_hour[2], None, params])
+            cursor.execute("INSERT OR IGNORE INTO forecastHorizon VALUES (?,?,?,?,?);", [twenty_four_hour[1], 24*12, twenty_four_hour[2], None, params])
             conn.commit()
 
     def update_forecast_horizon_with_actuals(self):
