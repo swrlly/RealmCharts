@@ -7,7 +7,6 @@ import datetime
 import time
 import os
 
-
 matplotlib.use('agg')
 lavender = "#6d56ffff"
 lightBlue = "#9cdcfe"

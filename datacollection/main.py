@@ -23,7 +23,6 @@ def main():
     while True:
 
         now = int(time.time())
-        # get reviews every hour, inserted after next playercount lookup
         if now % (60 * 60) == 0:
             thread = Thread(target = tasks.get_steam_reviews)
             thread.start()
@@ -31,10 +30,13 @@ def main():
         tasks.one_minute_tasks(now)
 
         if now % (5 * 60) == 0:
-            tasks.five_minute_tasks()
             if now % (6 * 60 * 60) == 0:
+                tasks.five_minute_tasks(defer = True)
                 thread = Thread(target = tasks.train_forecaster)
                 thread.start()
+            else:
+                tasks.five_minute_tasks(defer = False)
+
         
         time.sleep(60 - (time.monotonic() - clock) % 60)
 
