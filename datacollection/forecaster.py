@@ -22,7 +22,7 @@ class Forecaster:
     def prepare_data(self, data, update_df = True):
         # ignore maintenance + buggy data.
         df = pd.DataFrame(data, columns = ["timestamp", "players", "online", "trustworthiness"])
-        df["time"] = [i.tz_convert("US/Pacific") for i in pd.to_datetime(df["timestamp"], unit = "s", utc = True)]
+        df["time"] = pd.to_datetime(df["timestamp"], unit = "s", utc = True)#[i.tz_convert("America/Los_Angeles") for i in pd.to_datetime(df["timestamp"], unit = "s", utc = True)]
         df["graph_x"] = pd.Series(map(lambda x: x[:3], df.time.dt.day_name())) + " " + df.time.dt.hour.astype(str)
         df.loc[df["trustworthiness"] < 0.2, "players"] = pd.NA
         df.loc[df["online"] == 0, "players"] = pd.NA

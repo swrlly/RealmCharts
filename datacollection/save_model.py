@@ -102,7 +102,7 @@ def plot_and_save(res, df):
     days = 14
     start = df["timestamp"].max() + 300
     idx = [
-        pd.to_datetime(i, unit = "s", utc = True).tz_convert("US/Pacific").day_name()[:3] + f" {pd.to_datetime(i, unit = 's', utc = True).tz_convert('US/Pacific').hour}" 
+        pd.to_datetime(i, unit = "s", utc = True).day_name()[:3] + f" {pd.to_datetime(i, unit = 's', utc = True).hour}" 
         for i in range(start, start + 300 * days * 12 * 24, 300 * 12 * 24)
     ]
     fore = res.get_forecast(days * 12 * 24)
