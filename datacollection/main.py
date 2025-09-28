@@ -30,12 +30,12 @@ def main():
         tasks.one_minute_tasks(now)
 
         if now % (5 * 60) == 0:
-            #if now % (6 * 60 * 60) == 0:
-            #    tasks.five_minute_tasks(defer = True)
-            #    thread = Thread(target = tasks.train_forecaster)
-            #    thread.start()
-            #else:
-            tasks.five_minute_tasks(defer = False)
+            if now % (6 * 60 * 60) == 0:
+                tasks.five_minute_tasks(defer = True)
+                thread = Thread(target = tasks.train_forecaster)
+                thread.start()
+            else:
+                tasks.five_minute_tasks(defer = False)
 
         
         time.sleep(60 - (time.monotonic() - clock) % 60)

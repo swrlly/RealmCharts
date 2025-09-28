@@ -43,7 +43,7 @@ class Tasks:
         self.clean_playercount_data(window = None)
         self.group_cleaned_player_data()
         self.etl_factory.get_grouper().update_reviews_grouped()
-        #self.train_forecaster()
+        self.train_forecaster()
 
     def train_forecaster(self):
         # train forecaster and get first forecast

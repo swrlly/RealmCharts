@@ -61,3 +61,41 @@
 [2025-09-28] 06:31:49 -  INFO   - Main - Inserted 12 rows after 1759040340
 [2025-09-28] 06:31:49 -  INFO   - Main - Inserted 12 rows into maintenance.
 [2025-09-28] 06:31:49 -  INFO   - Main - Copied 13 rows from playersOnline into playersCleaned
+[2025-09-28] 06:35:05 -  INFO   - Main - Started program.
+[2025-09-28] 06:35:06 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 06:35:06 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 06:40:06 -  INFO   - Main - Started program.
+[2025-09-28] 06:40:07 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 06:40:08 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 06:45:08 -  INFO   - Main - Started program.
+[2025-09-28] 06:45:09 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 06:45:10 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 06:50:06 -  INFO   - Main - Started program.
+[2025-09-28] 06:50:07 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 06:50:07 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 06:55:05 -  INFO   - Main - Started program.
+[2025-09-28] 06:55:06 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 06:55:07 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-28] 07:00:00 -  INFO   - Main - Total reviews to scrape: 46938
+[2025-09-28] 07:02:34 -  INFO   - Main - Finished scraping 46932 reviews.
+[2025-09-28] 07:02:38 -  INFO   - Main - Started program.
+[2025-09-28] 07:02:39 -  INFO   - Main - Inserted 2 rows after 1759042800
+[2025-09-28] 07:02:39 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2025-09-28] 07:02:39 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2025-09-28] 07:05:07 -  INFO   - Main - Started program.
+[2025-09-28] 07:05:08 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 07:05:08 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 07:10:07 -  INFO   - Main - Started program.
+[2025-09-28] 07:10:08 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 07:10:08 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 07:15:08 -  INFO   - Main - Started program.
+[2025-09-28] 07:15:09 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 07:15:09 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 07:15:11 -  INFO   - Main - Training forecasting model...
+[2025-09-28] 07:16:31 -  INFO   - Main - Finished training model.
+[2025-09-28] 07:18:23 -  INFO   - Main - Started program.
+[2025-09-28] 07:18:24 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-28] 07:18:24 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-28] 07:18:26 -  INFO   - Main - Training forecasting model...
+[2025-09-28] 07:19:50 -  INFO   - Main - Finished training model.
