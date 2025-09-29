@@ -14,6 +14,7 @@ html {
     --text-color: #c9c9c9;
     --card-header-text-color: #7c7c7c;
     --less-emphasis-color: #5c5c5c;
+    --forecast-less-emphasis-color: #686868;
     --background-color: #101010;
     --card-border-color: #1f1f1f;
     --skeleton-background-color: #111111;
@@ -281,6 +282,41 @@ a {
 
 /* top statistics */
 
+.playercount-all-stat-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+}
+
+.playercount-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.forecast-line {
+    visibility: hidden;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.forecast-player-text {
+    font-size: 0.65rem;
+}
+
+.forecast-hour-header {
+    color: var(--forecast-less-emphasis-color);
+    font-size: 0.65rem;
+    display: inline-block;
+    width: 25px;
+}
+
+
+.forecast-less-emphasis {
+    color: var(--forecast-less-emphasis-color);
+}
+
 .one-stat-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -300,6 +336,24 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.forecast-card {
+    min-height: 85px;
+    border: none;
+    border-radius: var(--card-border-radius);
+    display: flex;
+    padding: 15px 10px 10px 10px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    /*background-color: var(--card-background-color);*/
+    /*display: grid;
+    grid-template-rows: 20% 80%;
+    align-items: center;
+
+    text-align: center;*/
+    justify-content: center;
+    text-align: left;
 }
 
 .review-card {
@@ -484,6 +538,9 @@ a {
     padding: 8px;
     border-radius: 10px; 
     transition: transform 0.1s;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-left: 20px;
 }
 
 #toggle-annotations:hover {
@@ -494,7 +551,7 @@ a {
 /* title-div wrapper: show background but not text, visibility: hidden hides background 
 don't put background wrapper children in here
 */
-.chart-skeleton, .card, .review-card, .playercount-chart-header, .title-div-wrapper, .navbar-text-wrapper {
+.chart-skeleton, .card, .review-card, .playercount-chart-header, .title-div-wrapper, .navbar-text-wrapper, .forecast-card {
     border-radius: var(--card-border-radius);
     background: linear-gradient(90deg, var(--skeleton-background-color) 25%, #23232355 50%, var(--skeleton-background-color) 51%);
     animation: loading 1.7s linear infinite normal;
@@ -593,14 +650,14 @@ don't put background wrapper children in here
     #players-weekly-change {
         font-size: calc(0.625rem + 1.2985vw);
     }
-    .one-stat-grid {
+    .one-stat-grid, .playercount-stat-grid {
         column-gap: 1.5rem;
         row-gap: 1.5rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 47%);
         justify-items: center;
     }
     .card, .review-card {
-        width: 70%;
+        width: 80%;
         min-width:fit-content;
         padding: 10px 20px 10px 20px;
     }
@@ -627,14 +684,23 @@ don't put background wrapper children in here
     .chart-skeleton {
         min-height: 450px;
     }
-    .player-forecast-info, .review-callout-info, .forecast-disabled-warning {
+    .player-forecast-info, .review-callout-info, .forecast-disabled-warning, #toggle-annotations {
         font-size: calc(0.4rem + 0.831vw);
+    }
+    .forecast-line {
+        font-size: calc(0.45rem + 0.935vw);
+    }
+    .forecast-player-text, .forecast-hour-header {
+        font-size: calc(0.325rem + 0.6755vw);
+    }
+    .forecast-hour-header { /* 2/3 width in px */
+        width: calc(12.5px + 1.62335vw);
     }
 }
 
 @media screen and (max-width: 500px) {
     .card, .review-card {
-        width: 85%;
+        width: 100%;
     }
     .chart-skeleton {
         aspect-ratio: 0.9 / 1;

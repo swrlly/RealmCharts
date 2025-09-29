@@ -59,7 +59,7 @@ export function removePlayerCountSkeleton() {
     let cardBorderColor = "2px " + window.getComputedStyle(document.body).getPropertyValue("--card-border-color") + " solid";
 
     // text - make text appear
-    var hiddenText = document.querySelectorAll(".card-header-text,.playercount-header,.navbar-text,.title-div,.player-forecast-info,.forecast-disabled-warning");
+    var hiddenText = document.querySelectorAll(".card-header-text,.playercount-header,.navbar-text,.title-div,.player-forecast-info,.forecast-disabled-warning,.forecast-line");
     for (let i = 0; i < hiddenText.length; i++) { 
         hiddenText[i].style.visibility = "visible"; 
     }
@@ -69,7 +69,7 @@ export function removePlayerCountSkeleton() {
     removeBorderSkeleton(header, "", false);
 
     // make card background normal + show border
-    var card = document.getElementsByClassName("card");
+    var card = document.querySelectorAll(".card,.forecast-card");
     for (let i = 0; i < card.length; i++) { 
         removeBorderSkeleton(card[i], cardBorderColor, true); 
     }
@@ -106,7 +106,6 @@ export function positionTooltips() {
         }
     }
     else {
-        console.log("ok");
         for (let i = 0; i < tooltip.length; i++) {
             var width = tooltip[i].clientWidth;
             tooltip[i].style["inset-inline-start"] = "-50px"; 

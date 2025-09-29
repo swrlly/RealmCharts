@@ -34,8 +34,6 @@ export async function createReviewsChart() {
         var date = new Date(data[index][0]);
         tsToReviewProp.set(date.getUTCFullYear() + "-" + String(date.getUTCMonth() + 1).padStart(2, "0") + "-" +  String(date.getUTCDate()).padStart(2, "0"), data[index][2]);
     }
-    console.log(tsToReviewProp);
-    console.log(tsToReviewProp.get("2020-04-15"));
     
     let reviews = data.slice(0, data.length).map(i => [i[0], i[1]]);
     let proportions = data.slice(0, data.length).map(i => [i[0], i[2]]);

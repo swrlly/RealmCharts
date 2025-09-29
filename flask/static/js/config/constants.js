@@ -1,4 +1,4 @@
-var debug = false;
+var debug = true;
 
 // color scheme for dashboard
 export const COLORS = {
@@ -35,6 +35,7 @@ export const API_ENDPOINTS = {
     latestPlayerCount: debug == false ? "https://realmcharts.swrlly.com/api/players-now" : "http://localhost:8001/api/players-now",
     playersLastWeek: debug == false ? "https://realmcharts.swrlly.com/api/players-last-week" : "http://localhost:8001/api/players-last-week",
     forecast: debug == false ? "https://realmcharts.swrlly.com/api/forecast" : "http://localhost:8001/api/forecast",
+    forecastPerformance: debug == false ? "https://realmcharts.swrlly.com/api/forecast-performance" : "http://localhost:8001/api/forecast-performance",
     reviews: debug == false ? "https://realmcharts.swrlly.com/api/reviews" : "http://localhost:8001/api/reviews",
     lastReviewTimeScraped: debug == false ? "https://realmcharts.swrlly.com/api/reviews-last-scraped" : "http://localhost:8001/api/reviews-last-scraped",
 };

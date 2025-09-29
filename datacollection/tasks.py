@@ -59,7 +59,7 @@ class Tasks:
         self.forecaster.train_model()
         forecast, params = self.forecaster.get_forecast()
         self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast, params)
-        self.etl_factory.get_forecast().insert_into_forecast(forecast[:12*12], params)
+        self.etl_factory.get_forecast().insert_into_forecast(forecast, params)
 
     def get_new_forecast_once(self):
         # get new forecast given one new data point
@@ -72,7 +72,7 @@ class Tasks:
         data = self.etl_factory.get_grouper().select_grouped_data()
         forecast, params = self.forecaster.update_forecast_once(data)
         self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast, params)
-        self.etl_factory.get_forecast().insert_into_forecast(forecast[:12*12], params)
+        self.etl_factory.get_forecast().insert_into_forecast(forecast, params)
 
     def update_forecast_horizon_with_actuals(self):
         self.etl_factory.get_forecast().update_forecast_horizon_with_actuals()

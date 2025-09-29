@@ -9,6 +9,33 @@ import gzip
 css_version = str(int(time.time()))
 app = Flask(__name__)
 
+@app.route("/api/forecast-performance", methods = ["GET"])
+def forecast_performance():
+    cur = get_db().cursor()
+    cur.execute("""SELECT 
+    CASE
+        WHEN horizon_steps = 12 THEN "1hr"
+        WHEN horizon_steps = 72 THEN "6hr"
+        WHEN horizon_steps = 144 THEN "12hr"
+        ELSE "24hr"
+    END AS horizon,
+    ROUND(AVG(mean_absolute_error), 0) AS MAE,
+    ROUND(100 * (1 - AVG(mean_absolute_percentage_error)), 1) AS MAPE,
+    SUM(
+        CASE 
+        WHEN actual_value NOT NULL THEN 1
+        ELSE 0 END
+    ) as n_obs
+    FROM forecastHorizon
+    WHERE timestamp >= unixepoch() - 2 * 24 * 60 * 60
+    AND params = "288:8 2016:7,1 strend ar2"
+    GROUP BY horizon
+    ORDER BY horizon_steps;
+        """)
+    results = json.dumps(cur.fetchall())
+    cur.close()
+    return app.response_class(response = results, status = 200, mimetype = "application/json")
+
 @app.route("/api/reviews", methods = ["GET"])
 def review_proportions():
     cur = get_db().cursor()

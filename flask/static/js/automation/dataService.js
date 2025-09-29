@@ -105,6 +105,26 @@ export async function updateCards(data) {
     content = document.getElementById("not-sure-yet");
     content.innerHTML = '<img class="not-sure-yet" style="animation: growFromCenter 0.4s ease-out forwards;" src="/static/images/glape.png"></img>';
     setTimeout(() => {document.getElementsByClassName("not-sure-yet")[0].style.removeProperty("animation");}, 400);
+
+    // update forecast performance
+    let forecast = await getData(API_ENDPOINTS.forecastPerformance);
+    console.log(forecast);
+    content = document.getElementById("one-h-percent");
+    content.innerHTML = forecast[0][2];
+    content = document.getElementById("six-h-percent");
+    content.innerHTML = forecast[1][2];
+    content = document.getElementById("twelve-h-percent");
+    content.innerHTML = forecast[2][2];
+    content = document.getElementById("twentyfour-h-percent");
+    content.innerHTML = forecast[3][2];
+    content = document.getElementById("one-h-number");
+    content.innerHTML = forecast[0][1];
+    content = document.getElementById("six-h-number");
+    content.innerHTML = forecast[1][1];
+    content = document.getElementById("twelve-h-number");
+    content.innerHTML = forecast[2][1];
+    content = document.getElementById("twentyfour-h-number");
+    content.innerHTML = forecast[3][1];
 }
 
 // update cards and chart data every minute
@@ -117,8 +137,8 @@ export async function updatePlayersJob(chart, data) {
     chart.series[0].addPoint(newData);
     var now = new Date();
     if ((now.getMinutes() % 5) === 1 || (now.getMinutes() % 5) === 6) {
+        // update forecast
         var forecast = await getData(API_ENDPOINTS.forecast);
-
         for (let index = 0; index < forecast.length; index++) {
             forecast[index][0] = forecast.length == 0 ? null : forecast[index][0] * 1000;
         }
@@ -129,18 +149,14 @@ export async function updatePlayersJob(chart, data) {
         let content = document.getElementsByClassName("forecast-disabled-warning")[0];
         if (forecast.length == 0) {
             content.innerHTML = "Forecast disabled until 60 minutes after data collection returns.";
-            chart.series[1].setData(forecasted_mean, true, true, false);
-            chart.series[2].setData(one_sd, true, true, false);
-            chart.series[3].setData(two_sd, true, true, false);
-            chart.series[4].setData(three_sd, true, true, false);
         }
         else {
             content.innerHTML = "";
-            chart.series[1].setData(forecasted_mean, true, true, false);
-            chart.series[2].setData(one_sd, true, true, false);
-            chart.series[3].setData(two_sd, true, true, false);
-            chart.series[4].setData(three_sd, true, true, false);
         }
+        chart.series[1].setData(forecasted_mean, true, true, false);
+        chart.series[2].setData(one_sd, true, true, false);
+        chart.series[3].setData(two_sd, true, true, false);
+        chart.series[4].setData(three_sd, true, true, false);
     }
 
     return Promise.resolve([chart, data]);

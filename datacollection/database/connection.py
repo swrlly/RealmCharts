@@ -23,7 +23,7 @@ class DatabaseConnection:
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
             try:
-                print("calling", func.__module__ + "." + func.__name__)
+                #print("calling", func.__module__ + "." + func.__name__)
                 return func(*args, **kwargs)
             except Exception as e:
                 class_name = func.__module__

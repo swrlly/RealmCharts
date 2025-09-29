@@ -100,23 +100,31 @@
                     </div>
                 </div>
             </div>
-
-            <div class="one-stat-grid">
-                <div class="card">
-                    <div class="card-header-text">Server up?</div>
-                    <div id="server-status" class="card-content"></div>
+            <div class="playercount-all-stat-grid">
+                <div class="playercount-stat-grid">
+                    <div class="card">
+                        <div class="card-header-text">Server up?</div>
+                        <div id="server-status" class="card-content"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header-text">Players online</div>
+                        <div id="players-online" class="card-content"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header-text">Weekly change</div>
+                        <div id="players-weekly-change" class="card-content"></div>
+                    </div>  
+                    <div class="card">
+                        <div class="card-header-text">soon...</div>
+                        <div id="not-sure-yet" class="card-content"></div><!--<img class="server-up-emoji" src="/static/images/glape.png"></img></div>-->
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card-header-text">Players online</div>
-                    <div id="players-online" class="card-content"></div>
-                </div>
-                <div class="card">
-                    <div class="card-header-text">Weekly change</div>
-                    <div id="players-weekly-change" class="card-content"></div>
-                </div>  
-                <div class="card">
-                    <div class="card-header-text">soon...</div>
-                    <div id="not-sure-yet" class="card-content"></div><!--<img class="server-up-emoji" src="/static/images/glape.png"></img></div>-->
+                <div class="forecast-card">
+                    <div class="card-header-text">Forecast Performance (avg, last 48h)</div>
+                    <div class="forecast-line"><span class="forecast-hour-header">1h:</span><span id="one-h-percent"></span>% <span class="forecast-less-emphasis forecast-player-text">accuracy</span> <span class="forecast-player-text"><span class="forecast-less-emphasis">(</span>±<span id="one-h-number"></span> <span class="forecast-less-emphasis">players)</span></span></div>
+                    <div class="forecast-line"><span class="forecast-hour-header">6h:</span><span id="six-h-percent"></span>% <span class="forecast-less-emphasis forecast-player-text">accuracy</span> <span class="forecast-player-text"><span class="forecast-less-emphasis">(</span>±<span id="six-h-number"></span> <span class="forecast-less-emphasis">players)</span></span></div>
+                    <div class="forecast-line"><span class="forecast-hour-header">12h:</span><span id="twelve-h-percent"></span>% <span class="forecast-less-emphasis forecast-player-text">accuracy</span> <span class="forecast-player-text"><span class="forecast-less-emphasis">(</span>±<span id="twelve-h-number"></span> <span class="forecast-less-emphasis forecast-player-text">players)</span></span></div>
+                    <div class="forecast-line"><span class="forecast-hour-header">24h:</span><span id="twentyfour-h-percent"></span>% <span class="forecast-less-emphasis forecast-player-text">accuracy</span> <span class="forecast-player-text"><span class="forecast-less-emphasis">(</span>±<span id="twentyfour-h-number"></span> <span class="forecast-less-emphasis">players)</span></span></div>
                 </div>
             </div>
         </div>
@@ -127,7 +135,7 @@
             <div id="playercount-chart"></div>
         </div>
 
-        <div class="player-forecast-info">12 hour forecast, updated every five minutes, model retrained every 6 hours. Bands are prediction intervals: future estimates of where player counts are likely to fall. Center band is 68%, middle band 95%, and outer band 99.5%. May be incorrect due to maintenance and (occasionally) incorrect data.</div>
+        <div class="player-forecast-info">12 hour forecast, updated every five minutes, model retrained every 6 hours. Bands are prediction intervals: future estimates of where player counts are likely to fall. Center band is 68%, middle band 95%, and outer band 99.5%. May be incorrect due to maintenance and missing data.</div>
 
         <!--<div class="container" style="padding:0; padding-top: 1rem;">Recent counts are inaccurate; data collection mechanism is broken.</div>-->
 
