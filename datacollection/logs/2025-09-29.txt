@@ -1,0 +1,5 @@
+[2025-09-29] 08:25:16 -  INFO   - Main - Started program.
+[2025-09-29] 08:25:17 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-29] 08:25:17 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-29] 08:25:20 -  INFO   - Main - Training forecasting model...
+[2025-09-29] 08:26:47 -  INFO   - Main - Finished training model.

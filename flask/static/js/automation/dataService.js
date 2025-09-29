@@ -108,7 +108,6 @@ export async function updateCards(data) {
 
     // update forecast performance
     let forecast = await getData(API_ENDPOINTS.forecastPerformance);
-    console.log(forecast);
     content = document.getElementById("one-h-percent");
     content.innerHTML = forecast[0][2];
     content = document.getElementById("six-h-percent");
