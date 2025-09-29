@@ -113,6 +113,8 @@ export async function createReviewsChart() {
             // left axis - percentage
             gridLineColor: COLORS.yAxisLineColor,
             labels: {
+                align: "left",
+                x: 1,
                 style: {
                     color: COLORS.axisLabelColor,
                     fontSize: "0.6rem"
@@ -127,6 +129,8 @@ export async function createReviewsChart() {
             // right axis - review count
             gridLineColor: COLORS.yAxisLineColor,
             labels: {
+                align: "right",
+                x: -1,
                 style: {
                     color: COLORS.axisLabelColor,
                     fontSize: "0.6rem"
@@ -437,7 +441,7 @@ export async function createReviewsChart() {
                             y: tsToReviewProp.get("2023-07-11")
                         },
                         x: -50,
-                        y: -50,
+                        y: -45,
                         text: "Enchanting - release"
                     }, {
                         allowOverlap: true,
@@ -470,57 +474,11 @@ export async function createReviewsChart() {
                             y: tsToReviewProp.get("2025-05-06")
                         },
                         x: -50,
-                        y: -40,
+                        y: -20,
                         text: "Enchanting - divines"
                     }
                 ]
             },
-            /*{
-                draggable: '',
-                labels: [
-                    {
-                        point: {
-                            xAxis: 0,
-                            yAxis: 0,
-                            x: '2019-03-14',
-                            y: 19.33
-                        },
-                        x: -60,
-                        text: 'Tesla Model Y announced'
-                    },
-                    {
-                        point: {
-                            xAxis: 0,
-                            yAxis: 0,
-                            x: '2019-11-21',
-                            y: 23.65
-                        },
-                        text: 'Tesla CyberTruck announced',
-                        x: -80,
-                        y: -40
-                    },
-                    {
-                        point: {
-                            xAxis: 0,
-                            yAxis: 0,
-                            x: '2020-09-22',
-                            y: 141.41
-                        },
-                        x: 100,
-                        y: 50,
-                        text: 'Tesla Model S and X Plaid announced'
-                    }, {
-                        point: {
-                            xAxis: 0,
-                            yAxis: 0,
-                            x: '2024-01-24',
-                            y: 207.83
-                        },
-                        y: 70,
-                        text: 'Tesla Model 2 announced'
-                    }
-                ]
-            }*/
         ],
     });
 
