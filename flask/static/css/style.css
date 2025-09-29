@@ -459,6 +459,36 @@ a {
     padding-bottom: 0.5rem; 
     color: var(--less-emphasis-color);
     font-size: 0.8rem;
+    display:flex;
+    align-items: self-end;
+}
+
+.review-image-annotation {
+    width: 28px;
+    height: 28px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.small-review-image-annotation {
+    width: 20px;
+    height: 20px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+#toggle-annotations {
+    background: #1e1e1e;
+    border: 1px solid #383838;
+    color: var(--text-color);
+    padding: 8px;
+    border-radius: 10px; 
+    transition: transform 0.1s;
+}
+
+#toggle-annotations:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /* title-div wrapper: show background but not text, visibility: hidden hides background 
@@ -595,7 +625,7 @@ don't put background wrapper children in here
         font-size: calc(0.6rem + 1.247vw);
     }
     .chart-skeleton {
-        min-height: 400px;
+        min-height: 450px;
     }
     .player-forecast-info, .review-callout-info, .forecast-disabled-warning {
         font-size: calc(0.4rem + 0.831vw);
@@ -607,7 +637,7 @@ don't put background wrapper children in here
         width: 85%;
     }
     .chart-skeleton {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 0.9 / 1;
     }
     .navbar-text {
         column-gap: 0.5rem;

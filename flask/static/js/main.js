@@ -32,6 +32,23 @@ async function main() {
     const playerUpdateId = setTimeout(updatePlayerChart, msUntilFirstUpdate, chart, data);
     // reviews
     const reviewUpdateId = setTimeout(updateReviewChart, 60000, reviewChart, lastReviewUpdateTime, reviewTimeId);
+
+    let annotationsVisible = true;
+    document.getElementById("toggle-annotations").addEventListener("click", function() {
+        if (annotationsVisible) {
+            reviewChart.annotations.forEach(annotation => {
+                annotation.setVisibility(false);
+            });
+            this.textContent = "Show Annotations";
+        } else {
+            reviewChart.annotations.forEach(annotation => {
+                annotation.setVisibility(true);
+            });
+            this.textContent = 'Hide Annotations';
+        }
+        
+        annotationsVisible = !annotationsVisible;
+    });
 }
 
 main();

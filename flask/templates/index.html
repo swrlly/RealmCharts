@@ -18,6 +18,8 @@
         <script rel="preload" src="/static/js/highstock.js"></script>
         <script rel="preload" src="/static/js/highcharts-more.js"></script>
         <script type="module" src="/static/js/main.js"></script>
+        <script rel="preload" src="/static/js/annotations.js"></script>
+
         {% endblock %}
 	<link rel="stylesheet" href="/static/css/style.css?v={{css_version}}" async>
     </head>
@@ -168,11 +170,13 @@
             </div>
         </div>
 
-        <div class="review-callout-info"><i>Callout boxes based on viewing window. Scroll/zoom in to change!</i></div>
+        <div class="review-callout-info"><i>Callout boxes based on viewing window. Scroll/zoom in to change!</i> <div style="margin-left: auto;"></div><button id="toggle-annotations">Hide Annotations</button></div>
 
         <div class="chart-skeleton">
             <div id="review-chart"></div>
         </div>
+
+        
 
     </div>
     {% endblock %}

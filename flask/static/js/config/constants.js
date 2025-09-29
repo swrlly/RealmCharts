@@ -1,4 +1,4 @@
-var debug = false;
+var debug = true;
 
 // color scheme for dashboard
 export const COLORS = {
@@ -18,7 +18,9 @@ export const COLORS = {
     rangeSelectorHover: "#343434ff",
     textColor: "#c9c9c9",
     disabledTextColor: "#4a4a4aff",
-    plotBandLineColor: "#4a4a4aff"
+    plotBandLineColor: "#4a4a4aff",
+    annotationBackgroundColor: "#25252580",
+    annotationLineColor: "#d1d1d180"
 };
 
 // chart configuration

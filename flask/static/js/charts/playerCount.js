@@ -57,17 +57,17 @@ export async function createPlayerCountChart() {
             }
         },
         plotOptions: {
-        arearange: {
-            enableMouseTracking: false,
-            states: {
-                inactive: {
-                    enabled: false
-                }
-            },
-            color: COLORS.forecastColor,
-            fillOpacity: 0.175,
-            lineWidth: 0
-        }
+            arearange: {
+                enableMouseTracking: false,
+                states: {
+                    inactive: {
+                        enabled: false
+                    }
+                },
+                color: COLORS.forecastColor,
+                fillOpacity: 0.175,
+                lineWidth: 0
+            }
         },
         navigator: {
             enabled: true,

@@ -113,6 +113,10 @@ async def about():
 async def robots():
     return app.send_static_file("robots.txt")
 
+@app.route("/favicon.ico")
+async def favicon():
+    return app.send_static_file("images/favicon.ico")
+
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, "_database", None)

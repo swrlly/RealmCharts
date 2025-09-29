@@ -25,14 +25,20 @@ function minutesToHumanTime(minutes) {
 
 export async function createReviewsChart() {
     var data = await getData(API_ENDPOINTS.reviews);
+    const tsToReviewProp = new Map();
 
     // convert timestamps to milliseconds
     for (let index = 0; index < data.length; index++) {
         data[index][0] *= 1000;
+        data[index][2] *= 100;
+        var date = new Date(data[index][0]);
+        tsToReviewProp.set(date.getUTCFullYear() + "-" + String(date.getUTCMonth() + 1).padStart(2, "0") + "-" +  String(date.getUTCDate()).padStart(2, "0"), data[index][2]);
     }
+    console.log(tsToReviewProp);
+    console.log(tsToReviewProp.get("2020-04-15"));
     
     let reviews = data.slice(0, data.length).map(i => [i[0], i[1]]);
-    let proportions = data.slice(0, data.length).map(i => [i[0], i[2] * 100]);
+    let proportions = data.slice(0, data.length).map(i => [i[0], i[2]]);
     
     var chart = Highcharts.stockChart("review-chart", {
         chart: {
@@ -43,8 +49,11 @@ export async function createReviewsChart() {
                 } 
             }
         },
+        time: {
+            timezone: "utc"
+        },
         navigator: {
-            enabled: false,
+            enabled: true,
             maskFill: "rgba(133, 133, 133, 0.08)",
             xAxis: {
                 labels: {
@@ -245,7 +254,274 @@ export async function createReviewsChart() {
                 color: COLORS.textColor,
             },
             followTouchMove: false
-        }
+        },
+        annotations: [
+            {
+                draggable: "",
+                labelOptions: {
+                    //shape: 'connector',
+                    backgroundColor: COLORS.annotationBackgroundColor,
+                    borderColor: COLORS.annotationLineColor,
+                    borderWidth: 1
+                },
+                labels: [
+                    {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2012-06-18",
+                            y: tsToReviewProp.get("2012-06-18")
+                        },
+                        x: 0,
+                        y: 10,
+                        text: "Kabam takeover of Wildshadow"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2013-12-12",
+                            y: tsToReviewProp.get("2013-12-12")
+                        },
+                        x: -50,
+                        y: 50,
+                        useHTML: true,
+                        text: "<img src='/static/images/shatters.png' class='review-image-annotation'></img>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2014-04-18",
+                            y: tsToReviewProp.get("2014-04-18")
+                        },
+                        x: 50,
+                        y: 0,
+                        useHTML: true,
+                        text: "<div style='display: flex; align-items: center'><img src='/static/images/cyanbag.png' class='small-review-image-annotation'></img><div>rework</div></div>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2016-07-27",
+                            y: tsToReviewProp.get("2016-07-27")
+                        },
+                        x: -20,
+                        y: 25,
+                        text: "DECA takeover"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2016-11-24",
+                            y: tsToReviewProp.get("2016-11-24")
+                        },
+                        x: 0,
+                        y: -5,
+                        text: "Portal exploit fix"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2017-08-01",
+                            y: tsToReviewProp.get("2017-08-01")
+                        },
+                        x: -10,
+                        y: 60,
+                        useHTML: true,
+                        text: "<img src='/static/images/lh.png' class='review-image-annotation'></img>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2018-05-24",
+                            y: tsToReviewProp.get("2018-05-24")
+                        },
+                        x: -30,
+                        y: -60,
+                        useHTML: true,
+                        text: "<div style='display: flex; align-items: center'><img src='/static/images/lh.png' class='small-review-image-annotation'></img><div style='padding-left:5px;'>rework</div></div>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2019-10-23",
+                            y: tsToReviewProp.get("2019-10-23")
+                        },
+                        x: 0,
+                        y: 50,
+                        useHTML: true,
+                        text: "<div style='display: flex; align-items: center'><img src='/static/images/totalia.png' class='review-image-annotation'></img><div>event</div></div>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2020-04-15",
+                            y: tsToReviewProp.get("2020-04-15")
+                        },
+                        x: -40,
+                        y: -5,
+                        text: "Unity client"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2020-07-22",
+                            y: tsToReviewProp.get("2020-07-22")
+                        },
+                        x: 10,
+                        y: -5,
+                        useHTML: true,
+                        text: "<img src='/static/images/osanc.png' class='review-image-annotation'></img>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2020-11-24",
+                            y: tsToReviewProp.get("2020-11-24")
+                        },
+                        x: 20,
+                        y: 40,
+                        useHTML: true,
+                        text: "<div style='display: flex; align-items: center'><img src='/static/images/fame.png' class='small-review-image-annotation'></img><div style='padding-left:5px;'>rework</div></div>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2021-08-26",
+                            y: tsToReviewProp.get("2021-08-26")
+                        },
+                        useHTML: true,
+                        x: -60,
+                        y: -60,
+                        text: "<div style='display: flex; align-items: center'><img src='/static/images/shatters.png' class='small-review-image-annotation'></img><div style='padding-left:5px;'>rework</div></div>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2022-08-02",
+                            y: tsToReviewProp.get("2022-08-02")
+                        },
+                        x: 0,
+                        y: -5,
+                        text: "Season 1"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2023-03-28",
+                            y: tsToReviewProp.get("2023-03-28")
+                        },
+                        x: -40,
+                        y: 50,
+                        useHTML: true,
+                        text: "<img src='/static/images/mv.png' class='review-image-annotation'></img>"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2023-07-11",
+                            y: tsToReviewProp.get("2023-07-11")
+                        },
+                        x: -50,
+                        y: -50,
+                        text: "Enchanting - release"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2023-12-12",
+                            y: tsToReviewProp.get("2023-12-12")
+                        },
+                        x: -50,
+                        y: -80,
+                        text: "Enchanting - rework"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2024-11-26",
+                            y: tsToReviewProp.get("2024-11-26")
+                        },
+                        x: -40,
+                        y: 40,
+                        text: "S18/Oryxmas"
+                    }, {
+                        allowOverlap: true,
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: "2025-05-06",
+                            y: tsToReviewProp.get("2025-05-06")
+                        },
+                        x: -50,
+                        y: -40,
+                        text: "Enchanting - divines"
+                    }
+                ]
+            },
+            /*{
+                draggable: '',
+                labels: [
+                    {
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: '2019-03-14',
+                            y: 19.33
+                        },
+                        x: -60,
+                        text: 'Tesla Model Y announced'
+                    },
+                    {
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: '2019-11-21',
+                            y: 23.65
+                        },
+                        text: 'Tesla CyberTruck announced',
+                        x: -80,
+                        y: -40
+                    },
+                    {
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: '2020-09-22',
+                            y: 141.41
+                        },
+                        x: 100,
+                        y: 50,
+                        text: 'Tesla Model S and X Plaid announced'
+                    }, {
+                        point: {
+                            xAxis: 0,
+                            yAxis: 0,
+                            x: '2024-01-24',
+                            y: 207.83
+                        },
+                        y: 70,
+                        text: 'Tesla Model 2 announced'
+                    }
+                ]
+            }*/
+        ],
     });
 
     return chart;
