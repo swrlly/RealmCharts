@@ -22,7 +22,7 @@ export async function createPlayerCountChart() {
     let forecasted_mean = forecast.slice(0, forecast.length).map(i => [i[0], i[1]]);
     let one_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[2], i[3]]);
     let two_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[4], i[5]]);
-    let three_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[6], i[7]]);
+    //let three_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[6], i[7]]);
 
     let plotBands = [];
     let chartMax = data[data.length - 1][0];
@@ -98,11 +98,11 @@ export async function createPlayerCountChart() {
             buttons: [
                 {
                     type: "minute",
-                    count: 60 * 48 + 60 * 12 + 30,
+                    count: 60 * 48 + 60 * 24 + 30,
                     text: "48h"
                 }, {
                     type: "minute",
-                    count: 60 * 24 * 7 + 60 * 12 + 30,
+                    count: 60 * 24 * 7 + 60 * 24 + 30,
                     text: "7d"
                 }, {
                     type: "month",
@@ -176,11 +176,11 @@ export async function createPlayerCountChart() {
             name: "2σ",
             data: two_sd,
             color: COLORS.forecastColor,
-        }, {
+        },/* {
             name: "3σ",
             data: three_sd,
             color: COLORS.forecastColor,
-        }],
+        }*/],
         xAxis: {
             lineColor: COLORS.linesInChartColor,
             tickColor: COLORS.linesInChartColor,
@@ -196,7 +196,7 @@ export async function createPlayerCountChart() {
                 dashStyle: "ShortDash"
             },
             tickPixelInterval: 120,
-            min: Date.now() - (3 * 24 * 60 * 60 * 1000),//Date.now() - (24 * 7 * 60 * 60 * 1000 + 30 * 60 * 1000), // 7 days, 30 min
+            min: Date.now() - (4 * 24 * 60 * 60 * 1000),//Date.now() - (24 * 7 * 60 * 60 * 1000 + 30 * 60 * 1000), // 7 days, 30 min
             max: chartMax,//Date.now(),
             plotBands: plotBands,
             /*plotLines: [{

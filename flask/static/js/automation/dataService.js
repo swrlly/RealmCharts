@@ -144,7 +144,7 @@ export async function updatePlayersJob(chart, data) {
         let forecasted_mean = forecast.slice(0, forecast.length).map(i => [i[0], i[1]]);
         let one_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[2], i[3]]);
         let two_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[4], i[5]]);
-        let three_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[6], i[7]]);
+        //let three_sd = forecast.slice(0, forecast.length).map(i => [i[0], i[6], i[7]]);
         let content = document.getElementsByClassName("forecast-disabled-warning")[0];
         if (forecast.length == 0) {
             content.innerHTML = "Forecast disabled until 60 minutes after data collection returns.";
@@ -155,7 +155,7 @@ export async function updatePlayersJob(chart, data) {
         chart.series[1].setData(forecasted_mean, true, true, false);
         chart.series[2].setData(one_sd, true, true, false);
         chart.series[3].setData(two_sd, true, true, false);
-        chart.series[4].setData(three_sd, true, true, false);
+        //chart.series[4].setData(three_sd, true, true, false);
     }
 
     return Promise.resolve([chart, data]);
