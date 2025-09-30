@@ -1,0 +1,63 @@
+[2025-09-30] 06:12:10 -  INFO   - Main - Started program.
+[2025-09-30] 06:12:11 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-09-30] 06:12:11 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-09-30] 06:12:13 -  INFO   - Main - Training forecasting model...
+[2025-09-30] 06:14:19 -  INFO   - Main - Finished training model.
+[2025-09-30] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 07:00:00 -  INFO   - Main - Total reviews to scrape: 46945
+[2025-09-30] 07:02:36 -  INFO   - Main - Finished scraping 46939 reviews.
+[2025-09-30] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 08:00:00 -  INFO   - Main - Total reviews to scrape: 46945
+[2025-09-30] 08:02:34 -  INFO   - Main - Finished scraping 46939 reviews.
+[2025-09-30] 08:33:16 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:34:01 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:35:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:36:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:37:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:38:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:39:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:40:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:41:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:42:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:43:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:44:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:45:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:46:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:47:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:48:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:49:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:50:01 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:51:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:52:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:53:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:54:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:55:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:56:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:57:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:58:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 08:59:01 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 09:00:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:00:01 -  INFO   - Main - Total reviews to scrape: 46945
+[2025-09-30] 09:01:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:02:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:02:34 -  INFO   - Main - Finished scraping 46939 reviews.
+[2025-09-30] 09:03:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:04:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:05:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:06:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:07:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:08:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:09:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:10:01 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:11:01 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:12:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:13:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:14:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:15:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:16:01 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:17:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:18:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:19:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:20:01 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 09:21:00 -  INFO   - Main - Exception while requesting player count.
