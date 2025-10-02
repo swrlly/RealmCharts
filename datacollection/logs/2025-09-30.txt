@@ -9,55 +9,76 @@
 [2025-09-30] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
 [2025-09-30] 08:00:00 -  INFO   - Main - Total reviews to scrape: 46945
 [2025-09-30] 08:02:34 -  INFO   - Main - Finished scraping 46939 reviews.
-[2025-09-30] 08:33:16 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:34:01 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:35:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:36:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:37:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:38:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:39:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:40:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:41:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:42:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:43:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:44:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:45:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:46:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:47:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:48:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:49:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:50:01 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:51:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:52:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:53:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:54:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:55:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:56:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:57:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:58:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 08:59:01 -  INFO   - Main - Exception while requesting player count.
 [2025-09-30] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
-[2025-09-30] 09:00:00 -  INFO   - Main - Exception while requesting player count.
 [2025-09-30] 09:00:01 -  INFO   - Main - Total reviews to scrape: 46945
-[2025-09-30] 09:01:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:02:00 -  INFO   - Main - Exception while requesting player count.
 [2025-09-30] 09:02:34 -  INFO   - Main - Finished scraping 46939 reviews.
-[2025-09-30] 09:03:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:04:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:05:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:06:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:07:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:08:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:09:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:10:01 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:11:01 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:12:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:13:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:14:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:15:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:16:01 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:17:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:18:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:19:00 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:20:01 -  INFO   - Main - Exception while requesting player count.
-[2025-09-30] 09:21:00 -  INFO   - Main - Exception while requesting player count.
+[2025-09-30] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 10:00:00 -  INFO   - Main - Total reviews to scrape: 46945
+[2025-09-30] 10:02:39 -  INFO   - Main - Finished scraping 46939 reviews.
+[2025-09-30] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 11:00:00 -  INFO   - Main - Total reviews to scrape: 46944
+[2025-09-30] 11:02:41 -  INFO   - Main - Finished scraping 46938 reviews.
+[2025-09-30] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 12:00:01 -  INFO   - Main - Total reviews to scrape: 46945
+[2025-09-30] 12:00:03 -  INFO   - Main - Training forecasting model...
+[2025-09-30] 12:01:55 -  INFO   - Main - Finished training model.
+[2025-09-30] 12:03:47 -  INFO   - Main - Finished scraping 46940 reviews.
+[2025-09-30] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 13:00:00 -  INFO   - Main - Total reviews to scrape: 46945
+[2025-09-30] 13:02:40 -  INFO   - Main - Finished scraping 46939 reviews.
+[2025-09-30] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 14:00:00 -  INFO   - Main - Total reviews to scrape: 46945
+[2025-09-30] 14:02:46 -  INFO   - Main - Finished scraping 46939 reviews.
+[2025-09-30] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 15:00:01 -  INFO   - Main - Total reviews to scrape: 46946
+[2025-09-30] 15:03:21 -  INFO   - Main - Finished scraping 46940 reviews.
+[2025-09-30] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 16:00:00 -  INFO   - Main - Total reviews to scrape: 46946
+[2025-09-30] 16:02:41 -  INFO   - Main - Finished scraping 46940 reviews.
+[2025-09-30] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 17:00:01 -  INFO   - Main - Total reviews to scrape: 46947
+[2025-09-30] 17:04:10 -  INFO   - Main - Finished scraping 46941 reviews.
+[2025-09-30] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 18:00:01 -  INFO   - Main - Total reviews to scrape: 46947
+[2025-09-30] 18:00:03 -  INFO   - Main - Training forecasting model...
+[2025-09-30] 18:01:50 -  INFO   - Main - Finished training model.
+[2025-09-30] 18:03:38 -  INFO   - Main - Finished scraping 46941 reviews.
+[2025-09-30] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 19:00:01 -  INFO   - Main - Total reviews to scrape: 46948
+[2025-09-30] 19:03:41 -  INFO   - Main - Finished scraping 46938 reviews.
+[2025-09-30] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 20:00:01 -  INFO   - Main - Total reviews to scrape: 46948
+[2025-09-30] 20:02:48 -  INFO   - Main - Finished scraping 46938 reviews.
+[2025-09-30] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 21:00:01 -  INFO   - Main - Total reviews to scrape: 46948
+[2025-09-30] 21:02:38 -  INFO   - Main - Finished scraping 46938 reviews.
+[2025-09-30] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 22:00:01 -  INFO   - Main - Total reviews to scrape: 46948
+[2025-09-30] 22:02:31 -  INFO   - Main - Finished scraping 46942 reviews.
+[2025-09-30] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-09-30] 23:00:00 -  INFO   - Main - Total reviews to scrape: 46949
+[2025-09-30] 23:03:03 -  INFO   - Main - Finished scraping 46943 reviews.
+[2025-10-01] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-01] 00:00:00 -  INFO   - Main - Total reviews to scrape: 46949
+[2025-10-01] 00:00:04 -  INFO   - Main - Training forecasting model...
+[2025-10-01] 00:02:13 -  INFO   - Main - Finished training model.
+[2025-10-01] 00:03:34 -  INFO   - Main - Finished scraping 46943 reviews.
+[2025-10-01] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-01] 01:00:00 -  INFO   - Main - Total reviews to scrape: 46949
+[2025-10-01] 01:02:31 -  INFO   - Main - Finished scraping 46943 reviews.
+[2025-10-01] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-01] 02:00:00 -  INFO   - Main - Total reviews to scrape: 46948
+[2025-10-01] 02:02:23 -  INFO   - Main - Finished scraping 46943 reviews.
+[2025-10-01] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-01] 03:00:00 -  INFO   - Main - Total reviews to scrape: 46948
+[2025-10-01] 03:02:23 -  INFO   - Main - Finished scraping 46942 reviews.
+[2025-10-01] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-01] 04:00:00 -  INFO   - Main - Total reviews to scrape: 46949
+[2025-10-01] 04:02:29 -  INFO   - Main - Finished scraping 46943 reviews.
+[2025-10-01] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-01] 05:00:00 -  INFO   - Main - Total reviews to scrape: 46949
+[2025-10-01] 05:02:31 -  INFO   - Main - Finished scraping 46943 reviews.
+[2025-10-01] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-01] 06:00:00 -  INFO   - Main - Total reviews to scrape: 46949
+[2025-10-01] 06:00:04 -  INFO   - Main - Training forecasting model...
+[2025-10-01] 06:01:38 -  INFO   - Main - Finished training model.
