@@ -71,3 +71,9 @@
 [2025-10-02] 00:00:04 -  INFO   - Main - Training forecasting model...
 [2025-10-02] 00:02:07 -  INFO   - Main - Finished training model.
 [2025-10-02] 00:03:44 -  INFO   - Main - Finished scraping 46944 reviews.
+[2025-10-02] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-02] 01:00:01 -  INFO   - Main - Total reviews to scrape: 46950
+[2025-10-02] 01:02:30 -  INFO   - Main - Finished scraping 46944 reviews.
+[2025-10-02] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-02] 02:00:00 -  INFO   - Main - Total reviews to scrape: 46950
+[2025-10-02] 02:02:27 -  INFO   - Main - Finished scraping 46944 reviews.
