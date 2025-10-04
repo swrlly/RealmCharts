@@ -2,7 +2,7 @@ import { createPlayerCountChart } from "./charts/playerCount.js";
 import { createReviewsChart } from "./charts/reviews.js";
 import { updateCards, updatePlayerCountTimeUpdated } from "./automation/dataService.js";
 import { updatePlayerChart, updateReviewChart, updateReviewTime } from "./automation/timeouts.js"
-import { positionTooltips } from "./ui/skeleton.js";
+import { positionTooltips, fillForecastPlayersText } from "./ui/skeleton.js";
 import { BASE_CHART_OPTIONS } from "./config/constants.js";
 
 async function main() {
@@ -18,6 +18,7 @@ async function main() {
     await updateCards(data);
     updatePlayerCountTimeUpdated(data);
     positionTooltips();
+    fillForecastPlayersText();
 
     // live update logic
     // array is pass by ref...

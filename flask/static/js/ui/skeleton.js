@@ -97,19 +97,33 @@ export function positionTooltips() {
     // put above hover area
     var tooltip = document.getElementsByClassName("tooltip-text");
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    if (vw >= 1100) {
-        for (let i = 0; i < tooltip.length; i++) {
+    
+    for (let i = 0; i < tooltip.length; i++) {
+        if (vw >= 1100) {
             var width = tooltip[i].clientWidth;
             // remove icon from both edges, get center offset, then adjust 12 px b/c left of icon is currently at center due to inline-inset-start: 0 being directly lined up w/ left side of box
             // then add 8 for icon 8 units to right
             tooltip[i].style["inset-inline-start"] = (-1 * (width - 48) / 2 - 12 + 8).toString() + "px"; 
         }
-    }
-    else {
-        for (let i = 0; i < tooltip.length; i++) {
-            var width = tooltip[i].clientWidth;
+        else {
             tooltip[i].style["inset-inline-start"] = "-80px"; 
             tooltip[i].style["font-size"] = " calc(0.4rem + 0.831vw)";
+        }
+    }
+}
+
+export function fillForecastPlayersText() {
+
+    var change = document.getElementsByClassName("forecast-players-text");
+    console.log(change);
+    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    
+    for (let i = 0; i < change.length; i++) {
+        if (vw >= 600) {
+            change[i].innerHTML = "players";
+        }
+        else {
+            change[i].innerHTML = "plrs";
         }
     }
 }
