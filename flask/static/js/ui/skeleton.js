@@ -108,7 +108,7 @@ export function positionTooltips() {
     else {
         for (let i = 0; i < tooltip.length; i++) {
             var width = tooltip[i].clientWidth;
-            tooltip[i].style["inset-inline-start"] = "-50px"; 
+            tooltip[i].style["inset-inline-start"] = "-80px"; 
             tooltip[i].style["font-size"] = " calc(0.4rem + 0.831vw)";
         }
     }

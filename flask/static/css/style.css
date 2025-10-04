@@ -255,6 +255,7 @@ a {
     opacity: 0;
     transition: opacity 0.2s;
     inset-block-start: calc(-48px - 5px);
+    max-width: calc(100vw - 20px);
 }
 
 .tooltip:hover .tooltip-text {
@@ -293,6 +294,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
+    justify-items: center;
 }
 
 .forecast-line {
@@ -336,6 +338,10 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.card {
+    width: 80%;
 }
 
 .forecast-card {
@@ -658,8 +664,8 @@ don't put background wrapper children in here
     }
     .card, .review-card {
         width: 80%;
-        min-width:fit-content;
-        padding: 10px 20px 10px 20px;
+        /*min-width:fit-content;
+        padding: 10px 20px 10px 20px;*/ 
     }
     .playercount-header, .steam-review-header {
         font-size: calc(1rem + 2.078vw);
@@ -699,7 +705,7 @@ don't put background wrapper children in here
 }
 
 @media screen and (max-width: 500px) {
-    .card, .review-card {
+    .card {
         width: 100%;
     }
     .chart-skeleton {
