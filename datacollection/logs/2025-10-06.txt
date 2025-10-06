@@ -1,0 +1,8 @@
+[2025-10-06] 09:36:27 -  INFO   - Main - Started program.
+[2025-10-06] 09:36:28 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2025-10-06] 09:36:28 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2025-10-06] 09:36:31 -  INFO   - Main - Training forecasting model...
+[2025-10-06] 09:41:37 -  INFO   - Main - Finished training model.
+[2025-10-06] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-06] 10:00:00 -  INFO   - Main - Total reviews to scrape: 46962
+[2025-10-06] 10:02:18 -  INFO   - Main - Finished scraping 46956 reviews.
