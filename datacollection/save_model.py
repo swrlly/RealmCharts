@@ -58,7 +58,7 @@ def plot_significant_acorr(res, ax, is_acf = True):
     ax.axhline(y = 0, xmin = 0, xmax = 1, color = borderColor)
     matplotlib.rcParams.update({'font.size': 10})
 
-def plot_and_save(res, df):
+def plot_and_save(res, df, plot_exog):
     now = time.gmtime(time.time())
     name = str(datetime.datetime(*now[:4]))[:-6]
     dir = f"data/models/{name}"
@@ -105,7 +105,7 @@ def plot_and_save(res, df):
         pd.to_datetime(i, unit = "s", utc = True).tz_convert("America/Los_Angeles").day_name()[:3] + f" {pd.to_datetime(i, unit = 's', utc = True).tz_convert('America/Los_Angeles').hour}" 
         for i in range(start, start + 300 * days * 12 * 24, 300 * 12 * 24)
     ]
-    fore = res.get_forecast(days * 12 * 24)
+    fore = res.get_forecast(days * 12 * 24, exog = plot_exog)
     axs[2, 1].plot(fore.predicted_mean, color = lavender)
     axs[2, 1].set_xticks(fore.predicted_mean.index[::12*24], idx, fontsize = "small")
     axs[2, 1].tick_params(axis = "x", labelrotation = 45)

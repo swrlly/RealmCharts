@@ -68,11 +68,15 @@ class Tasks:
         if maintenance_time[1] == 0:
             self.etl_factory.get_forecast().generate_forecast_during_maintenance(maintenance_time)
 
-        # allow forecaster to interpolate through maintenance
-        data = self.etl_factory.get_grouper().select_grouped_data()
-        forecast, params = self.forecaster.update_forecast_once(data)
-        self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast, params)
-        self.etl_factory.get_forecast().insert_into_forecast(forecast, params)
+        # effects:
+        # 1. upon startup, if model takes > 5 min to train, delay returning new forecast every 5 min
+        # 2. upon new training cycle, if model takes > 5 min to train, use old forecaster results to return forecast for users
+        if self.forecaster.result is not None:
+            # allow forecaster to interpolate through maintenance
+            data = self.etl_factory.get_grouper().select_grouped_data()
+            forecast, params = self.forecaster.update_forecast_once(data)
+            self.etl_factory.get_forecast().insert_into_forecast_horizon(forecast, params)
+            self.etl_factory.get_forecast().insert_into_forecast(forecast, params)
 
     def update_forecast_horizon_with_actuals(self):
         self.etl_factory.get_forecast().update_forecast_horizon_with_actuals()
