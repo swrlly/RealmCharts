@@ -1,0 +1,32 @@
+[2025-10-07] 16:35:33 -  INFO   - Main - Started program.
+[2025-10-07] 16:37:48 -  INFO   - Main - Exception while requesting player count.
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759806240
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759816080
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759816800
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 5 rows after 1759816980
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759817340
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759817520
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759817760
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759817940
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759819380
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759819560
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 2 rows after 1759819740
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 14 rows after 1759854060
+[2025-10-07] 16:37:48 -  INFO   - Main - Inserted 39 rows into maintenance.
+[2025-10-07] 16:37:48 -  INFO   - Main - Copied 40 rows from playersOnline into playersCleaned
+[2025-10-07] 16:37:51 -  INFO   - Main - Training forecasting model...
+[2025-10-07] 16:41:45 -  INFO   - Main - Finished training model.
+[2025-10-07] 16:52:00 -  INFO   - Main - Exception while requesting player count.
+[2025-10-07] 16:53:20 -  INFO   - Main - Exception while requesting player count.
+[2025-10-07] 16:55:31 -  INFO   - Main - Exception while requesting player count.
+[2025-10-07] 17:13:08 -  INFO   - Main - Exception while requesting player count.
+[2025-10-07] 17:16:14 -  INFO   - Main - Exception while requesting player count.
+[2025-10-07] 17:17:26 -  INFO   - Main - Exception while requesting player count.
+[2025-10-07] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-07] 18:00:00 -  INFO   - Main - Total reviews to scrape: 46961
+[2025-10-07] 18:00:03 -  INFO   - Main - Training forecasting model...
+[2025-10-07] 18:04:43 -  INFO   - Main - Finished training model.
+[2025-10-07] 18:04:44 -  INFO   - Main - Finished scraping 46955 reviews.
+[2025-10-07] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-10-07] 19:00:00 -  INFO   - Main - Total reviews to scrape: 46961
+[2025-10-07] 19:02:30 -  INFO   - Main - Finished scraping 46955 reviews.
