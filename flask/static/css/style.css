@@ -11,7 +11,7 @@
 }
 
 html {
-    --text-color: #c9c9c9;
+    --text-color: #c0c0c0;
     --card-header-text-color: #7c7c7c;
     --less-emphasis-color: #5c5c5c;
     --forecast-less-emphasis-color: #686868;
@@ -22,10 +22,20 @@ html {
     --tooltip-background-color: #bdbdbd;
     --tooltip-text-color: #202020;
     --navbar-text-background-color: #1a1a1a;
+    --bold-color: rgb(180, 145, 215);
 
     --blue: rgb(107, 142, 255);
     --light-blue: rgb(136, 164, 255);
     --code-background: #212121;
+
+    --param-color: rgb(218, 126, 254);
+    --field-color: rgb(194, 194, 116);
+    --api-less-emphasis-color: #a1a1a1;
+    --api-less-emphasis-color2: #7c7c7c;
+    --api-example-border-color: #393939;
+    --json-number-color: rgb(126, 156, 254);
+    --json-null-color: #ed625e;
+    --json-string-color: #34c192;
 
     --card-border-radius: 25px;
 }
@@ -125,6 +135,7 @@ a {
     align-items: center;
     justify-content: flex-end;
     column-gap: 1.5rem;
+    width: fit-content
 }
 
 .navbar-text:hover {
@@ -151,7 +162,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #1f1f1f;
+    background: #282828a0;
     padding: 5px;
     border-radius: 10px;
 }
@@ -564,6 +575,11 @@ don't put background wrapper children in here
     background-size: 200% 100%;
 }
 
+.navbar-text-wrapper {
+    justify-content: flex-end;
+    display: flex;
+}
+
 @font-face {
   font-family: 'icons';
   src: url('/static/fonts/icons.woff') format('woff');
@@ -611,6 +627,183 @@ don't put background wrapper children in here
 
 .i-github {
     font-size: 30px; padding-left: 2.14165px; padding-right: 2.14165px;
+}
+
+
+
+
+
+
+/* about */
+
+h1, h2, h3 {
+    font-weight: 400;
+    margin-top: 2.75rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.65rem;
+    padding-left: 2rem;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
+}
+
+code {
+    font-family: "Source Code Pro, monospace";
+    background: var(--code-background);
+    padding: 0px 4px 0px 4px;
+}
+
+.ul-normal {
+    font-size: revert;
+}
+
+.about-a {
+    color: var(--blue);
+}
+
+.about-a:hover {
+    color: var(--light-blue);
+}
+
+b {
+    color: var(--bold-color);
+    font-weight: 500;
+}
+
+
+
+
+
+/* api */
+
+.api-ref, .api-ref-ex {
+    font-family: "Source Code Pro, monospace";
+    /*background: linear-gradient(to right, var(--code-background) 50%, var(--background-color) 100%);*/
+    background-color: var(--code-background);
+    padding: 10px;
+}
+
+.api-ref {
+    display: flex;
+}
+
+.api-ref-grad {
+    font-family: "Source Code Pro, monospace";
+    background-color: var(--code-background);
+    padding: 10px;
+    margin-bottom: 1rem;
+    max-width: 50%;
+    white-space: nowrap;
+}
+
+.a-h1 {
+    margin-bottom: 0;
+}
+
+.a-h3 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.method {
+    font-size: 0.8rem;
+    padding: 0.25rem;
+    border: 1px solid var(--api-less-emphasis-color2);
+    border-radius: 4px;
+    color: var(--api-less-emphasis-color2);
+}
+
+pre {
+    white-space: initial;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.js-number {
+    color: var(--json-number-color);
+}
+
+.js-null {
+    color: var(--json-null-color);
+}
+
+.js-string {
+    color: var(--json-string-color);
+}
+
+.param {
+    color: var(--param-color);
+}
+
+.field {
+    color: var(--json-string-color);
+}
+
+hr {
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+}
+
+.field-desc {
+    font-size: 0.8rem;
+    color: var(--api-less-emphasis-color);
+}
+
+.param-dtype {
+    background: none;
+    padding: 0;
+    font-size: 0.7rem;
+    color: var(--api-less-emphasis-color2);
+}
+
+.param-line, .field-line {
+    margin-top: 0.5rem;
+}
+
+.field-line {
+    margin-bottom: 0.5rem;
+}
+
+.param-ex, .response {
+    color: var(--api-less-emphasis-color);
+}
+
+.example-box {
+    margin-top: 2rem;
+    border: 1px solid var(--api-example-border-color); 
+    border-radius: 24px; 
+    padding: 1rem;
+}
+
+li::marker {
+    color: var(--api-less-emphasis-color2);
+}
+
+.api-update-time {
+    color: var(--api-less-emphasis-color2);
+    margin-left: auto;
+    font-size: 0.7rem;
 }
 
 /* navbar overflows */
@@ -702,6 +895,12 @@ don't put background wrapper children in here
     .forecast-hour-header { /* 2/3 width in px */
         width: calc(12.5px + 1.62335vw);
     }
+
+    /* api */
+
+    .api-ref-grad {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -728,45 +927,7 @@ don't put background wrapper children in here
     }
 }
 
-/* about */
 
-h1, h2, h3 {
-    font-weight: 400;
-    margin-top: 2.75rem;
-}
-
-h3 {
-    margin: 0;
-    font-size: 1rem;
-}
-
-ul {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.6rem;
-}
-
-p {
-    line-height: 1.5;
-}
-
-code {
-    font-family: "Source Code Pro, monospace";
-    background: var(--code-background);
-    padding: 0px 2px 0px 2px;
-}
-
-.ul-normal {
-    font-size: 1rem;
-}
-
-.about-a {
-    color: var(--blue);
-}
-
-.about-a:hover {
-    color: var(--light-blue);
-}
 
 ::selection {
     background-color: #352e7e;

@@ -11,7 +11,7 @@ export const COLORS = {
     yAxisLineColor: "#5e5e5e",
     inputBoxBorderColor: "#6e6e6e",
     axisLabelColor: "#adadadff",
-    zoomLabelColor: "#c9c9c9",
+    zoomLabelColor: "#c0c0c0",
     rangeSelectorColorDisabled: "rgba(16, 16, 16, 1)",
     rangeSelectorColor: "#1c1c1cff",
     rangeSelectorEnabled: "#343434ff",
@@ -30,14 +30,14 @@ export const CHART_CONFIG = {
 
 // API endpoints
 export const API_ENDPOINTS = {
-    serverUp: debug == false ? "https://realmcharts.swrlly.com/api/is-game-online" : "http://localhost:8001/api/is-game-online",
-    playerCount: debug == false ? "https://realmcharts.swrlly.com/api/playercount" : "http://localhost:8001/api/playercount",
-    latestPlayerCount: debug == false ? "https://realmcharts.swrlly.com/api/players-now" : "http://localhost:8001/api/players-now",
-    playersLastWeek: debug == false ? "https://realmcharts.swrlly.com/api/players-last-week" : "http://localhost:8001/api/players-last-week",
+    serverUp: debug == false ? "https://realmcharts.swrlly.com/api/game/online" : "http://localhost:8001/api/game/online",
+    playerCount: debug == false ? "https://realmcharts.swrlly.com/api/players" : "http://localhost:8001/api/players",
+    latestPlayerCount: debug == false ? "https://realmcharts.swrlly.com/api/players?time=now" : "http://localhost:8001/api/players?time=now",
+    playersLastWeek: debug == false ? "https://realmcharts.swrlly.com/api/players?time=last-week" : "http://localhost:8001/api/players?time=last-week",
     forecast: debug == false ? "https://realmcharts.swrlly.com/api/forecast" : "http://localhost:8001/api/forecast",
-    forecastPerformance: debug == false ? "https://realmcharts.swrlly.com/api/forecast-performance" : "http://localhost:8001/api/forecast-performance",
+    forecastPerformance: debug == false ? "https://realmcharts.swrlly.com/api/forecast/performance" : "http://localhost:8001/api/forecast/performance",
     reviews: debug == false ? "https://realmcharts.swrlly.com/api/reviews" : "http://localhost:8001/api/reviews",
-    lastReviewTimeScraped: debug == false ? "https://realmcharts.swrlly.com/api/reviews-last-scraped" : "http://localhost:8001/api/reviews-last-scraped",
+    lastReviewTimeScraped: debug == false ? "https://realmcharts.swrlly.com/api/reviews/last-scraped" : "http://localhost:8001/api/reviews/last-scraped",
 };
 
 // common chart options that can be reused

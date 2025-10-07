@@ -193,22 +193,8 @@ export async function createReviewsChart() {
                 dashStyle: "ShortDash"
             },
             tickPixelInterval: 120,
-            /*
             events: {
-                setExtremes: function(event) {
-                    console.log(event.min);
-                    console.log(event.max);
-                }*/
-            events: {
-                /* 
-                0 date,
-                1 daily_total_reviews, 
-                2 all_time_prop, 
-                3 daily_playtime_last_two_weeks, 
-                4 daily_votes_up, 
-                5 daily_playtime_at_review, 
-                6 daily_playtime_forever
-                */
+
                 afterSetExtremes: function(event) {
                     var start = Math.ceil(event.min);
                     var end = Math.floor(event.max);

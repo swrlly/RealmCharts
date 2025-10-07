@@ -1,25 +1,28 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
-        {% block title %}<title>RealmCharts - Live RotMG Analysis</title>{% endblock %}
-        {% block discord %}
-        <meta property="og:title" content="RealmCharts - Live RotMG Analysis"/>
-        <meta name="theme-color" content="transparent"/>
-        <meta property="description" content="Live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
-        <meta property="og:description" content="Live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
-        <meta property="og:url" content="https://realmcharts.swrlly.com"/>
-        <meta property="og:image" content="/static/images/favicon.png" />
-        {% endblock %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="transparent"/>
+        <meta property="og:image" content="/static/images/favicon.png"/>
+        <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+        {% block title %}
+        <title>RealmCharts - Live RotMG Analysis</title>
+        {% endblock %}
+
+        {% block discord %}
+        <meta property="og:title" content="RealmCharts - Live RotMG Analysis"/>
+        <meta property="description" content="Live statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Includes RotMG player count, Steam reviews, and 24-hour forecasts!"/>
+        <meta property="og:description" content="Live statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Includes RotMG player count, Steam reviews, and 24-hour forecasts!"/>
+        <meta property="og:url" content="https://realmcharts.swrlly.com"/>
+        {% endblock %}
+
         {% block header %} 
         <!--<script type="module" src="/static/js/main.js" async></script>-->
         <script rel="preload" src="/static/js/highstock.js"></script>
         <script rel="preload" src="/static/js/highcharts-more.js"></script>
         <script type="module" src="/static/js/main.js"></script>
         <script rel="preload" src="/static/js/annotations.js"></script>
-
         {% endblock %}
 	<link rel="stylesheet" href="/static/css/style.css?v={{css_version}}" async>
     </head>
@@ -27,25 +30,22 @@
     {% block content %}
     <div class="navbar">
         <span class="navbar-text-wrapper">
-            <a href="#playercount-section"><div class="navbar-text"><span>Players</span><img class="navbar-text-icon" src="/static/images/players.png"></img></div></a>
+            <a href="#players"><div class="navbar-text"><span>Players</span><img class="navbar-text-icon" src="/static/images/players.png"></img></div></a>
         </span>
         <span class="navbar-text-wrapper">
-            <a href="#reviews-section"><div class="navbar-text"><span>Reviews</span><img class="navbar-text-icon" src="/static/images/reviews.png"></img></div></a>
-        </span>
-        <span class="navbar-text-wrapper">
-            <div class="tooltip" style="display: inherit; position: relative; padding-left: 0;">
-                <div class="navbar-text"><span>Tools</span><img class="navbar-text-icon" src="/static/images/tools.png"></img></div>
-                <span class="tooltip-text">Soon!</span>
-            </div>
+            <a href="#reviews"><div class="navbar-text"><span>Reviews</span><img class="navbar-text-icon" src="/static/images/reviews.png"></img></div></a>
         </span>
         <span class="navbar-text-wrapper">
             <a href="/about"><div class="navbar-text"><span>About</span><img class="navbar-text-icon" style="padding-left: 3.375px; padding-right: 3.375px;" src="/static/images/about.png"></img></div></a>
         </span>
         <span class="navbar-text-wrapper">
+            <a href="/api-reference"><div class="navbar-text"><span>API Reference</span><img class="navbar-text-icon" src="/static/images/api.png"></img></div></a>
+        </span>
+        <span class="navbar-text-wrapper">
             <a href="https://github.com/swrlly/realmcharts"><div class="navbar-text"><span>Source Code</span><span class="navbar-text-icon i-github" style="font-size: 30px; padding-left: 2.14165px; padding-right: 2.14165px"></span></div></a>
         </span>
     </div>
-
+    
     <div class="title-container">
         <span class="title-div-wrapper">
             <div class="title-div">
@@ -64,19 +64,16 @@
 
         <div class="navbar-mobile">
             <span class="navbar-text-wrapper">
-                <a href="#playercount-section"><div class="navbar-text"><span>Players</span><img class="navbar-text-icon" src="/static/images/players.png"></img></div></a>
+                <a href="#players"><div class="navbar-text"><span>Players</span><img class="navbar-text-icon" src="/static/images/players.png"></img></div></a>
             </span>
             <span class="navbar-text-wrapper">
-                <a href="#reviews-section"><div class="navbar-text"><span>Reviews</span><img class="navbar-text-icon" src="/static/images/reviews.png"></img></div></a>
-            </span>
-            <span class="navbar-text-wrapper">
-                <div class="tooltip" style="display: inherit; position: relative; padding-left: 0;">
-                    <div class="navbar-text"><span>Tools</span><img class="navbar-text-icon" src="/static/images/tools.png"></img></div>
-                    <span class="tooltip-text">Soon!</span>
-                </div>
+                <a href="#reviews"><div class="navbar-text"><span>Reviews</span><img class="navbar-text-icon" src="/static/images/reviews.png"></img></div></a>
             </span>
             <span class="navbar-text-wrapper">
                 <a href="/about"><div class="navbar-text"><span>About</span><img class="navbar-text-icon" style="padding-left: 3.375px; padding-right: 3.375px;" src="/static/images/about.png"></img></div></a>
+            </span>
+            <span class="navbar-text-wrapper">
+                <a href="/api-reference"><div class="navbar-text"><span>API Docs</span><img class="navbar-text-icon" src="/static/images/api.png"></img></div></a>
             </span>
             <span class="navbar-text-wrapper">
                 <a href="https://github.com/swrlly/realmcharts"><div class="navbar-text"><span>Source Code</span><span class="navbar-text-icon i-github"></span></div></a>
@@ -85,7 +82,7 @@
 
         <div class="visualization-container">
 
-            <div id="playercount-section" class="playercount-header">
+            <div id="players" class="playercount-header">
                 <div class="header-grid">
                     <div style="display: flex;">
                         <span>Players</span>
@@ -142,7 +139,7 @@
         <div class="container" style="padding: 1rem; padding-top:3rem;"></div>
 
         <div class="visualization-container">
-            <div id="reviews-section" class="steam-review-header">
+            <div id="reviews" class="steam-review-header">
                 <div class="header-grid">
                     <div style="display: flex;">
                         <span>Steam Reviews</span>

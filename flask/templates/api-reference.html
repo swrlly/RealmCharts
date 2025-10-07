@@ -1,0 +1,377 @@
+{% extends "index.html" %}
+
+{% block title %}
+<title>RealmCharts - API Reference</title>
+{% endblock %}
+
+{% block discord %}
+<meta property="og:title" content="RealmCharts - API Reference"/>
+<meta property="description" content="API Reference for RealmCharts, a live dashboard for ROTMG tracking player counts and Steam reviews. Learn how to connect your program to live RotMG player data."/>
+<meta property="og:description" content="API Reference for RealmCharts, a live dashboard for ROTMG tracking player counts and Steam reviews. Learn how to connect your program to live RotMG player data."/>
+<meta property="og:url" content="https://realmcharts.swrlly.com/api-reference"/>
+{% endblock %}
+
+{% block header %}
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+        };
+</script>
+<script async type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="navbar">
+    <a href="/">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Home</span><img class="navbar-text-icon" src="/static/images/home.png"></img></div>
+        </span>
+    </a>
+    <a href="#player-data">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Player Data</span><img class="navbar-text-icon" src="/static/images/players.png"></img></div>
+        </span>
+    </a>
+    <a href="#review-data">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Review Data</span><img class="navbar-text-icon" src="/static/images/reviews.png"></img></div>
+        </span>
+    </a>
+    <a href="#forecast-data">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Forecast Data</span><img class="navbar-text-icon" src="/static/images/forecast.png"></img></div>
+        </span>
+    </a>
+    <a href="#game-data">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Game Data</span><img class="navbar-text-icon" src="/static/images/game.png"></img></div>
+        </span>
+    </a>
+    <a href="#ratelimiting">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Ratelimiting</span><img class="navbar-text-icon" src="/static/images/ratelimiting.png"></img></div>
+        </span>
+    </a>
+    <span class="navbar-text-wrapper">
+        <a href="/about"><div class="navbar-text"><span>About</span><img class="navbar-text-icon" style="padding-left: 3.375px; padding-right: 3.375px;" src="/static/images/about.png"></img></div></a>
+    </span>
+</div>
+
+<div class="title-container">
+    <div class="title-div" style="visibility: visible;">
+        <a href="/" class="title-and-icon">
+            <img class="navbar-icon" src="/static/images/favicon.png"></img> 
+            <span class="navbar-website-text">RealmCharts</span>
+        </a>
+        <span class="navbar-descriptor"><i>Analytics for the MMORPG Realm of the Mad God (RotMG).</i></span>
+    </div>
+</div>
+
+<div class="container" style="font-size: 85%;">
+
+    <div class="home-floating-footer">
+        <a href="/"><img class="home-icon" src="/static/images/home.png"></img></a>
+    </div>
+
+    <h1 class="a-h1">API Reference</h1><hr>
+
+    <p>Welcome! This page describes the API for accessing all data in the RealmCharts dashboard. Data is delivered as JSON. You do not need to sign up for an API key.</p>
+
+    <div class="api-ref" style="display: block;">
+        <span style="font-family: Open Sans; color: var(--api-less-emphasis-color);">Base URL:</span> 
+        <code>https://realmcharts.swrlly.com/api</code>
+    </div>
+
+    <h1 id="player-data" class="a-h1">Player Data</h1><hr>
+
+    <h2>All/specific player counts</h2>
+
+    <div class="api-ref">
+        <code><span class="method">GET</span> /players?time=<span class="param">{time}</span></code>
+        <div class="api-update-time">Updated every minute</div>
+    </div>
+
+    <p>Returns historical player count data at minute-level granularity in an array. Row entries read left to right:</p>
+
+    <ul style="font-size:revert;">
+        <li><code class="field-desc">timestamp</code>: Unix time when player data was collected</li>
+        <li><code class="field-desc">players</code>: Total unique players seen in the last 60 minutes, excluding &lt;2 star players</li>
+    </ul>
+        
+    <p><code class="field-desc">players</code> = 0 represents maintenance times, <code class="field-desc">players</code> = <span class="js-null">null</span> represents missing data, bugged data collection, or counts withheld due to less than 60 minutes of observed data.</p>
+
+    <h3 class="a-h3">Parameters</h3>
+
+    <div>
+        <code class="param">time</code> <code class="param-dtype">string</code>
+        <div class="param-line">Time of requested playercount in form of a string. Not required.</div>
+        <div class="param-line"><span class="param-ex">Example</span> <code class="field-desc">now</code> or <code class="field-desc">last-week</code></div>
+    </div>
+
+    <h3 class="a-h3">Examples</h3>
+
+    <div class="example-box">
+
+        <div class="api-ref-grad" style="margin-top: 0;">
+            <code><span class="method">GET</span> /api/players</code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            [<br>
+            &emsp;[ <span class="js-number">1756653746</span>, <span class="js-number">2824</span> ],<br>
+            &emsp;[ <span class="js-number">1756653806</span>, <span class="js-number">2829</span> ],<br>
+            &emsp;[ <span class="js-number">1756653866</span>, <span class="js-number">2841</span> ],<br>
+            &emsp;...<br>
+            ]<br>
+        </div>
+
+    </div>
+
+    <div class="example-box">
+
+        <div class="api-ref-grad">
+            <code><span class="method">GET</span> /api/players?time=<span class="param">now</span></code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            [ <span class="js-number">1759840620</span>, <span class="js-number">2151</span> ]
+        </div>
+
+    </div>
+
+    <div class="example-box">
+
+        <div class="api-ref-grad">
+            <code><span class="method">GET</span> /api/players?time=<span class="param">last-week</span></code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            [ <span class="js-number">1759236840</span>, <span class="js-null">null</span> ]
+        </div>
+
+    </div>
+
+    <h1 id="review-data" class="a-h1">Steam Review Data</h1><hr>
+
+    <h2>All Review Statistics</h2>
+
+    <div class="api-ref">
+        <code><span class="method">GET</span> /reviews</code>
+        <div class="api-update-time">Updated hourly</div>
+    </div>
+
+    <p>Returns all Steam review statistics grouped by day in an array. Each row represents statistics for <b>reviews created</b> within that day. Row entries read left to right:</p>
+
+    <ul style="font-size:revert;">
+        <li><code class="field-desc">timestamp</code>: Unix time for start of day</li>
+        <li><code class="field-desc">daily_total_reviews</code>: Total reviews created within this day</li>
+        <li><code class="field-desc">total_proportion_positive</code>: Total proportion of positive reviews over entire game history up until this day</li>
+        <li><code class="field-desc">daily_total_playtime_last_two_weeks</code>: Total daily playtime last two weeks for reviews created in this day</li>
+        <li><code class="field-desc">daily_total_votes_up</code>: Total positive reviews created within this day</li>
+        <li><code class="field-desc">daily_total_playtime_at_review</code>: Total daily playtime at reviews for reviews created within this day</li>
+        <li><code class="field-desc">daily_total_playtime_forever</code>: Total overall playtime for reviews created within this day</li>
+    </ul>
+
+    <h3 class="a-h3">Example</h3>
+
+    <div class="example-box">
+
+        <div class="api-ref-grad" style="margin-top: 0;">
+            <code><span class="method">GET</span> /api/reviews</code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            [<br>
+            &emsp;[ <span class="js-number">1329696000</span>, <span class="js-number">15</span>,  <span class="js-number">1.0</span>, <span class="js-number">0</span>, <span class="js-number">15</span>, <span class="js-number">4041</span>, <span class="js-number">4927</span> ],<br>
+            &emsp;[ <span class="js-number">1329782400</span>, <span class="js-number">100</span>, <span class="js-number">0.95652</span>, <span class="js-number">1654</span>, <span class="js-number">95</span>, <span class="js-number">152492</span>, <span class="js-number">543095</span> ],<br>
+            &emsp;[ <span class="js-number">1329868800</span>, <span class="js-number">73</span>,  <span class="js-number">0.95745</span>, <span class="js-number">72</span>, <span class="js-number">70</span>, <span class="js-number">80706</span>, <span class="js-number">311193</span> ],<br>
+            &emsp;...<br>
+            ]<br>
+        </div>
+    
+    </div>
+
+    <h2>Reviews Last Updated</h2>
+
+    <div class="api-ref">
+        <code><span class="method">GET</span> /reviews/last-scraped</code>
+        <div class="api-update-time">Updated hourly</div>
+    </div>
+
+    <p>Returns time when Steam reviews were last scraped in Unix time.</p>
+
+    <h3 class="a-h3">Example</h3>
+
+        <div class="example-box">
+
+        <div class="api-ref-grad" style="margin-top: 0;">
+            <code><span class="method">GET</span> /api/reviews/last-scraped</code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            <span class="js-number">1759838606</span>
+        </div>
+
+    </div>
+
+    <h1 id="forecast-data" class="a-h1">Forecast Data</h1><hr>
+
+    <h2>24-hour Forecast</h2>
+
+    <div class="api-ref">
+        <code><span class="method">GET</span> /forecast</code>
+        <div class="api-update-time">Updated every 5 minutes</div>
+    </div>
+
+    <p>Returns a 24-hour forecast of player counts based on the current time at five minute-level granularity in an array. Row entries read left to right:</p>
+
+    <ul style="font-size:revert;">
+        <li><code class="field-desc">timestamp</code>: Unix time of the forecast at the beginning of the five minute interval</li>
+        <li><code class="field-desc">predicted_mean</code>: Predicted average player counts</li>
+        <li><code class="field-desc">one_sd_lower</code>: Prediction interval lower bound for one standard deviation below <code class="field-desc">predicted_mean</code></li>
+        <li><code class="field-desc">one_sd_upper</code>: Prediction interval upper bound for one standard deviation above <code class="field-desc">predicted_mean</code></li>
+        <li><code class="field-desc">two_sd_lower</code>: Prediction interval lower bound for two standard deviations below <code class="field-desc">predicted_mean</code></li>
+        <li><code class="field-desc">two_sd_upper</code>: Prediction interval upper bound for two standard deviations above <code class="field-desc">predicted_mean</code></li>
+    </ul>
+
+    <p>In general, 68% of observed player counts will lie between <code class="field-desc">one_sd_lower</code> and <code class="field-desc">one_sd_upper</code> while 95% of observed player counts will lie between <code class="field-desc">two_sd_lower</code> and <code class="field-desc">two_sd_upper</code>.</p>
+
+    <h3 class="a-h3">Example</h3>
+
+    <div class="example-box">
+
+        <div class="api-ref-grad" style="margin-top: 0;">
+            <code><span class="method">GET</span> /api/forecast</code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            [<br>
+            &emsp;[ <span class="js-number">1759847700</span>, <span class="js-number">2682.4899</span>, <span class="js-number">2658.9638</span>, <span class="js-number">2706.016</span>, <span class="js-number">2644.5153</span>, <span class="js-number">2720.4644</span> ],<br>
+            &emsp;[ <span class="js-number">1759848000</span>, <span class="js-number">2659.9841</span>, <span class="js-number">2636.458</span>, <span class="js-number">2683.5102</span>, <span class="js-number">2622.0095</span>, <span class="js-number">2697.9587</span> ],<br>
+            &emsp;[ <span class="js-number">1759848300</span>, <span class="js-number">2681.8786</span>, <span class="js-number">2641.1273</span>, <span class="js-number">2722.6299</span>, <span class="js-number">2616.0999</span>, <span class="js-number">2747.6572</span> ],<br>
+            &emsp;...<br>
+            ]<br>
+        </div>
+
+    </div>
+
+    <h2>Historical Forecast Performance</h2>
+
+    <div class="api-ref">
+        <code><span class="method">GET</span> /forecast/performance</code>
+        <div class="api-update-time">Updated every five minutes</div>
+    </div>
+
+    <p>Returns the 1-, 6-, 12- and 24-hour forecast performance statistics over the last 48 hours in an array. For example, 24-hour forecasts are saved and compared with real player counts 24 hours later. Row entries read left to right:</p>
+
+    <ul style="font-size:revert;">
+        <li><code class="field-desc">horizon</code>: how far in the future the forecast is</li>
+        <li><code class="field-desc">MAE</code>: mean absolute error, calculated as \[\dfrac{1}{n}\sum^n_{i=1}\lvert A_t - F_t\rvert\] where $A_t = $ actual players and $F_t = $ forecasted players. </li>
+        <li><code class="field-desc">MAPE</code>: mean absolute percentage error, calculated as \[\dfrac{100}{n}\sum^n_{i=1}\left\lvert\dfrac{A_t - F_t}{A_t}\right\rvert\]</li>
+        <li><code class="field-desc">n_obs</code>: number of observations in the calculation of <code class="field-desc">MAE</code> and <code class="field-desc">MAPE</code></li>
+    </ul>
+
+    <h3 class="a-h3">Example</h3>
+
+    <div class="example-box">
+
+        <div class="api-ref-grad" style="margin-top: 0;">
+            <code><span class="method">GET</span> /api/forecast/performance</code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            [<br>
+            &emsp;[ <span class="js-string">"1hr"</span>, <span class="js-number">78</span>, <span class="js-number">97.6</span>, <span class="js-number">235</span> ],<br>
+            &emsp;[ <span class="js-string">"6hr"</span>, <span class="js-number">191</span>, <span class="js-number">93.9</span>, <span class="js-number">235</span> ],<br>
+            &emsp;[ <span class="js-string">"12hr"</span>, <span class="js-number">186</span>, <span class="js-number">92.7</span>, <span class="js-number">235</span> ],<br>
+            &emsp;[ <span class="js-string">"24hr"</span>, <span class="js-number">215</span>, <span class="js-number">91.8</span>, <span class="js-number">234</span> ]<br>
+            ]<br>
+        </div>
+
+    </div>
+
+    <h1 id="game-data" class="a-h1">Game Data</h1><hr>
+
+    <h2>Check if RotMG is Online</h2>
+
+    <div class="api-ref">
+        <code><span class="method">GET</span> /game/online</code>
+        <div class="api-update-time">Updated every minute</div>
+    </div>
+
+    <p>Checks whether RotMG is currently undergoing maintenance.</p>
+
+    <h3 class="a-h3">Fields</h3>
+
+    <div>
+        <code class="field">last_checked</code> <code class="param-dtype">float</code>
+        <div class="field-line">Seconds since checking RotMG maintenance status</div>
+    </div>
+
+    <div>
+        <code class="field">online</code> <code class="param-dtype">int</code>
+        <div class="field-line" style="margin-bottom:0;"><code>1</code> if RotMG is online, <code>0</code> if RotMG undergoing maintenance</div>
+    </div>
+
+    <h3 class="a-h3">Example</h3>
+
+    <div class="example-box">
+
+        <div class="api-ref-grad" style="margin-top: 0;">
+            <code><span class="method">GET</span> /api/game/online</code>
+        </div>
+
+        <h4 class="response">Response</h4>
+
+        <div class="api-ref-ex">
+            {<br>
+            &emsp;<span class="js-string">"last_checked"</span>: <span class="js-number">41.514</span>,<br>
+            &emsp;<span class="js-string">"online"</span>: <span class="js-number">1</span><br>
+            }
+        </div>
+
+    </div>
+
+    <h1 id="ratelimiting" class="a-h1">Ratelimiting</h1><hr>
+
+    <p>A rate limit of 50 requests per second is enforced on the <a class="about-a" href="/">realmcharts.swrlly.com</a> subdomain as well as the root domain <a class="about-a" href="https://swrlly.com">swrlly.com</a>. Each API request counts against a per-second rate limit, as well as any requests on realmcharts.swrlly.com and swrlly.com. If a request hits the Cloudflare cache, it will not count towards the rate limit. You can check if a request was a cache hit by looking for the response header <code>CF-Cache-Status: HIT</code>. See the <a class="about-a" href="https://developers.cloudflare.com/cache/concepts/cache-responses/">Cloudflare documentation</a> for more details.</a>
+        
+    <p>If the rate limit is surpassed, Cloudflare will prevent you from accessing the site for 15 minutes.</p>
+
+
+
+</div>
+
+<script>
+    let navbar = document.querySelectorAll(".navbar-text-wrapper");
+    for (let i = 0; i < navbar.length; i++) { 
+        navbar[i].style.background = "none";
+        navbar[i].style.animation = "none";
+        navbar[i].style.backgroundSize = "none";
+    }
+    var hiddenText = document.querySelectorAll(".navbar-text");
+    for (let i = 0; i < hiddenText.length; i++) { 
+        hiddenText[i].style.visibility = "visible"; 
+    }
+</script>
+{% endblock %}

@@ -1,13 +1,14 @@
 {% extends "index.html" %}
 
-{% block title %}<title>RealmCharts - About</title>{% endblock %}
+{% block title %}
+<title>RealmCharts - About</title>
+{% endblock %}
+
 {% block discord %}
 <meta property="og:title" content="RealmCharts - About"/>
-<meta name="theme-color" content="transparent"/>
-<meta property="description" content="Live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
-<meta property="og:description" content="Live dashboard tracking various statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Tracking player count and Steam reviews. More features coming soon!"/>
+<meta property="description" content="Live statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Includes RotMG player count, Steam reviews, and 24-hour forecasts!"/>
+<meta property="og:description" content="Live statistics for the bullet hell roguelike MMORPG Realm of the Mad God. Includes RotMG player count, Steam reviews, and 24-hour forecasts!"/>
 <meta property="og:url" content="https://realmcharts.swrlly.com/about"/>
-<meta property="og:image" content="/static/images/favicon.png" />
 {% endblock %}
 
 {% block header %} 
@@ -16,7 +17,21 @@
 {% block content %}
 
 <div class="navbar">
-    <a href="/"><div class="navbar-text" style="visibility: visible;"><span>Home</span><img class="navbar-text-icon" src="/static/images/home.png"></img></div></a>
+    <a href="/">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Home</span><img class="navbar-text-icon" src="/static/images/home.png"></img></div>
+        </span>
+    </a>
+    <a href="/api-reference">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>API Reference</span><img class="navbar-text-icon" src="/static/images/api.png"></img></div>
+        </span>
+    </a>
+    <a href="https://github.com/swrlly/realmcharts">
+        <span class="navbar-text-wrapper">
+            <div class="navbar-text"><span>Source Code</span><span class="navbar-text-icon i-github"></span></div>
+        </span>
+    </a>
 </div>
 
 <div class="title-container">
@@ -29,18 +44,48 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" style="font-size: 85%;">
 
     <div class="home-floating-footer">
         <a href="/"><img class="home-icon" src="/static/images/home.png"></img></a>
     </div>
-    <h1>About this site</h1>
 
-    <p>Hello world! This is a project for one of my favorite online bullet hell multiplayer games <a class="about-a" href="https://www.realmofthemadgod.com/">RotMG</a>. I've always wanted to learn more about the intersection of web development and data analysis, and this project was the perfect combination of the two. All the code is open-sourced <a class="about-a" href="https://github.com/swrlly/RealmCharts">on GitHub.</a></p>
+    <h1 class="a-h1">About This Site</h1><hr>
 
-    <p>RealmCharts provides a live dashboard for insights on RotMG player count and Steam review analysis. Included are 24 hour player count forecasts and proportion of positive steam reviews calculated on a time interval of your choice. Enjoy!</p>
+    <p>Hello world! RealmCharts is a project for one of my favorite online bullet hell multiplayer games <a class="about-a" href="https://www.realmofthemadgod.com/">RotMG</a>. I've always wanted to learn more about the intersection of web development and data analysis, and this project was the perfect combination of the two. All the code is open-sourced <a class="about-a" href="https://github.com/swrlly/RealmCharts">on GitHub.</a></p>
 
-    <h1>Attribution and Technologies</h1>
+    <p>RealmCharts provides a live dashboard for insights on RotMG player count and Steam review analysis. Enjoy!</p>
+
+    <h1 class="a-h1">What We Show</h1><hr>
+
+    <ul class="ul-normal">
+        <li><b>Players Now</b>: Minute-level granularity of unique players seen in the last 60 minutes (excluding  &lt;2 star players)</li>
+        <li><b>24-hour Forecast</b>: High accuracy time series forecast for 1-, 6-, 12-, and 24-hour horizons</li>
+        <li><b>Steam Analysis</b>: Review volume by day and %positive reviews over your time period of choice</li>
+        <li><b>RotMG Milestones</b>: Annotations for large changes in game mechanics and player review responses</li>
+    </ul>
+
+    <h1 class="a-h1">How We Model</h1><hr>
+
+    <p>Every statistic on RealmCharts is created through multi-step ETL pipelines on live data. Here is the general framework:</p>
+
+    <ul class="ul-normal">
+        <li><b>Data Ingestion</b>: player count data is sampled every minute and filtered for anomalies and game maintenance periods; steam reviews are sampled every hour. Data is aligned to UTC and player count data is upsampled to five-minute averages for forecasting.</li>
+        <li><b>Forecasting</b>: we use the powerful <a class="about-a" href="https://www.statsmodels.org/dev/generated/statsmodels.tsa.statespace.structural.UnobservedComponents.html">Unobserved Components</a> time series model to capture multiple consistent patterns in RotMG player behavior, leading to 97%+ MAPE (≈70-80 MAE) for one hour forecasts.</li>
+        <li><b>Live statistics</b>: Highcharts and pure JavaScript provides an on-demand experience at the minute-granularity.</li>
+    </ul>
+
+    <h2>Forecasting Methodology</h2>
+
+    <p>RotMG player data contains multiple patterns we used to obtain high accuracy forecasts. Cyclical effects (called seasonalities) were modeled carefully: there is a daily seasonality and a weekly seasonality (more players playing on weekends). If you look closely, each days' peak player count contains two smaller peaks: the first one for peak EU time and the second for peak US time. If you look even more closely, the EU peak is stronger than the US peak on Friday-Sunday while the US peak is stronger than EU during Monday-Thursday, gradually weakening until Thursday where EU/US peaks are about the same. Multiple seasonal components were utilized to model the various cyclic effects and double EU/US peak.</p>
+
+    <p>Maintenances with significant content (MotMG) and season starts cause shock effects: more players return to the game than prior. Cubic spline basis functions were used to propogate the shock effect (after Tuesday maintenance) from the beginning of the week until the end of the weekend, allowing interpretations on the direct additive effect of the shock.</p>
+
+    <p>Lastly, the general trend of players increases after a significant maintenance/season start, and slowly decreases week by week until the next maintenance. This was handled with a smooth trend parameterization in Unobserved Components.</p>
+
+    <p>I'll go much more into detail on the modeling philosophy, progression, and automation over time in a separate blog post. Stay tuned!</p>
+
+    <h1 class="a-h1">Attribution and Technologies</h1><hr>
 
     <p>This website uses</p>
 
@@ -57,10 +102,22 @@
 
     <ul class="ul-normal">
         <li><a class="about-a" href="https://sqlitebrowser.org/">DB Browser for SQLite</a> for testing SQL queries</li>
+        <li><a class="about-a" href="https://realmeye.com/">RealmEye</a> for researching previous game releases</li>
         <li>RotMG pixel art for icons</li>
         <li><a class="about-a" href="https://icomoon.io/">Icomoon</a> for GitHub icon</li>
     </ul>
-    <h1>Changelog</h1>
+
+    <h1 class="a-h1">Changelog</h1><hr>
+
+    <h3>10/7/2025</h3>
+    <ul>
+        <li>Documented API for public use</li>
+        <li>Updated About page with details on the backend process</li>
+    </ul>
+    <h3>10/5/2025</h3>
+    <ul>
+        <li>Modeled new season/big event shock effect with cubic spline basis, increasing forecast accuracies and fitting the data generation process better</li>
+    </ul>
     <h3>9/28/2025</h3>
     <ul>
         <li>Added forecast performance last 48 hours</li>
@@ -170,4 +227,17 @@
         <li>Added basic logging functionality</li>
     </ul>
 </div>
+
+<script>
+    let navbar = document.querySelectorAll(".navbar-text-wrapper");
+    for (let i = 0; i < navbar.length; i++) { 
+        navbar[i].style.background = "none";
+        navbar[i].style.animation = "none";
+        navbar[i].style.backgroundSize = "none";
+    }
+    var hiddenText = document.querySelectorAll(".navbar-text");
+    for (let i = 0; i < hiddenText.length; i++) { 
+        hiddenText[i].style.visibility = "visible"; 
+    }
+</script>
 {% endblock %}

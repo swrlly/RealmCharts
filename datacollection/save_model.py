@@ -60,8 +60,11 @@ def plot_significant_acorr(res, ax, is_acf = True):
 
 def plot_and_save(res, df, plot_exog):
     now = time.gmtime(time.time())
+    ym = "-".join([str(i) for i in now[:2]])
+    if not os.path.isdir(f"data/models/{ym}"):
+        os.makedirs(ym)
     name = str(datetime.datetime(*now[:4]))[:-6]
-    dir = f"data/models/{name}"
+    dir = f"data/models/{ym}/{name}"
     done, ctr = False, 0
     while not done:
         try: 

@@ -111,7 +111,7 @@ class Tasks:
 
         count = None
         try:
-            count = int(requests.get(self.player_link).content)
+            count = int(requests.get(self.player_link, timeout = 5).content)
         except Exception as e:
             self.logger.info("Exception while requesting player count.")
         self.data_to_insert.put({"playersOnline": [time, count]})

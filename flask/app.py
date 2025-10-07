@@ -9,7 +9,7 @@ import gzip
 css_version = str(int(time.time()))
 app = Flask(__name__)
 
-@app.route("/api/forecast-performance", methods = ["GET"])
+@app.route("/api/forecast/performance", methods = ["GET"])
 def forecast_performance():
     cur = get_db().cursor()
     cur.execute("""SELECT 
@@ -19,7 +19,7 @@ def forecast_performance():
         WHEN horizon_steps = 144 THEN "12hr"
         ELSE "24hr"
     END AS horizon,
-    ROUND(AVG(mean_absolute_error), 0) AS MAE,
+    CAST(ROUND(AVG(mean_absolute_error), 0) AS INT) AS MAE,
     ROUND(100 * (1 - AVG(mean_absolute_percentage_error)), 1) AS MAPE,
     SUM(
         CASE 
@@ -36,68 +36,6 @@ def forecast_performance():
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
 
-@app.route("/api/reviews", methods = ["GET"])
-def review_proportions():
-    cur = get_db().cursor()
-    cur.execute("SELECT * FROM reviewsGrouped;")
-    results = json.dumps(cur.fetchall())
-    cur.close()
-    return app.response_class(response = results, status = 200, mimetype = "application/json")
-
-@app.route("/api/reviews-last-scraped", methods = ["GET"])
-def steam_last_scraped():
-    # get time steam reviews was last scraped
-    with open("../datacollection/data/reviews_last_scraped", "r") as f:
-        time = f.read().strip()
-        return app.response_class(response = time, status = 200, mimetype = "application/json")
-
-@app.route("/api/playercount", methods = ["GET"])
-def player_count():
-    # get all player counts collected, minute granularity
-    cur = get_db().cursor()
-    cur.execute("SELECT timestamp, CASE WHEN trustworthiness = 0 THEN null ELSE players END FROM playersCleaned;")
-    results = json.dumps(cur.fetchall())
-    cur.close()
-    return app.response_class(response = results, status = 200, mimetype = "application/json")
-
-@app.route("/api/players-now", methods = ["GET"])
-def players_online_now():
-    # get latest playercount
-    cur = get_db().cursor()
-    cur.execute("""SELECT timestamp, 
-        CASE WHEN trustworthiness = 0 THEN null ELSE players END 
-        FROM playersCleaned 
-        WHERE timestamp = (SELECT max(timestamp) FROM playersCleaned);""")
-    results = json.dumps(cur.fetchone())
-    cur.close() 
-    return app.response_class(response = results, status = 200, mimetype = "application/json")
-
-@app.route("/api/players-last-week", methods = ["GET"])
-def players_last_week():
-    # get last week's playercount vs. latest scraped time
-    cur = get_db().cursor()
-    cur.execute("""
-    SELECT 
-        timestamp,
-        players,
-        (SELECT MAX(timestamp) FROM playersCleaned) - 60 * 60 * 24 * 7 - timestamp AS difference
-    FROM playersCleaned
-    ORDER BY ABS(difference)
-    LIMIT 1;""")
-    results = json.dumps(cur.fetchone())
-    cur.close()
-    return app.response_class(response = results, status = 200, mimetype = "application/json")
-
-@app.route("/api/is-game-online", methods = ["GET"])
-def is_game_up():
-    # get latest game status with time last checked
-    cur = get_db().cursor()
-    cur.execute("SELECT timestamp, online FROM maintenance WHERE timestamp = (SELECT max(timestamp) FROM maintenance);")
-    results = cur.fetchone()
-    cur.close()
-    results = json.dumps({"last_checked": time.time() - results[0], "online": results[1]})
-    return app.response_class(response = results, status = 200, mimetype = "text/plain")
-
 @app.route("/api/forecast", methods = ["GET"])
 def get_forecast():
     cur = get_db().cursor()    
@@ -110,13 +48,92 @@ def get_forecast():
         if results[0] < 0.2 or results[1] == 0:
             results = json.dumps([])
         else:
-            cur.execute("SELECT * FROM forecast where timestamp >= unixepoch() - 300;")
-            results = json.dumps([i[1:-1] for i in cur.fetchall()])
+            cur.execute("""SELECT
+            timestamp, ROUND(forecast_mean, 4), ROUND(one_sd_lower, 4), ROUND(one_sd_upper, 4), ROUND(two_sd_lower, 4), ROUND(two_sd_upper, 4)
+            FROM forecast
+            WHERE timestamp >= unixepoch() - 300;""")
+            results = json.dumps(cur.fetchall())
     else:
         cur.execute("SELECT * FROM maintenanceForecast where timestamp >= unixepoch() - 300;")
         results = json.dumps([i[1:] for i in cur.fetchall()])
     cur.close()
     return app.response_class(response = results, status = 200, mimetype = "application/json")
+
+@app.route("/api/reviews", methods = ["GET"])
+def review_proportions():
+    cur = get_db().cursor()
+    cur.execute("SELECT * FROM reviewsGrouped;")
+    results = json.dumps(cur.fetchall())
+    cur.close()
+    return app.response_class(response = results, status = 200, mimetype = "application/json")
+
+@app.route("/api/reviews/last-scraped", methods = ["GET"])
+def steam_last_scraped():
+    # get time steam reviews was last scraped
+    with open("../datacollection/data/reviews_last_scraped", "r") as f:
+        time = f.read().strip()
+        return app.response_class(response = time, status = 200, mimetype = "application/json")
+
+@app.route("/api/players", methods = ["GET"])
+def player_count():
+    time = request.args.get("time")
+    if time == "now":
+        return players_online_now()
+    elif time == "last-week":
+        return players_last_week()
+    elif time is not None:
+        return app.response_class(response = "time must be `now` or `last-week`", status = 200, mimetype = "text/plain")
+    else:
+        # get all player counts collected, minute granularity
+        cur = get_db().cursor()
+        cur.execute("SELECT timestamp, CASE WHEN trustworthiness = 0 THEN null ELSE players END FROM playersCleaned;")
+        results = json.dumps(cur.fetchall())
+        cur.close()
+        return app.response_class(response = results, status = 200, mimetype = "application/json")
+
+def players_online_now():
+    # get latest playercount
+    cur = get_db().cursor()
+    cur.execute("""SELECT timestamp, 
+        CASE WHEN trustworthiness = 0 THEN null ELSE players END 
+        FROM playersCleaned 
+        WHERE timestamp = (SELECT max(timestamp) FROM playersCleaned);""")
+    results = json.dumps(cur.fetchone())
+    cur.close() 
+    return app.response_class(response = results, status = 200, mimetype = "application/json")
+
+def players_last_week():
+    # get last week's playercount vs. latest scraped time
+    cur = get_db().cursor()
+    cur.execute("""
+    SELECT 
+        timestamp,
+        players
+    FROM (SELECT
+            timestamp,
+            players,
+            (SELECT MAX(timestamp) FROM playersCleaned) - 60 * 60 * 24 * 7 - timestamp AS difference
+        FROM playersCleaned
+        ORDER BY ABS(difference)
+        LIMIT 1);""")
+    results = json.dumps(cur.fetchone())
+    cur.close()
+    return app.response_class(response = results, status = 200, mimetype = "application/json")
+
+@app.route("/api/game/online", methods = ["GET"])
+def is_game_up():
+    # get latest game status with time last checked
+    cur = get_db().cursor()
+    cur.execute("SELECT timestamp, online FROM maintenance WHERE timestamp = (SELECT max(timestamp) FROM maintenance);")
+    results = cur.fetchone()
+    cur.close()
+    results = json.dumps({"last_checked": round(time.time() - results[0], 3), "online": results[1]})
+    return app.response_class(response = results, status = 200, mimetype = "application/json")
+
+@app.route("/api", methods = ["GET"])
+def api():
+    msg = {"message": "Welcome. Read the documentation: https://realmcharts.swrlly.com/api-reference"}
+    return app.response_class(response = json.dumps(msg), status = 200, mimetype = "application/json")
 
 # compress data requests
 @app.after_request
@@ -135,6 +152,10 @@ async def index():
 @app.route("/about")
 async def about():
     return render_template("about.html", css_version = css_version)
+
+@app.route("/api-reference")
+async def api_reference():
+    return render_template("api-reference.html", css_version = css_version)
 
 @app.route("/robots.txt")
 async def robots():

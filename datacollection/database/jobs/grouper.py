@@ -88,7 +88,7 @@ class Grouper(ETLJob):
                 unixepoch(MIN(year) || "-" || MIN(month) || "-" || MIN(day)) as timestamp,
                 COUNT(timestamp_created) as daily_total_reviews,
                 ROUND(MAX(total_votes_up)*1.0 / MAX(total_votes), 5) as total_proportion_positive, -- max gets EoD statistics; most updated.
-                SUM(playtime_last_two_weeks) as daily_total_playtime_last_two_weeks,
+                CAST(SUM(playtime_last_two_weeks) AS INT) as daily_total_playtime_last_two_weeks,
                 SUM(voted_up) as daily_total_votes_up, 
                 SUM(playtime_at_review) as daily_total_playtime_at_review,
                 SUM(playtime_forever) as daily_total_playtime_forever
