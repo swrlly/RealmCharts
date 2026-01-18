@@ -1,0 +1,340 @@
+[2026-01-14] 00:11:55 -  INFO   - Main - Started program.
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768338900
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768339500
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768339800
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768340400
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768341900
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768344300
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768345500
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768346700
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768347000
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768348500
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 2 rows after 1768348980
+[2026-01-14] 00:11:56 -  INFO   - Main - Inserted 22 rows into maintenance.
+[2026-01-14] 00:11:57 -  INFO   - Main - Copied 23 rows from playersOnline into playersCleaned
+[2026-01-14] 00:12:04 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 00:18:59 -  INFO   - Main - Finished training model.
+[2026-01-14] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47252
+[2026-01-14] 01:02:43 -  INFO   - Main - Finished scraping 47252 reviews.
+[2026-01-14] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 02:02:45 -  INFO   - Main - Finished scraping 47252 reviews.
+[2026-01-14] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 03:02:43 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-14] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 04:00:01 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 04:02:56 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-14] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 05:02:42 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-14] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 06:00:07 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 06:05:54 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-14] 06:07:55 -  INFO   - Main - Finished training model.
+[2026-01-14] 06:11:36 -  INFO   - Main - Started program.
+[2026-01-14] 06:11:38 -  INFO   - Main - Inserted 2 rows after 1768350000
+[2026-01-14] 06:11:38 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 06:11:38 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 06:11:45 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 06:18:39 -  INFO   - Main - Finished training model.
+[2026-01-14] 06:21:42 -  INFO   - Main - Started program.
+[2026-01-14] 06:21:43 -  INFO   - Main - Inserted 2 rows after 1768371120
+[2026-01-14] 06:21:43 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 06:21:44 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 06:21:50 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 06:29:12 -  INFO   - Main - Finished training model.
+[2026-01-14] 06:31:51 -  INFO   - Main - Started program.
+[2026-01-14] 06:31:52 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 06:31:53 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 06:31:59 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 06:38:42 -  INFO   - Main - Finished training model.
+[2026-01-14] 06:41:35 -  INFO   - Main - Started program.
+[2026-01-14] 06:41:36 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 06:41:37 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 06:41:43 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 06:48:26 -  INFO   - Main - Finished training model.
+[2026-01-14] 06:51:37 -  INFO   - Main - Started program.
+[2026-01-14] 06:51:38 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 06:51:39 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 06:51:45 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 06:58:23 -  INFO   - Main - Finished training model.
+[2026-01-14] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 07:01:42 -  INFO   - Main - Started program.
+[2026-01-14] 07:01:44 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 07:01:44 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 07:01:51 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 07:08:47 -  INFO   - Main - Finished training model.
+[2026-01-14] 07:11:39 -  INFO   - Main - Started program.
+[2026-01-14] 07:11:40 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 07:11:41 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 07:11:48 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 07:18:36 -  INFO   - Main - Finished training model.
+[2026-01-14] 07:21:39 -  INFO   - Main - Started program.
+[2026-01-14] 07:21:41 -  INFO   - Main - Inserted 2 rows after 1768374720
+[2026-01-14] 07:21:41 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 07:21:41 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 07:21:48 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 07:28:50 -  INFO   - Main - Finished training model.
+[2026-01-14] 07:31:43 -  INFO   - Main - Started program.
+[2026-01-14] 07:31:45 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 07:31:45 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 07:31:52 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 07:38:43 -  INFO   - Main - Finished training model.
+[2026-01-14] 07:41:27 -  INFO   - Main - Started program.
+[2026-01-14] 07:41:28 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 07:41:29 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 07:41:35 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 07:48:37 -  INFO   - Main - Finished training model.
+[2026-01-14] 07:51:57 -  INFO   - Main - Started program.
+[2026-01-14] 07:51:58 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 07:51:59 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 07:52:06 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 07:58:52 -  INFO   - Main - Finished training model.
+[2026-01-14] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 08:01:27 -  INFO   - Main - Started program.
+[2026-01-14] 08:01:29 -  INFO   - Main - Inserted 2 rows after 1768377300
+[2026-01-14] 08:01:29 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 08:01:29 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 08:01:36 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 08:08:22 -  INFO   - Main - Finished training model.
+[2026-01-14] 08:11:32 -  INFO   - Main - Started program.
+[2026-01-14] 08:11:34 -  INFO   - Main - Inserted 2 rows after 1768377720
+[2026-01-14] 08:11:34 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 08:11:34 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 08:11:41 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 08:18:25 -  INFO   - Main - Finished training model.
+[2026-01-14] 08:21:30 -  INFO   - Main - Started program.
+[2026-01-14] 08:21:31 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 08:21:31 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 08:21:38 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 08:28:23 -  INFO   - Main - Finished training model.
+[2026-01-14] 08:31:44 -  INFO   - Main - Started program.
+[2026-01-14] 08:31:45 -  INFO   - Main - Inserted 2 rows after 1768378920
+[2026-01-14] 08:31:45 -  INFO   - Main - Inserted 2 rows after 1768379041
+[2026-01-14] 08:31:45 -  INFO   - Main - Inserted 4 rows into maintenance.
+[2026-01-14] 08:31:46 -  INFO   - Main - Copied 5 rows from playersOnline into playersCleaned
+[2026-01-14] 08:31:53 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 08:39:00 -  INFO   - Main - Finished training model.
+[2026-01-14] 08:41:25 -  INFO   - Main - Started program.
+[2026-01-14] 08:41:26 -  INFO   - Main - Inserted 2 rows after 1768379640
+[2026-01-14] 08:41:26 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 08:41:27 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 08:41:33 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 08:48:21 -  INFO   - Main - Finished training model.
+[2026-01-14] 08:51:39 -  INFO   - Main - Started program.
+[2026-01-14] 08:51:40 -  INFO   - Main - Inserted 2 rows after 1768380240
+[2026-01-14] 08:51:40 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 08:51:41 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 08:51:47 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 08:58:54 -  INFO   - Main - Finished training model.
+[2026-01-14] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 09:00:01 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 09:01:30 -  INFO   - Main - Started program.
+[2026-01-14] 09:01:31 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 09:01:32 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 09:01:39 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 09:09:19 -  INFO   - Main - Finished training model.
+[2026-01-14] 09:11:28 -  INFO   - Main - Started program.
+[2026-01-14] 09:11:30 -  INFO   - Main - Inserted 2 rows after 1768381440
+[2026-01-14] 09:11:30 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 09:11:30 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 09:11:38 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 09:19:29 -  INFO   - Main - Finished training model.
+[2026-01-14] 09:21:39 -  INFO   - Main - Started program.
+[2026-01-14] 09:21:41 -  INFO   - Main - Inserted 2 rows after 1768382040
+[2026-01-14] 09:21:41 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 09:21:43 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 09:21:50 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 09:29:39 -  INFO   - Main - Finished training model.
+[2026-01-14] 18:30:12 -  INFO   - Main - Started program.
+[2026-01-14] 18:30:13 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 18:30:14 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 18:30:20 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 18:38:12 -  INFO   - Main - Finished training model.
+[2026-01-14] 18:41:33 -  INFO   - Main - Started program.
+[2026-01-14] 18:41:34 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 18:41:35 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 18:41:41 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 18:48:51 -  INFO   - Main - Finished training model.
+[2026-01-14] 18:51:26 -  INFO   - Main - Started program.
+[2026-01-14] 18:51:27 -  INFO   - Main - Inserted 2 rows after 1768416120
+[2026-01-14] 18:51:27 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 18:51:28 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 18:51:34 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 18:58:21 -  INFO   - Main - Finished training model.
+[2026-01-14] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 19:01:43 -  INFO   - Main - Started program.
+[2026-01-14] 19:01:44 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 19:01:45 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 19:01:51 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 19:09:07 -  INFO   - Main - Finished training model.
+[2026-01-14] 19:11:38 -  INFO   - Main - Started program.
+[2026-01-14] 19:11:40 -  INFO   - Main - Inserted 2 rows after 1768417440
+[2026-01-14] 19:11:40 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 19:11:41 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 19:11:47 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 19:18:41 -  INFO   - Main - Finished training model.
+[2026-01-14] 19:21:37 -  INFO   - Main - Started program.
+[2026-01-14] 19:21:39 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 19:21:40 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 19:21:46 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 19:28:26 -  INFO   - Main - Finished training model.
+[2026-01-14] 19:31:43 -  INFO   - Main - Started program.
+[2026-01-14] 19:31:44 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 19:31:44 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 19:31:51 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 19:38:41 -  INFO   - Main - Finished training model.
+[2026-01-14] 19:41:37 -  INFO   - Main - Started program.
+[2026-01-14] 19:41:39 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 19:41:39 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 19:41:45 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 19:48:38 -  INFO   - Main - Finished training model.
+[2026-01-14] 19:51:41 -  INFO   - Main - Started program.
+[2026-01-14] 19:51:42 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 19:51:43 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 19:51:49 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 19:58:38 -  INFO   - Main - Finished training model.
+[2026-01-14] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 20:00:01 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 20:01:53 -  INFO   - Main - Started program.
+[2026-01-14] 20:01:55 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 20:01:55 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 20:02:02 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 20:08:53 -  INFO   - Main - Finished training model.
+[2026-01-14] 20:11:41 -  INFO   - Main - Started program.
+[2026-01-14] 20:11:42 -  INFO   - Main - Inserted 2 rows after 1768421100
+[2026-01-14] 20:11:42 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 20:11:43 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 20:11:49 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 20:19:03 -  INFO   - Main - Finished training model.
+[2026-01-14] 20:21:38 -  INFO   - Main - Started program.
+[2026-01-14] 20:21:39 -  INFO   - Main - Inserted 2 rows after 1768421520
+[2026-01-14] 20:21:39 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 20:21:40 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 20:21:46 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 20:28:32 -  INFO   - Main - Finished training model.
+[2026-01-14] 20:31:26 -  INFO   - Main - Started program.
+[2026-01-14] 20:31:28 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 20:31:28 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 20:31:35 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 20:38:34 -  INFO   - Main - Finished training model.
+[2026-01-14] 20:41:44 -  INFO   - Main - Started program.
+[2026-01-14] 20:41:45 -  INFO   - Main - Inserted 2 rows after 1768422840
+[2026-01-14] 20:41:45 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 20:41:46 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 20:41:52 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 20:49:06 -  INFO   - Main - Finished training model.
+[2026-01-14] 20:51:42 -  INFO   - Main - Started program.
+[2026-01-14] 20:51:43 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 20:51:44 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 20:51:50 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 20:58:40 -  INFO   - Main - Finished training model.
+[2026-01-14] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-14] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-14] 21:02:00 -  INFO   - Main - Started program.
+[2026-01-14] 21:02:01 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 21:02:02 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 21:02:09 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 21:09:50 -  INFO   - Main - Finished training model.
+[2026-01-14] 21:11:40 -  INFO   - Main - Started program.
+[2026-01-14] 21:11:41 -  INFO   - Main - Inserted 2 rows after 1768424580
+[2026-01-14] 21:11:42 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 21:11:42 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 21:11:51 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 21:19:31 -  INFO   - Main - Finished training model.
+[2026-01-14] 21:21:51 -  INFO   - Main - Started program.
+[2026-01-14] 21:21:53 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 21:21:53 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 21:22:02 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 21:30:39 -  INFO   - Main - Finished training model.
+[2026-01-14] 21:36:42 -  INFO   - Main - Started program.
+[2026-01-14] 21:36:44 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 21:36:44 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 21:36:51 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 21:44:14 -  INFO   - Main - Finished training model.
+[2026-01-14] 21:46:29 -  INFO   - Main - Started program.
+[2026-01-14] 21:46:30 -  INFO   - Main - Inserted 2 rows after 1768426620
+[2026-01-14] 21:46:30 -  INFO   - Main - Inserted 2 rows after 1768426741
+[2026-01-14] 21:46:30 -  INFO   - Main - Inserted 4 rows into maintenance.
+[2026-01-14] 21:46:31 -  INFO   - Main - Copied 5 rows from playersOnline into playersCleaned
+[2026-01-14] 21:46:38 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 21:53:30 -  INFO   - Main - Finished training model.
+[2026-01-14] 21:56:43 -  INFO   - Main - Started program.
+[2026-01-14] 21:56:45 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 21:56:45 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 21:56:52 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 22:04:12 -  INFO   - Main - Finished training model.
+[2026-01-14] 22:06:30 -  INFO   - Main - Started program.
+[2026-01-14] 22:06:31 -  INFO   - Main - Inserted 2 rows after 1768427940
+[2026-01-14] 22:06:32 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 22:06:32 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 22:06:39 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 22:13:51 -  INFO   - Main - Finished training model.
+[2026-01-14] 22:16:53 -  INFO   - Main - Started program.
+[2026-01-14] 22:16:55 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 22:16:55 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 22:17:03 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 22:23:51 -  INFO   - Main - Finished training model.
+[2026-01-14] 22:26:42 -  INFO   - Main - Started program.
+[2026-01-14] 22:26:44 -  INFO   - Main - Inserted 2 rows after 1768429200
+[2026-01-14] 22:26:44 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 22:26:44 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 22:26:51 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 22:33:56 -  INFO   - Main - Finished training model.
+[2026-01-14] 22:36:43 -  INFO   - Main - Started program.
+[2026-01-14] 22:36:45 -  INFO   - Main - Inserted 2 rows after 1768429740
+[2026-01-14] 22:36:45 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 22:36:45 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 22:36:53 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 22:43:56 -  INFO   - Main - Finished training model.
+[2026-01-14] 22:46:43 -  INFO   - Main - Started program.
+[2026-01-14] 22:46:45 -  INFO   - Main - Inserted 2 rows after 1768430400
+[2026-01-14] 22:46:45 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 22:46:45 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 22:46:52 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 22:53:50 -  INFO   - Main - Finished training model.
+[2026-01-14] 22:56:46 -  INFO   - Main - Started program.
+[2026-01-14] 22:56:48 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 22:56:48 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 22:56:55 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 23:04:11 -  INFO   - Main - Finished training model.
+[2026-01-14] 23:06:28 -  INFO   - Main - Started program.
+[2026-01-14] 23:06:29 -  INFO   - Main - Inserted 2 rows after 1768431540
+[2026-01-14] 23:06:29 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 23:06:30 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 23:06:36 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 23:13:38 -  INFO   - Main - Finished training model.
+[2026-01-14] 23:16:42 -  INFO   - Main - Started program.
+[2026-01-14] 23:16:43 -  INFO   - Main - Inserted 2 rows after 1768432020
+[2026-01-14] 23:16:43 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 23:16:44 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 23:16:50 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 23:23:56 -  INFO   - Main - Finished training model.
+[2026-01-14] 23:26:37 -  INFO   - Main - Started program.
+[2026-01-14] 23:26:38 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 23:26:39 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 23:26:46 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 23:33:41 -  INFO   - Main - Finished training model.
+[2026-01-14] 23:36:47 -  INFO   - Main - Started program.
+[2026-01-14] 23:36:49 -  INFO   - Main - Inserted 0 rows into maintenance.
+[2026-01-14] 23:36:49 -  INFO   - Main - Copied 1 rows from playersOnline into playersCleaned
+[2026-01-14] 23:36:55 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 23:44:14 -  INFO   - Main - Finished training model.
+[2026-01-14] 23:46:45 -  INFO   - Main - Started program.
+[2026-01-14] 23:46:46 -  INFO   - Main - Inserted 2 rows after 1768433940
+[2026-01-14] 23:46:46 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 23:46:47 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 23:46:53 -  INFO   - Main - Training forecasting model...
+[2026-01-14] 23:53:51 -  INFO   - Main - Finished training model.
+[2026-01-14] 23:56:40 -  INFO   - Main - Started program.
+[2026-01-14] 23:56:41 -  INFO   - Main - Inserted 2 rows after 1768434540
+[2026-01-14] 23:56:41 -  INFO   - Main - Inserted 2 rows into maintenance.
+[2026-01-14] 23:56:42 -  INFO   - Main - Copied 3 rows from playersOnline into playersCleaned
+[2026-01-14] 23:56:48 -  INFO   - Main - Training forecasting model...
+[2026-01-15] 00:04:05 -  INFO   - Main - Finished training model.

@@ -1,0 +1,103 @@
+[2025-12-12] 22:05:46 -  INFO   - Main - Started program.
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1764936600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765083000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765087800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765109400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765184400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765198200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765198800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765200600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765227600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765271100
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765274400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765276200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765276800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765278000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765283400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765284000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765284600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765285200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765285800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765287000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765287600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765288200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765288800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765292400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765314000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765360800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765368120
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765393200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765395300
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765400400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765411800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765421400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765422900
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765437300
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765446000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765450200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765453500
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765465200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765468800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765469100
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765469400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765474800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765479600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765483200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765485600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765493400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765494000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765498200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765499100
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765501800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765503300
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765504800
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765506000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 3 rows after 1765512300
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765525500
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765526100
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765536300
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765544400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765548000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765551600
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765552200
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765553400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765556400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765561500
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765563000
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765565400
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765573500
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 2 rows after 1765574100
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 10 rows after 1765576500
+[2025-12-12] 22:05:50 -  INFO   - Main - Inserted 147 rows into maintenance.
+[2025-12-12] 22:05:52 -  INFO   - Main - Copied 148 rows from playersOnline into playersCleaned
+[2025-12-12] 22:06:00 -  INFO   - Main - Training forecasting model...
+[2025-12-12] 22:11:39 -  INFO   - Main - Finished training model.
+[2025-12-12] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-12] 23:00:00 -  INFO   - Main - Total reviews to scrape: 47195
+[2025-12-12] 23:02:53 -  INFO   - Main - Finished scraping 47195 reviews.
+[2025-12-13] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-13] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47195
+[2025-12-13] 00:00:07 -  INFO   - Main - Training forecasting model...
+[2025-12-13] 00:05:16 -  INFO   - Main - Finished scraping 47195 reviews.
+[2025-12-13] 00:05:42 -  INFO   - Main - Finished training model.
+[2025-12-13] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-13] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47195
+[2025-12-13] 01:02:42 -  INFO   - Main - Finished scraping 47195 reviews.
+[2025-12-13] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-13] 02:00:01 -  INFO   - Main - Total reviews to scrape: 47195
+[2025-12-13] 02:02:40 -  INFO   - Main - Finished scraping 47195 reviews.
+[2025-12-13] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-13] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47196
+[2025-12-13] 03:03:28 -  INFO   - Main - Finished scraping 47197 reviews.
+[2025-12-13] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-13] 04:00:01 -  INFO   - Main - Total reviews to scrape: 47197
+[2025-12-13] 04:02:54 -  INFO   - Main - Finished scraping 47197 reviews.
+[2025-12-13] 04:20:05 -  INFO   - Main - Exception while requesting player count.
+[2025-12-13] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-13] 05:00:01 -  INFO   - Main - Total reviews to scrape: 47197
+[2025-12-13] 05:02:48 -  INFO   - Main - Finished scraping 47197 reviews.
+[2025-12-13] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-13] 06:00:01 -  INFO   - Main - Total reviews to scrape: 47197
+[2025-12-13] 06:00:06 -  INFO   - Main - Training forecasting model...
+[2025-12-13] 06:05:20 -  INFO   - Main - Finished scraping 47197 reviews.
+[2025-12-13] 06:05:30 -  INFO   - Main - Finished training model.

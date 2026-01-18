@@ -1,0 +1,1878 @@
+[2025-12-29] 21:44:11 -  INFO   - Main - Started program.
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765947600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765953000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765956300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765958400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765959900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765961100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765961400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765962000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765962900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765963800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765964700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765965300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765965900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765966500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765969200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765969800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765974000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765974600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765975200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765975800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765976400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765978200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765978800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765980000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765980300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765980900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765981500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765982400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765983000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765983600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765984200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765984800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765985400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765987200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765987800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765988400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765990500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765990800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765992000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765992900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765993200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765995000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765996200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765996800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765998900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765999500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1765999800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766000400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766001300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766001900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766002800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766003400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766004600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766006100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766006700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766007300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766007600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766008500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766009400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766010300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766011800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766012700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766013900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766014500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766016600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766018100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766019000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766019900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766020800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766021700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766022600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766023200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766023800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766024400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766024700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766025300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766025900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766026200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766026800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766027400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766028000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766028900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766029800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766030400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766031600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766032500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766033100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766034300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766034900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766035500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766038200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766038800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766039400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766040000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766041800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766042700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766043600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766045700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766046300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766046900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766047500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766047800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766048700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766049300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766050200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766051100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766051700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766052000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766052600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766053200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766054700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766055600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766056200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766056800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766057700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766058600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766058900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766059800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766060700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766061000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766061600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766062200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766063100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766064000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766064600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766064900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766065500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766066700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766067300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766067600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766067900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766068500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766068800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766069100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766069700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766070300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766070900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766071500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766072100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766072400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766072700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766073000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766073300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766073900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766075100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766076000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766076600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766077800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766078100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766078700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766079600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766079900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766080500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766082300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766083200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766085000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766085900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766086800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766087100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766087700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766090100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766091000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766091300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766091600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766091900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766092200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766092800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766093400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766094300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766095200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766096100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766097000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766097900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766098200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766098800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766100300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766100900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766101200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766101800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766103000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766103900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766104500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766104800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766105100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766105400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766106000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766106600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766107500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766108100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766108700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766110500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766111100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766111700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766112300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766112900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766113500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766114100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766114700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766115300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766116200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766116500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766117100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766117700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766118600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766120100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766120700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766121300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766121600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766122500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766123700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766124600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766126700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766127600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766129100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766130000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766131800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766134500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766135400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766136300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766137200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766137800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766138400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766139300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766141100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766142600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766142900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766143200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766143800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766144700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766146200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766146500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766147100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766147700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766148600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766149500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766150400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766151300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766151600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766151900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766152200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766152800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766153700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766154300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766155500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766156100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766156700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766157000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766157600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766158200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766158500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766159100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766160600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766160900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766161500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766163600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766163900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766164200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766164500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766165100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766165400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766166000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766166600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766166900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766167800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766168700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766169300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766169600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766170200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766171100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766171400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766172000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766172900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766173500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766174400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766175300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766176500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766177400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766177700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766178300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766179200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766180400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766180700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766182500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766182800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766183400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766184300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766184900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766185500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766187000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766187600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766188200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766189400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766190600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766191200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766191500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766192100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766193000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766193300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766195700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766196300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766196600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766196900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766197500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766198100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766199300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766200200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766200800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766201400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766202300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766203500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766204400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766204700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766205300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766206200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766207100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766208000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766209200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766211000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766211300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766213700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766214300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766214600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766217900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766219400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766219700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766220600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766222700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766223000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766223600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766223900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766225100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766225700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766226000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766226900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766227800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766228700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766229600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766230500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766230800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766231400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766232600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766233200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766234100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766235000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766235300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766235600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766236200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766236500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766237100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766237400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766238600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766239200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766239500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766241300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766241600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766242200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766242500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766242800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766243400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766245200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766246400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766247900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766248200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766249400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766249700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766250300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766251200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766252700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766254200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766254500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766254800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766255700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766256000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766256300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766256600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766257200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766257500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766258400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766258700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766259300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766260200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766260500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766260800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766261400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766261700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766262000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766262300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766262600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766263200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766263800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766264400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766265300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766265600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766265900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766266200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766266500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766266800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766267100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766267400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766267700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766268300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766268900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766269500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766269800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766270100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766270400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766271000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766271600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766272200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766272500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766272800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766273400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766273700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766274000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766274300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766274900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766275800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766276100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766276400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766277000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766277300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766277900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766278500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766278800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766279100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766284200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766284500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766284800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766285100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766285400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766285700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766286300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766286600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766286900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766287500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766287800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766288700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766289300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766289600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766290500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766290800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766291400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766292000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766292300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766292900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766293200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766294100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766294400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766294700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766295000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766295300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766295600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766296200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766296500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766297400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766297700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766298000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766298300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766298600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766299200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766299500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766301000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766301300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766301600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766302200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766303100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766303400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766304000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766304300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766304600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766305800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766306100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766306400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766307000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766307600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766308200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766308800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766309100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766309400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766310600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766310900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766311500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766311800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766312100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766312700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766313000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766313600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766313900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766314500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766314800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766315100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766316000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766316300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766317200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766317500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766318100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766319000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766319300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766319600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766319900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766320800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766321100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766321700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766322000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766322300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766322600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766323500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766323800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766325000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766325300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766327700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766328000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766328600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766328900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766329200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766329800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766330100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766330400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766330700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766331000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766331600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766331900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766332200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766332500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766332800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766333100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766333700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766334300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766334600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766334900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766335200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766335500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766335800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766336100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766336400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766336700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766337000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766337300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766337600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766337900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766338200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766339400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766340600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766341200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766341500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766342100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766342400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766342700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766343300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766343600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766343900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766344500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766344800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766345100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766345700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766346000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766346600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766346900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766347200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766347500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766347800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766348400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766348700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766349000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766349600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766349900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766350200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766350500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766350800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766351100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766351400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766351700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766352000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766352600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766352900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766353200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766353800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766354400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766354700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766355000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766355300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766355600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766355900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766356200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766356500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766358000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766358300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766358600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766359200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766359500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766359800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766360400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766360700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766362200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766362500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766362800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766364300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766364600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766365200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766365800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766366400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766366700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766367000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766367300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766367600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766367900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766368200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766368800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766369100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766369700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766370600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766370900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766371200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766372100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766372400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766372700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766373000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766373300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766373600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766374200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766374500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766374800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766375100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766375400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766375700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766376000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766376300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766376600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766376900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766377200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766377800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766378700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766379000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766379300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766379600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766380200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766380500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766380800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766381100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766381400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766382000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766382300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766382900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766383800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766384100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766384700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766385000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766385300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766385600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766385900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766386200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766386500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766386800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766387400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766387700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766388000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766388600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766388900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766389200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766389500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766389800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766390100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766390700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766391000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766391300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766391900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766392200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766392500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766392800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766393100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766393400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766394000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766394300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766394600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766394900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766395200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766395500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766396100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766396400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766396700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766397000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766397300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766397600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766397900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766398200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766398800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766399100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766399700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766400000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766400300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766400900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766401200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766401500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766401800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766402100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766402400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766402700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766403000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766403300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766403600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766403900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766404500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766405400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766406000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766406300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766406900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766407200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766407800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766408400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766408700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766409000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766409600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766409900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766410200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766410800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766411100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766411400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766412000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766412300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766412900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766413200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766413800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766414100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766414400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766414700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766415600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766415900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766416200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766416500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766416800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766417100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766417400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766417700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766418000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766418300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766418600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766418900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766419200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766419500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766419800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766420100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766420400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766421000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766421300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766421600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766421900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766422500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766422800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766423100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766423400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766423700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766424000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766424300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766424900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766425200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766425500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766425800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766426100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766427000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766427300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766427600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766427900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766428200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766428500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766428800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766429100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766429400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766429700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766430000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766430600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766430900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766431200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766431500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766431800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766432100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766432400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766432700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766433300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766433600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766433900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766434200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766434500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766435400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766436000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766436300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766436900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766437200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766437500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766437800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766438100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766438400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766438700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766439000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766439300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766439600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766439900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766440200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766440800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766441100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766441400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766441700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766442000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766442300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766442600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766442900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766443200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766443500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766444100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766444400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766444700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766445000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766445300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766445600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766445900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766446200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766446500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766447100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766447700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766448600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766449200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766449500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766450100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766450400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766451000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766451300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766451600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766451900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766452200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766452500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766452800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766453100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766453400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766454000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766454300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766454600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766454900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766455200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766455500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766455800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766456100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766456400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766456700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766457300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766457900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766458200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766458800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766459100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766459400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766459700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766460000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766460300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766460600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766460900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766461200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766461500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766461800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766462400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766462700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766463300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766463600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766464200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766465100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766465400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766465700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766466000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766466300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766466600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766467200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766467500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766467800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766468100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766468400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766468700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766469000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766469300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766470200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766470500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766470800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766471100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766471400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766471700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766472000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766472600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766472900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766473200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766473500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766473800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766474100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766474400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766474700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766475000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766475300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766475600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766475900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766476200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766476500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766476800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766477400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766477700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766478000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766478300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766478600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766478900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766479200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766479500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766479800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766480100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766480400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766480700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766481000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766481300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766481600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766481900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766482500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766482800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766483100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766483400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766483700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766484000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766484300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766484600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766484900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766485200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766485500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766485800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766486100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766486400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766486700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766487000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766487300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766487600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766487900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766488200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766488500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766489100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766489700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766490000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766490300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766490600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766491800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766492400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766492700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766493000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766493300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766493600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766493900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766494800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766495100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766495400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766495700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766496000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766496300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766496600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766496900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766497200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766497500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766498100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766498400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766499000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766499300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766499900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766500200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766500500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766500800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766501100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766501400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766501700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766502000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766502300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766502600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766502900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766503200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766503500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766503800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766504100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766504400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766504700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766505000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766505300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766505600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766505900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766506200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766506500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766506800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766507100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766507400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766507700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766508000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766508300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766508600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766508900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766509200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766509500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766509800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766510100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766510400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766510700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766511000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766511300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766511600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766511900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766512200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766512500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766513400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766514000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766514300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766514600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766514900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766515200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766515500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766515800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766516100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766516400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766516700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766517000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766517300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766517600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766517900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766518200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766518500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766518800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766519100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766519400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766519700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766520000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766520300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766520600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766520900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766521200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766521500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766521800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766522100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766522400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766522700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 3 rows after 1766523300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766523600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766523900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766524200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766524800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766525100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766525400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766525700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766526000
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766526300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766526600
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766526900
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766527200
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766527500
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766527800
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766528100
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766528400
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766528700
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766529300
+[2025-12-29] 21:44:12 -  INFO   - Main - Inserted 2 rows after 1766529600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766529900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766530200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766530500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766530800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766531100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766531400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766531700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766532000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766532300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766532600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766532900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766533200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766533500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766533800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766534100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766535000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766535300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766535600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766535900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766536200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766536500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766536800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766537100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766537400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766538000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766538300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766538900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766539200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766539500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766539800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766540100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766540400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766540700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766541000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766541300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766541600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766541900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766542200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766542500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766542800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766543100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766543400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766543700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766544000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766544300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766544600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766544900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766545200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766545500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766545800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766546100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766546400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766546700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766547000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766547300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766547600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766547900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766548200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766548800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766549100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766549400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766549700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766550000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766550300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766550600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766551200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766551500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766552100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766552400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766552700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766553000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766553300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766553600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766553900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766554200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766554500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766554800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766555100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766555400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766555700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766556600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766557200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766557500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766557800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766558100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766558400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766558700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766559000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766559300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766559600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766559900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766560200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766560500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766560800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766561400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766561700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766562000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766562300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766562600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766562900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766563200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766563500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766563800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766564100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766564400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766564700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766565000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766565300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766565600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766565900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766566200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766566500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766566800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766567100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766567400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766567700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766568000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766568300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766568600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766568900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766569200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766569500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766569800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766570100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766570400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766570700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766571000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766571300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766571600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766571900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766572200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766572500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766572800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766573100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766573400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766573700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766574000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766574300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766574600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766574900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766575200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766575500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766575800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766576100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766576400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766576700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766577000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766577300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766578200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766578800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766579100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766579400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766580000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766580300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766580600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766580900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766581200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766581500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766581800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766582100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766582400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766582700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766583000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766583300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766583600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766583900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766584500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766584800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766585100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766585400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766585700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766586000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766586300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766586600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766586900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766587200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766587500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766587800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766588100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766588400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766588700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766589000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766589300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766589600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766589900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766590200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766590500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766590800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766591100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766591400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766591700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766592000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766592300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766592600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766592900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766593200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766593500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766593800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766594100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766594400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766594700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766595000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766595300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766595600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766595900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766596200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766596500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766596800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766597100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766597400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766597700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766598000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766598300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766598900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766599800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766600100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766600400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766600700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766601000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766601300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766601600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766601900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766602200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766602500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766602800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766603100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766603400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766603700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766604000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766604300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766604600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766604900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766605200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766605500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766605800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766606100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766606400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766606700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766607000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766607300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766607600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766607900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766608500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766608800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766609100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766609400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766609700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766610000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766610300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766610600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766610900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766611200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766611500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766611800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766612100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766612400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766612700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 3 rows after 1766613000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766613300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766613600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766613900
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766614200
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766614500
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766614800
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766615100
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766615400
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766615700
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766616000
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 2 rows after 1766616300
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 7134 rows after 1766616600
+[2025-12-29] 21:44:13 -  INFO   - Main - Inserted 9802 rows into maintenance.
+[2025-12-29] 21:44:13 -  INFO   - Main - Copied 9803 rows from playersOnline into playersCleaned
+[2025-12-29] 21:44:20 -  INFO   - Main - Training forecasting model...
+[2025-12-29] 21:52:06 -  INFO   - Main - Finished training model.
+[2025-12-29] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-29] 22:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-29] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-29] 23:03:43 -  INFO   - Main - Finished scraping 41730 reviews.
+[2025-12-30] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 00:00:11 -  INFO   - Main - Training forecasting model...
+[2025-12-30] 00:05:56 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 00:08:51 -  INFO   - Main - Finished training model.
+[2025-12-30] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 01:03:13 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 02:03:13 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 03:03:20 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 04:03:06 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 05:03:07 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 06:00:10 -  INFO   - Main - Training forecasting model...
+[2025-12-30] 06:06:08 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 06:09:05 -  INFO   - Main - Finished training model.
+[2025-12-30] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 07:02:59 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 08:03:03 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 09:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 09:03:18 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 10:03:04 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 11:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 11:03:12 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 12:00:11 -  INFO   - Main - Training forecasting model...
+[2025-12-30] 12:06:01 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 12:09:03 -  INFO   - Main - Finished training model.
+[2025-12-30] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 13:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 13:03:19 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 14:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-30] 14:03:18 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-30] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 15:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 15:04:10 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 16:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 16:03:16 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 17:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 17:03:26 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 18:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 18:00:10 -  INFO   - Main - Training forecasting model...
+[2025-12-30] 18:06:05 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 18:09:35 -  INFO   - Main - Finished training model.
+[2025-12-30] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 19:03:13 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 20:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 20:03:19 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 21:03:23 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 22:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 22:03:16 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-30] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-30] 23:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-30] 23:03:18 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 00:00:10 -  INFO   - Main - Training forecasting model...
+[2025-12-31] 00:06:31 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 00:09:49 -  INFO   - Main - Finished training model.
+[2025-12-31] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 01:03:07 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 02:03:38 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 03:03:05 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 04:03:16 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 05:03:01 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 06:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 06:00:14 -  INFO   - Main - Training forecasting model...
+[2025-12-31] 06:06:23 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 06:09:53 -  INFO   - Main - Finished training model.
+[2025-12-31] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 07:03:09 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 08:03:11 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 09:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 09:03:20 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 10:03:05 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 11:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 11:03:21 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 12:00:11 -  INFO   - Main - Training forecasting model...
+[2025-12-31] 12:07:10 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 12:11:10 -  INFO   - Main - Finished training model.
+[2025-12-31] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 13:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 13:03:10 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 14:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 14:04:39 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 15:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 15:06:17 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 16:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 16:03:24 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 17:00:00 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-31] 17:03:24 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 18:00:01 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-31] 18:00:10 -  INFO   - Main - Training forecasting model...
+[2025-12-31] 18:08:38 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 18:09:56 -  INFO   - Main - Finished training model.
+[2025-12-31] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 19:00:01 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-31] 19:05:02 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-31] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 20:00:01 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-31] 20:06:19 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-31] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 21:00:03 -  INFO   - Main - Total reviews to scrape: 47230
+[2025-12-31] 21:05:20 -  INFO   - Main - Finished scraping 47230 reviews.
+[2025-12-31] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 22:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 22:06:09 -  INFO   - Main - Finished scraping 47231 reviews.
+[2025-12-31] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2025-12-31] 23:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2025-12-31] 23:06:44 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 00:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 00:00:13 -  INFO   - Main - Training forecasting model...
+[2026-01-01] 00:08:25 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 00:09:45 -  INFO   - Main - Finished training model.
+[2026-01-01] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 01:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 01:05:07 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 02:04:24 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 03:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 03:04:29 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 04:00:01 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 04:05:03 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 05:00:02 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 05:06:06 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 06:00:09 -  INFO   - Main - Training forecasting model...
+[2026-01-01] 06:08:53 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 06:09:13 -  INFO   - Main - Finished training model.
+[2026-01-01] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 07:06:01 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 08:00:01 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 08:07:22 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 09:00:02 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 09:06:59 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 10:00:06 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 10:08:16 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 11:00:01 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 11:09:25 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 12:00:12 -  INFO   - Main - Training forecasting model...
+[2026-01-01] 12:06:27 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 12:09:34 -  INFO   - Main - Finished training model.
+[2026-01-01] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 13:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 13:03:12 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 14:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 14:03:17 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 15:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 15:03:18 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 16:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 16:03:18 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 17:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 17:03:21 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 18:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 18:00:09 -  INFO   - Main - Training forecasting model...
+[2026-01-01] 18:06:32 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 18:10:00 -  INFO   - Main - Finished training model.
+[2026-01-01] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 19:03:19 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 20:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-01] 20:03:31 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-01] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 21:03:31 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 22:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 22:03:15 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-01] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-01] 23:00:00 -  INFO   - Main - Total reviews to scrape: 47231
+[2026-01-01] 23:03:20 -  INFO   - Main - Finished scraping 47231 reviews.
+[2026-01-02] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-02] 00:00:13 -  INFO   - Main - Training forecasting model...
+[2026-01-02] 00:06:32 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-02] 00:08:39 -  INFO   - Main - Finished training model.
+[2026-01-02] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47233
+[2026-01-02] 01:04:02 -  INFO   - Main - Finished scraping 47233 reviews.
+[2026-01-02] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47233
+[2026-01-02] 02:03:16 -  INFO   - Main - Finished scraping 47233 reviews.
+[2026-01-02] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47233
+[2026-01-02] 03:03:15 -  INFO   - Main - Finished scraping 47233 reviews.
+[2026-01-02] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-02] 04:03:12 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-02] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 05:00:01 -  INFO   - Main - Total reviews to scrape: 47232
+[2026-01-02] 05:03:33 -  INFO   - Main - Finished scraping 47232 reviews.
+[2026-01-02] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 06:00:08 -  INFO   - Main - Training forecasting model...
+[2026-01-02] 06:06:11 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 06:08:31 -  INFO   - Main - Finished training model.
+[2026-01-02] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 07:03:14 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 08:03:08 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 09:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 09:03:31 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 10:03:25 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 11:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 11:03:22 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 12:00:09 -  INFO   - Main - Training forecasting model...
+[2026-01-02] 12:06:00 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 12:08:56 -  INFO   - Main - Finished training model.
+[2026-01-02] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 13:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 13:03:16 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 14:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 14:03:27 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 15:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-02] 15:03:34 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-02] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 16:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 16:01:19 -  INFO   - Main - Finished scraping 4900 reviews.
+[2026-01-02] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 17:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 17:01:31 -  INFO   - Main - Finished scraping 10400 reviews.
+[2026-01-02] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 18:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 18:00:09 -  INFO   - Main - Training forecasting model...
+[2026-01-02] 18:07:40 -  INFO   - Main - Finished scraping 47235 reviews.
+[2026-01-02] 18:09:04 -  INFO   - Main - Finished training model.
+[2026-01-02] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 19:03:34 -  INFO   - Main - Finished scraping 47235 reviews.
+[2026-01-02] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 20:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 20:03:30 -  INFO   - Main - Finished scraping 47235 reviews.
+[2026-01-02] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 21:03:35 -  INFO   - Main - Finished scraping 47235 reviews.
+[2026-01-02] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 22:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 22:03:24 -  INFO   - Main - Finished scraping 47235 reviews.
+[2026-01-02] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-02] 23:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-02] 23:03:14 -  INFO   - Main - Finished scraping 47235 reviews.
+[2026-01-03] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47236
+[2026-01-03] 00:00:08 -  INFO   - Main - Training forecasting model...
+[2026-01-03] 00:06:06 -  INFO   - Main - Finished scraping 47235 reviews.
+[2026-01-03] 00:09:07 -  INFO   - Main - Finished training model.
+[2026-01-03] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-03] 01:03:08 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-03] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-03] 02:03:15 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-03] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-03] 03:03:16 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-03] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47234
+[2026-01-03] 04:03:12 -  INFO   - Main - Finished scraping 47234 reviews.
+[2026-01-03] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47235
+[2026-01-03] 05:02:09 -  INFO   - Main - Finished scraping 21900 reviews.
+[2026-01-03] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47236
+[2026-01-03] 06:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-03] 06:04:29 -  INFO   - Main - Finished scraping 25000 reviews.
+[2026-01-03] 06:08:47 -  INFO   - Main - Finished training model.
+[2026-01-03] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47236
+[2026-01-03] 07:03:53 -  INFO   - Main - Finished scraping 47236 reviews.
+[2026-01-03] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47236
+[2026-01-03] 08:03:29 -  INFO   - Main - Finished scraping 47236 reviews.
+[2026-01-03] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 09:00:00 -  INFO   - Main - Total reviews to scrape: 47236
+[2026-01-03] 09:03:09 -  INFO   - Main - Finished scraping 47236 reviews.
+[2026-01-03] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47237
+[2026-01-03] 10:04:08 -  INFO   - Main - Finished scraping 47237 reviews.
+[2026-01-03] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 11:00:00 -  INFO   - Main - Total reviews to scrape: 47237
+[2026-01-03] 11:03:32 -  INFO   - Main - Finished scraping 47237 reviews.
+[2026-01-03] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47237
+[2026-01-03] 12:00:11 -  INFO   - Main - Training forecasting model...
+[2026-01-03] 12:06:57 -  INFO   - Main - Finished scraping 47237 reviews.
+[2026-01-03] 12:10:22 -  INFO   - Main - Finished training model.
+[2026-01-03] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 13:00:00 -  INFO   - Main - Total reviews to scrape: 47237
+[2026-01-03] 13:03:27 -  INFO   - Main - Finished scraping 47237 reviews.
+[2026-01-03] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 14:00:00 -  INFO   - Main - Total reviews to scrape: 47237
+[2026-01-03] 14:03:40 -  INFO   - Main - Finished scraping 47237 reviews.
+[2026-01-03] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 15:00:00 -  INFO   - Main - Total reviews to scrape: 47238
+[2026-01-03] 15:01:39 -  INFO   - Main - Finished scraping 9600 reviews.
+[2026-01-03] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 16:00:00 -  INFO   - Main - Total reviews to scrape: 47238
+[2026-01-03] 16:04:43 -  INFO   - Main - Finished scraping 47238 reviews.
+[2026-01-03] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 17:00:00 -  INFO   - Main - Total reviews to scrape: 47239
+[2026-01-03] 17:04:23 -  INFO   - Main - Finished scraping 47239 reviews.
+[2026-01-03] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 18:00:00 -  INFO   - Main - Total reviews to scrape: 47239
+[2026-01-03] 18:00:11 -  INFO   - Main - Training forecasting model...
+[2026-01-03] 18:06:36 -  INFO   - Main - Finished scraping 47239 reviews.
+[2026-01-03] 18:09:38 -  INFO   - Main - Finished training model.
+[2026-01-03] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47239
+[2026-01-03] 19:03:30 -  INFO   - Main - Finished scraping 47239 reviews.
+[2026-01-03] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 20:00:01 -  INFO   - Main - Total reviews to scrape: 47239
+[2026-01-03] 20:03:26 -  INFO   - Main - Finished scraping 47239 reviews.
+[2026-01-03] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47240
+[2026-01-03] 21:04:26 -  INFO   - Main - Finished scraping 47240 reviews.
+[2026-01-03] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 22:00:00 -  INFO   - Main - Total reviews to scrape: 47240
+[2026-01-03] 22:03:29 -  INFO   - Main - Finished scraping 47240 reviews.
+[2026-01-03] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-03] 23:00:00 -  INFO   - Main - Total reviews to scrape: 47239
+[2026-01-03] 23:03:24 -  INFO   - Main - Finished scraping 47240 reviews.
+[2026-01-04] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47239
+[2026-01-04] 00:00:25 -  INFO   - Main - Training forecasting model...
+[2026-01-04] 00:06:47 -  INFO   - Main - Finished scraping 47239 reviews.
+[2026-01-04] 00:10:10 -  INFO   - Main - Finished training model.
+[2026-01-04] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 01:00:01 -  INFO   - Main - Total reviews to scrape: 47240
+[2026-01-04] 01:03:30 -  INFO   - Main - Finished scraping 47240 reviews.
+[2026-01-04] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-04] 02:04:02 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-04] 03:03:20 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 04:03:05 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 05:03:05 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 06:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-04] 06:06:47 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 06:10:17 -  INFO   - Main - Finished training model.
+[2026-01-04] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 07:03:16 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 08:03:33 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 09:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 09:03:27 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 10:03:21 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 11:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 11:03:26 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-04] 12:00:13 -  INFO   - Main - Training forecasting model...
+[2026-01-04] 12:06:29 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 12:09:30 -  INFO   - Main - Finished training model.
+[2026-01-04] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 13:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-04] 13:03:16 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 14:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-04] 14:03:18 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 15:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-04] 15:03:30 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 16:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-04] 16:03:21 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 17:00:00 -  INFO   - Main - Total reviews to scrape: 47240
+[2026-01-04] 17:03:25 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 18:00:00 -  INFO   - Main - Total reviews to scrape: 47240
+[2026-01-04] 18:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-04] 18:06:55 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-04] 18:09:55 -  INFO   - Main - Finished training model.
+[2026-01-04] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 19:02:46 -  INFO   - Main - Finished scraping 23300 reviews.
+[2026-01-04] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 20:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 20:03:30 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 21:03:42 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 22:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 22:03:30 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-04] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-04] 23:00:01 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-04] 23:03:20 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-05] 00:00:12 -  INFO   - Main - Training forecasting model...
+[2026-01-05] 00:06:58 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 00:10:17 -  INFO   - Main - Finished training model.
+[2026-01-05] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47243
+[2026-01-05] 01:03:52 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47243
+[2026-01-05] 02:03:26 -  INFO   - Main - Finished scraping 47243 reviews.
+[2026-01-05] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47243
+[2026-01-05] 03:03:19 -  INFO   - Main - Finished scraping 47243 reviews.
+[2026-01-05] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-05] 04:03:27 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-05] 05:03:29 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-05] 06:00:09 -  INFO   - Main - Training forecasting model...
+[2026-01-05] 06:06:34 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 06:09:26 -  INFO   - Main - Finished training model.
+[2026-01-05] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-05] 07:03:32 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47242
+[2026-01-05] 08:03:41 -  INFO   - Main - Finished scraping 47242 reviews.
+[2026-01-05] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 09:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 09:03:41 -  INFO   - Main - Finished scraping 47240 reviews.
+[2026-01-05] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 10:03:38 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 11:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 11:03:27 -  INFO   - Main - Finished scraping 47243 reviews.
+[2026-01-05] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 12:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-05] 12:07:04 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 12:09:47 -  INFO   - Main - Finished training model.
+[2026-01-05] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 13:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 13:03:47 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 14:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 14:03:40 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 15:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 15:04:30 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 16:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 16:03:37 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 17:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 17:04:10 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-05] 18:00:00 -  INFO   - Main - Total reviews to scrape: 47241
+[2026-01-05] 18:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-05] 18:06:37 -  INFO   - Main - Finished scraping 47241 reviews.
+[2026-01-05] 18:09:30 -  INFO   - Main - Finished training model.

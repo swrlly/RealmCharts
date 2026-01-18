@@ -1,0 +1,128 @@
+[2026-01-11] 00:11:53 -  INFO   - Main - Started program.
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 2 rows after 1768068840
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 2 rows after 1768071000
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 2 rows after 1768072200
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 2 rows after 1768074900
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 2 rows after 1768079700
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 2 rows after 1768080300
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 2 rows after 1768085700
+[2026-01-11] 00:11:54 -  INFO   - Main - Inserted 14 rows into maintenance.
+[2026-01-11] 00:11:55 -  INFO   - Main - Copied 15 rows from playersOnline into playersCleaned
+[2026-01-11] 00:12:02 -  INFO   - Main - Training forecasting model...
+[2026-01-11] 00:19:51 -  INFO   - Main - Finished training model.
+[2026-01-11] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 01:03:01 -  INFO   - Main - Finished scraping 47254 reviews.
+[2026-01-11] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 02:03:21 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 03:02:46 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 04:02:42 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 05:02:48 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 06:00:09 -  INFO   - Main - Training forecasting model...
+[2026-01-11] 06:06:33 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 06:07:40 -  INFO   - Main - Finished training model.
+[2026-01-11] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 07:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 07:02:49 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 08:00:00 -  INFO   - Main - Total reviews to scrape: 47258
+[2026-01-11] 08:03:07 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 09:00:01 -  INFO   - Main - Total reviews to scrape: 47258
+[2026-01-11] 09:03:25 -  INFO   - Main - Finished scraping 47258 reviews.
+[2026-01-11] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47258
+[2026-01-11] 10:02:50 -  INFO   - Main - Finished scraping 47258 reviews.
+[2026-01-11] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 11:00:00 -  INFO   - Main - Total reviews to scrape: 47258
+[2026-01-11] 11:02:52 -  INFO   - Main - Finished scraping 47258 reviews.
+[2026-01-11] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 12:00:00 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 12:00:11 -  INFO   - Main - Training forecasting model...
+[2026-01-11] 12:07:03 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 12:08:10 -  INFO   - Main - Finished training model.
+[2026-01-11] 12:12:07 -  INFO   - Main - Started program.
+[2026-01-11] 12:12:09 -  INFO   - Main - Inserted 2 rows after 1768131600
+[2026-01-11] 12:12:09 -  INFO   - Main - Inserted 2 rows after 1768132980
+[2026-01-11] 12:12:09 -  INFO   - Main - Inserted 2 rows after 1768133400
+[2026-01-11] 12:12:09 -  INFO   - Main - Inserted 6 rows into maintenance.
+[2026-01-11] 12:12:09 -  INFO   - Main - Copied 7 rows from playersOnline into playersCleaned
+[2026-01-11] 12:12:16 -  INFO   - Main - Training forecasting model...
+[2026-01-11] 12:20:05 -  INFO   - Main - Finished training model.
+[2026-01-11] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 13:00:01 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 13:02:53 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 14:00:01 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 14:02:47 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 15:00:01 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 15:03:05 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 16:00:01 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 16:02:57 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 17:00:01 -  INFO   - Main - Total reviews to scrape: 47257
+[2026-01-11] 17:03:00 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 18:00:01 -  INFO   - Main - Total reviews to scrape: 47256
+[2026-01-11] 18:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-11] 18:07:23 -  INFO   - Main - Finished scraping 47257 reviews.
+[2026-01-11] 18:08:33 -  INFO   - Main - Finished training model.
+[2026-01-11] 18:11:56 -  INFO   - Main - Started program.
+[2026-01-11] 18:11:58 -  INFO   - Main - Inserted 2 rows after 1768133580
+[2026-01-11] 18:11:58 -  INFO   - Main - Inserted 4 rows after 1768150800
+[2026-01-11] 18:11:58 -  INFO   - Main - Inserted 2 rows after 1768152600
+[2026-01-11] 18:11:58 -  INFO   - Main - Inserted 8 rows into maintenance.
+[2026-01-11] 18:11:59 -  INFO   - Main - Copied 9 rows from playersOnline into playersCleaned
+[2026-01-11] 18:12:09 -  INFO   - Main - Training forecasting model...
+[2026-01-11] 18:19:50 -  INFO   - Main - Finished training model.
+[2026-01-11] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47256
+[2026-01-11] 19:03:07 -  INFO   - Main - Finished scraping 47256 reviews.
+[2026-01-11] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 20:00:00 -  INFO   - Main - Total reviews to scrape: 47256
+[2026-01-11] 20:02:55 -  INFO   - Main - Finished scraping 47256 reviews.
+[2026-01-11] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47256
+[2026-01-11] 21:02:56 -  INFO   - Main - Finished scraping 47256 reviews.
+[2026-01-11] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 22:00:00 -  INFO   - Main - Total reviews to scrape: 47255
+[2026-01-11] 22:02:54 -  INFO   - Main - Finished scraping 47256 reviews.
+[2026-01-11] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-11] 23:00:01 -  INFO   - Main - Total reviews to scrape: 47255
+[2026-01-11] 23:03:00 -  INFO   - Main - Finished scraping 47256 reviews.
+[2026-01-12] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-12] 00:00:00 -  INFO   - Main - Total reviews to scrape: 47254
+[2026-01-12] 00:00:07 -  INFO   - Main - Training forecasting model...
+[2026-01-12] 00:06:57 -  INFO   - Main - Finished scraping 47255 reviews.
+[2026-01-12] 00:07:53 -  INFO   - Main - Finished training model.
+[2026-01-12] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-12] 01:00:00 -  INFO   - Main - Total reviews to scrape: 47254
+[2026-01-12] 01:02:51 -  INFO   - Main - Finished scraping 47255 reviews.
+[2026-01-12] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-12] 02:00:00 -  INFO   - Main - Total reviews to scrape: 47254
+[2026-01-12] 02:03:12 -  INFO   - Main - Finished scraping 47254 reviews.
+[2026-01-12] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-12] 03:00:00 -  INFO   - Main - Total reviews to scrape: 47254
+[2026-01-12] 03:02:50 -  INFO   - Main - Finished scraping 47254 reviews.
+[2026-01-12] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-12] 04:00:00 -  INFO   - Main - Total reviews to scrape: 47254
+[2026-01-12] 04:02:56 -  INFO   - Main - Finished scraping 47254 reviews.
+[2026-01-12] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-12] 05:00:00 -  INFO   - Main - Total reviews to scrape: 47254
+[2026-01-12] 05:02:50 -  INFO   - Main - Finished scraping 47254 reviews.
+[2026-01-12] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-12] 06:00:00 -  INFO   - Main - Total reviews to scrape: 47254
+[2026-01-12] 06:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-12] 06:05:52 -  INFO   - Main - Finished scraping 47253 reviews.
+[2026-01-12] 06:08:04 -  INFO   - Main - Finished training model.

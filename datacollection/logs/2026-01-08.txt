@@ -1,0 +1,200 @@
+[2026-01-08] 18:12:04 -  INFO   - Main - Started program.
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767637500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767637800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767638100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767638400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767638700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767639000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767639300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767639600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767639900
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767640200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767640500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767640800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767641100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767641400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767641700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767642000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767642300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767642600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767642900
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767643200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767643500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767643800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767644100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767644400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767644700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767645000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767645300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767645600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767645900
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767646200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767646500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 3 rows after 1767646800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767647100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767647400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767647700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767648000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767648300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767648600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767648900
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767649200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767649500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767649800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767650100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 3 rows after 1767650400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767650700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767651000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767651300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767651600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767651900
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767652200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767652500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767652800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767653100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767653400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767653700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767654000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767654300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767654600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767654900
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767655200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767655500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767655800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767656100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767656400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767656700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767657000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767657300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767657780
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767658200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767658500
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767658800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767659100
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767659400
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767659700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767660000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767660300
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767660600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767660900
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767661200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 3 rows after 1767679260
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767706200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767711600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767723000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767726000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 4 rows after 1767744061
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767765780
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767766200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767808980
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767821700
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767831000
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767852600
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767873720
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767874200
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767895380
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 2 rows after 1767895800
+[2026-01-08] 18:12:06 -  INFO   - Main - Inserted 195 rows into maintenance.
+[2026-01-08] 18:12:07 -  INFO   - Main - Copied 196 rows from playersOnline into playersCleaned
+[2026-01-08] 18:12:13 -  INFO   - Main - Training forecasting model...
+[2026-01-08] 18:19:51 -  INFO   - Main - Finished training model.
+[2026-01-08] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-08] 19:00:00 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-08] 19:02:58 -  INFO   - Main - Finished scraping 47248 reviews.
+[2026-01-08] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-08] 20:00:01 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-08] 20:03:06 -  INFO   - Main - Finished scraping 47248 reviews.
+[2026-01-08] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-08] 21:00:00 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-08] 21:03:03 -  INFO   - Main - Finished scraping 47248 reviews.
+[2026-01-08] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-08] 22:00:01 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-08] 22:02:59 -  INFO   - Main - Finished scraping 47248 reviews.
+[2026-01-08] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-08] 23:00:01 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-08] 23:03:30 -  INFO   - Main - Finished scraping 47248 reviews.
+[2026-01-09] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 00:00:01 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-09] 00:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-09] 00:06:34 -  INFO   - Main - Finished scraping 47248 reviews.
+[2026-01-09] 00:08:50 -  INFO   - Main - Finished training model.
+[2026-01-09] 01:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 01:00:01 -  INFO   - Main - Total reviews to scrape: 47247
+[2026-01-09] 01:02:41 -  INFO   - Main - Finished scraping 47247 reviews.
+[2026-01-09] 02:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 02:00:01 -  INFO   - Main - Total reviews to scrape: 47247
+[2026-01-09] 02:02:48 -  INFO   - Main - Finished scraping 47247 reviews.
+[2026-01-09] 03:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 03:00:01 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-09] 03:02:50 -  INFO   - Main - Finished scraping 47248 reviews.
+[2026-01-09] 04:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 04:00:01 -  INFO   - Main - Total reviews to scrape: 47248
+[2026-01-09] 04:02:43 -  INFO   - Main - Finished scraping 47249 reviews.
+[2026-01-09] 05:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 05:00:01 -  INFO   - Main - Total reviews to scrape: 47249
+[2026-01-09] 05:02:54 -  INFO   - Main - Finished scraping 47249 reviews.
+[2026-01-09] 06:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 06:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 06:00:10 -  INFO   - Main - Training forecasting model...
+[2026-01-09] 06:07:47 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 06:09:02 -  INFO   - Main - Finished training model.
+[2026-01-09] 07:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 07:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 07:02:49 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 08:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 08:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 08:02:49 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 09:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 09:00:00 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 09:02:49 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 10:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 10:00:00 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 10:02:56 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 11:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 11:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 11:02:51 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 12:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 12:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 12:00:11 -  INFO   - Main - Training forecasting model...
+[2026-01-09] 12:07:10 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 12:08:25 -  INFO   - Main - Finished training model.
+[2026-01-09] 13:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 13:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 13:03:04 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 14:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 14:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 14:02:59 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 15:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 15:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 15:02:54 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 16:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 16:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 16:04:33 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 17:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 17:00:01 -  INFO   - Main - Total reviews to scrape: 47250
+[2026-01-09] 17:02:58 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 18:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 18:00:01 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-09] 18:00:08 -  INFO   - Main - Training forecasting model...
+[2026-01-09] 18:07:36 -  INFO   - Main - Finished scraping 47250 reviews.
+[2026-01-09] 18:08:51 -  INFO   - Main - Finished training model.
+[2026-01-09] 19:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 19:00:01 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-09] 19:03:20 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-09] 20:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 20:00:01 -  INFO   - Main - Total reviews to scrape: 47252
+[2026-01-09] 20:03:32 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-09] 21:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 21:00:01 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-09] 21:03:21 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-09] 22:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 22:00:01 -  INFO   - Main - Total reviews to scrape: 47251
+[2026-01-09] 22:03:03 -  INFO   - Main - Finished scraping 47251 reviews.
+[2026-01-09] 23:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-09] 23:00:01 -  INFO   - Main - Total reviews to scrape: 47253
+[2026-01-09] 23:03:42 -  INFO   - Main - Finished scraping 47253 reviews.
+[2026-01-10] 00:00:00 -  INFO   - Main - Starting hourly job for scraping Steam reviews..
+[2026-01-10] 00:00:01 -  INFO   - Main - Total reviews to scrape: 47253
+[2026-01-10] 00:00:12 -  INFO   - Main - Training forecasting model...
+[2026-01-10] 00:07:05 -  INFO   - Main - Finished scraping 47253 reviews.
+[2026-01-10] 00:08:08 -  INFO   - Main - Finished training model.

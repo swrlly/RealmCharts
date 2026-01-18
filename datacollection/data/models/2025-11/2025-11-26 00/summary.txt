@@ -1,0 +1,46 @@
+                                 Unobserved Components Results                                 
+===============================================================================================
+Dep. Variable:                                 players   No. Observations:                24888
+Model:                                    smooth trend   Log Likelihood             -119949.605
+                    + stochastic freq_seasonal(288(8))   AIC                         239923.210
+                   + stochastic freq_seasonal(2016(7))   BIC                         240020.659
+                   + stochastic freq_seasonal(2016(1))   HQIC                        239954.760
+                                               + AR(2)                                         
+Date:                                 Wed, 26 Nov 2025                                         
+Time:                                         00:07:04                                         
+Sample:                                              0                                         
+                                               - 24888                                         
+Covariance Type:                                   oim                                         
+================================================================================================
+                                   coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+sigma2.irregular              2.185e-06     12.347   1.77e-07      1.000     -24.199      24.199
+sigma2.trend                  7.326e-06   4.54e-06      1.614      0.107   -1.57e-06    1.62e-05
+sigma2.freq_seasonal_288(8)      0.0720      0.016      4.479      0.000       0.041       0.104
+sigma2.freq_seasonal_2016(7)     0.8121      0.194      4.181      0.000       0.431       1.193
+sigma2.freq_seasonal_2016(1)   195.8582     22.558      8.682      0.000     151.645     240.071
+sigma2.ar                     1782.3909      5.898    302.218      0.000    1770.832    1793.950
+ar.L1                            0.9571      0.011     86.821      0.000       0.935       0.979
+ar.L2                           -0.0638      0.009     -7.088      0.000      -0.081      -0.046
+beta.x1                        579.2677      0.541   1071.500      0.000     578.208     580.327
+beta.x2                        296.4119      0.389    761.560      0.000     295.649     297.175
+beta.x3                        438.5602      0.205   2139.041      0.000     438.158     438.962
+beta.x4                        229.4457      0.189   1216.604      0.000     229.076     229.815
+===================================================================================
+Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):        2076658051.64
+Prob(Q):                              0.95   Prob(JB):                         0.00
+Heteroskedasticity (H):              14.89   Skew:                           -29.26
+Prob(H) (two-sided):                  0.00   Kurtosis:                      1417.88
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the observed information matrix (complex-step) described in Harvey (1989).
+[2] Covariance matrix is singular or near-singular, with condition number 4.51e+20. Standard errors may be unstable.
+Condition number: 35.116105141845686
+Determinant: 0.06381086330038703
+Eigenvalues: [0.88494809 0.0721069  1.         1.         1.         1.
+ 1.         1.         1.         1.         1.         1.
+ 1.         1.         1.         1.         1.         1.
+ 1.         1.         1.         1.         1.         1.
+ 1.         1.         1.         1.         1.         1.
+ 1.         1.         1.         1.         1.         1.        ])

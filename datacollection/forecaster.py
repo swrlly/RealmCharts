@@ -29,7 +29,8 @@ class Forecaster:
         self.maintenance_dates = [
             pd.Timestamp("2025-09-02 03:00:00", tz = "America/Los_Angeles"),  # MOTMG 2025
             pd.Timestamp("2025-09-30 03:00:00", tz = "America/Los_Angeles"),   # S24
-            pd.Timestamp("2025-11-18 03:00:00", tz = "America/Los_Angeles")   # S25
+            pd.Timestamp("2025-11-18 03:00:00", tz = "America/Los_Angeles"),   # S25
+            pd.Timestamp("2025-01-13 02:00:00", tz = "America/Los_Angeles")   # S26
         ]
 
     def create_maintenance_spline(self, df, hours_effect=144):
